@@ -1,0 +1,516 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Exploring Maps &#8212; Pelagos data on KMaP 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=736b8b63" />
+    <link rel="stylesheet" type="text/css" href="_static/pelagos.css?v=a161a970" />
+    <link rel="stylesheet" href="./" type="text/css" />
+    
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+
+    
+    
+     
+        <script src="_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="3. Managing Metadata" href="03_managing_metadata.html" />
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="_static/pelagos.css" type="text/css"/>
+  </head><body>
+<div class="pelagos-header">
+  <div class="pelagos-header-left">
+    <a href="index.html" class="pelagos-logo-link">
+      <div class="pelagos-logo-circle">
+        <img src="_static/logo-pelagos-site.png"
+             alt="Pelagos Sanctuary"
+             class="pelagos-logo-main"/>
+      </div>
+    </a>
+  </div>
+  <div class="pelagos-header-center">
+    <a href="index.html" class="pelagos-title-link">
+      <span class="pelagos-project-title">Pelagos data on KMaP</span>
+    </a>
+  </div>
+  <div class="pelagos-header-right">
+    <a href="https://kmap.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="_static/KMAP4-LOGO-2-white.svg"
+           alt="KMaP"
+           class="pelagos-logo-kmap"/>
+    </a>
+    <a href="https://www.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="_static/LOGO_info_rac_nuovoUNEP.png"
+           alt="INFO/RAC – UNEP/MAP"
+           class="pelagos-logo-inforac"/>
+    </a>
+  </div>
+</div>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="03_managing_metadata.html" title="3. Managing Metadata"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Exploring Maps</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="exploring-maps">
+<span id="maps-en"></span><h1><span class="section-number">4. </span>Exploring Maps<a class="headerlink" href="#exploring-maps" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On this page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#finding-a-map" id="id1">Finding a Map</a></p></li>
+<li><p><a class="reference internal" href="#the-map-viewer-interface" id="id2">The Map Viewer Interface</a></p></li>
+<li><p><a class="reference internal" href="#navigating-the-map" id="id3">Navigating the Map</a></p>
+<ul>
+<li><p><a class="reference internal" href="#basic-navigation" id="id4">Basic Navigation</a></p></li>
+<li><p><a class="reference internal" href="#going-to-a-specific-location" id="id5">Going to a Specific Location</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#working-with-layers" id="id6">Working with Layers</a></p>
+<ul>
+<li><p><a class="reference internal" href="#opening-the-layer-panel" id="id7">Opening the Layer Panel</a></p></li>
+<li><p><a class="reference internal" href="#toggling-layer-visibility" id="id8">Toggling Layer Visibility</a></p></li>
+<li><p><a class="reference internal" href="#changing-layer-order" id="id9">Changing Layer Order</a></p></li>
+<li><p><a class="reference internal" href="#adjusting-layer-opacity" id="id10">Adjusting Layer Opacity</a></p></li>
+<li><p><a class="reference internal" href="#viewing-the-legend" id="id11">Viewing the Legend</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#querying-features" id="id12">Querying Features</a></p>
+<ul>
+<li><p><a class="reference internal" href="#clicking-on-a-feature" id="id13">Clicking on a Feature</a></p></li>
+<li><p><a class="reference internal" href="#identify-tool" id="id14">Identify Tool</a></p></li>
+<li><p><a class="reference internal" href="#selecting-and-filtering-features" id="id15">Selecting and Filtering Features</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#measurement-tools" id="id16">Measurement Tools</a></p>
+<ul>
+<li><p><a class="reference internal" href="#distance-measurement" id="id17">Distance Measurement</a></p></li>
+<li><p><a class="reference internal" href="#area-measurement" id="id18">Area Measurement</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#printing-and-exporting-the-map-view" id="id19">Printing and Exporting the Map View</a></p>
+<ul>
+<li><p><a class="reference internal" href="#print" id="id20">Print</a></p></li>
+<li><p><a class="reference internal" href="#share-permalink" id="id21">Share / Permalink</a></p></li>
+<li><p><a class="reference internal" href="#embed" id="id22">Embed</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#saving-changes-to-a-map" id="id23">Saving Changes to a Map</a></p></li>
+<li><p><a class="reference internal" href="#creating-a-new-map" id="id24">Creating a New Map</a></p></li>
+</ul>
+</nav>
+<p>A <strong>Map</strong> in KMaP is an interactive, multi-layer web map built from one or more Datasets.
+This section explains how to find, open, and navigate Maps, how to work with layers, and
+how to extract information from the data displayed.</p>
+<section id="finding-a-map">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">4.1. </span>Finding a Map</a><a class="headerlink" href="#finding-a-map" title="Link to this heading">¶</a></h2>
+<p>Maps are listed in the catalogue alongside all other resource types. To filter the
+catalogue to show only Maps:</p>
+<ol class="arabic simple">
+<li><p>Open the catalogue: click <strong>Maps</strong> in the top navigation bar.</p></li>
+<li><p>In the filter panel on the left, under <strong>Resource type</strong>, select <strong>Map</strong>.</p></li>
+<li><p>To find Pelagos-related maps, also apply the keyword filter:
+in the <strong>Keywords</strong> field, type <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> or <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>.</p></li>
+</ol>
+<p>Alternatively, search for a map by title using the search bar.</p>
+<p>Click on a Map card to open its <strong>detail page</strong>. From there, click <strong>View map</strong> to open
+it in the interactive map viewer.</p>
+</section>
+<section id="the-map-viewer-interface">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">4.2. </span>The Map Viewer Interface</a><a class="headerlink" href="#the-map-viewer-interface" title="Link to this heading">¶</a></h2>
+<p>The map viewer (powered by <strong>MapStore</strong>) opens in a full-screen layout.
+Its main interface elements are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Element</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Main map canvas</strong></p></td>
+<td><p>The central interactive map area.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Layer panel</strong> (☰)</p></td>
+<td><p>Toggles layer visibility, reorders layers, accesses layer settings.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Basemap switcher</strong></p></td>
+<td><p>Changes the background map (OpenStreetMap, satellite imagery, …).</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zoom controls</strong> (+ / −)</p></td>
+<td><p>Zoom in and out. Also supports mouse wheel and pinch gesture.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Toolbar</strong></p></td>
+<td><p>Row of tool icons at the top or side of the map canvas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Scale bar</strong></p></td>
+<td><p>Displays the current map scale.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Coordinates panel</strong></p></td>
+<td><p>Shows the geographic coordinates of the mouse cursor position.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="navigating-the-map">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.3. </span>Navigating the Map</a><a class="headerlink" href="#navigating-the-map" title="Link to this heading">¶</a></h2>
+<section id="basic-navigation">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.3.1. </span>Basic Navigation</a><a class="headerlink" href="#basic-navigation" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>How to perform it</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Pan (move the map)</strong></p></td>
+<td><p>Click and drag on the map canvas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zoom in</strong></p></td>
+<td><p>Scroll the mouse wheel forward, click <strong>+</strong>, or double-click on the map.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom out</strong></p></td>
+<td><p>Scroll the mouse wheel backward or click <strong>−</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zoom to full extent</strong></p></td>
+<td><p>Click the <em>Home</em> icon (🏠) in the toolbar to return to the default view.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom to a layer</strong></p></td>
+<td><p>In the Layer panel, right-click a layer and select <em>Zoom to layer extent</em>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="going-to-a-specific-location">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.3.2. </span>Going to a Specific Location</a><a class="headerlink" href="#going-to-a-specific-location" title="Link to this heading">¶</a></h3>
+<p>Use the <strong>Search / Geocoder</strong> tool in the toolbar (🔍 icon) to search for a place name.
+Type the name and press Enter — the map will zoom to that location.</p>
+</section>
+</section>
+<section id="working-with-layers">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.4. </span>Working with Layers</a><a class="headerlink" href="#working-with-layers" title="Link to this heading">¶</a></h2>
+<section id="opening-the-layer-panel">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.4.1. </span>Opening the Layer Panel</a><a class="headerlink" href="#opening-the-layer-panel" title="Link to this heading">¶</a></h3>
+<p>Click the <strong>☰</strong> (hamburger) icon to open the layer panel. It lists all layers included
+in the map, grouped into:</p>
+<ul class="simple">
+<li><p><strong>Overlays</strong> – the thematic data layers (e.g. Pelagos Sanctuary boundary, cetacean
+sighting points, shipping lanes).</p></li>
+<li><p><strong>Background layers</strong> – the basemap options (only one can be active at a time).</p></li>
+</ul>
+</section>
+<section id="toggling-layer-visibility">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.4.2. </span>Toggling Layer Visibility</a><a class="headerlink" href="#toggling-layer-visibility" title="Link to this heading">¶</a></h3>
+<p>Each layer in the panel has an <strong>eye icon</strong> (👁). Click it to show or hide that layer.
+Hidden layers remain in the map composition but are not displayed on the canvas.</p>
+</section>
+<section id="changing-layer-order">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">4.4.3. </span>Changing Layer Order</a><a class="headerlink" href="#changing-layer-order" title="Link to this heading">¶</a></h3>
+<p>Layers are drawn in the order they appear in the panel (top layers are drawn on top).
+To reorder:</p>
+<ol class="arabic simple">
+<li><p>Click and hold a layer name in the panel.</p></li>
+<li><p>Drag it up or down to the desired position.</p></li>
+<li><p>Release to drop.</p></li>
+</ol>
+</section>
+<section id="adjusting-layer-opacity">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">4.4.4. </span>Adjusting Layer Opacity</a><a class="headerlink" href="#adjusting-layer-opacity" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>In the Layer panel, click the <strong>⋮</strong> (options) icon next to a layer.</p></li>
+<li><p>Select <strong>Settings</strong> (or the slider icon).</p></li>
+<li><p>Use the <strong>Opacity</strong> slider to set transparency between 0 % (invisible) and 100 % (solid).</p></li>
+</ol>
+</section>
+<section id="viewing-the-legend">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">4.4.5. </span>Viewing the Legend</a><a class="headerlink" href="#viewing-the-legend" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>⋮</strong> (options) icon next to a layer.</p></li>
+<li><p>Select <strong>Legend</strong> to expand the symbol key for that layer.</p></li>
+</ol>
+<p>Alternatively, some map configurations display a persistent legend panel on the side
+of the canvas.</p>
+</section>
+</section>
+<section id="querying-features">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">4.5. </span>Querying Features</a><a class="headerlink" href="#querying-features" title="Link to this heading">¶</a></h2>
+<section id="clicking-on-a-feature">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">4.5.1. </span>Clicking on a Feature</a><a class="headerlink" href="#clicking-on-a-feature" title="Link to this heading">¶</a></h3>
+<p>Click on any visible feature (point, line, or polygon) on the map canvas to open an
+<strong>attribute pop-up</strong>. The pop-up displays the attribute values associated with that
+feature — for example, the name of a marine protected area, a species name, or a
+monitoring value.</p>
+<p>If multiple layers overlap at the clicked location, the pop-up may show results from
+all overlapping layers. Use the arrow buttons in the pop-up to navigate between them.</p>
+</section>
+<section id="identify-tool">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">4.5.2. </span>Identify Tool</a><a class="headerlink" href="#identify-tool" title="Link to this heading">¶</a></h3>
+<p>The <strong>Identify</strong> tool (ℹ️ icon in the toolbar) works similarly to clicking directly
+on the map. It queries all visible layers at the clicked point and returns their
+attributes in a panel.</p>
+</section>
+<section id="selecting-and-filtering-features">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">4.5.3. </span>Selecting and Filtering Features</a><a class="headerlink" href="#selecting-and-filtering-features" title="Link to this heading">¶</a></h3>
+<p>For vector layers, MapStore offers a <strong>Filter</strong> tool:</p>
+<ol class="arabic simple">
+<li><p>In the Layer panel, click <strong>⋮</strong> next to the desired layer.</p></li>
+<li><p>Select <strong>Filter</strong>.</p></li>
+<li><p>Define a filter condition using the attribute fields
+(e.g. show only records where <em>country = “France”</em>).</p></li>
+<li><p>Click <strong>Apply</strong>. Only features matching the filter are displayed.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use the filter tool to focus on a specific subset of Pelagos data — for example,
+showing only cetacean sightings from a specific year, or only routes that pass
+through the sanctuary.</p>
+</div>
+</section>
+</section>
+<section id="measurement-tools">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">4.6. </span>Measurement Tools</a><a class="headerlink" href="#measurement-tools" title="Link to this heading">¶</a></h2>
+<section id="distance-measurement">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">4.6.1. </span>Distance Measurement</a><a class="headerlink" href="#distance-measurement" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Measure</strong> tool (📐 icon) in the toolbar.</p></li>
+<li><p>Select <strong>Distance</strong>.</p></li>
+<li><p>Click points on the map to define a line. Double-click to end.</p></li>
+<li><p>The total distance is displayed in the unit of your choice (km, miles, nm).</p></li>
+</ol>
+</section>
+<section id="area-measurement">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">4.6.2. </span>Area Measurement</a><a class="headerlink" href="#area-measurement" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Measure</strong> tool.</p></li>
+<li><p>Select <strong>Area</strong>.</p></li>
+<li><p>Click to define the vertices of a polygon. Double-click to close.</p></li>
+<li><p>The calculated area is displayed.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Measurements are performed on the map projection and may have small geometric
+inaccuracies for large areas. For precise measurements, use a desktop GIS application.</p>
+</div>
+</section>
+</section>
+<section id="printing-and-exporting-the-map-view">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">4.7. </span>Printing and Exporting the Map View</a><a class="headerlink" href="#printing-and-exporting-the-map-view" title="Link to this heading">¶</a></h2>
+<section id="print">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">4.7.1. </span>Print</a><a class="headerlink" href="#print" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Print</strong> tool (🖨 icon) in the toolbar.</p></li>
+<li><p>A print dialog appears. Configure:</p>
+<ul class="simple">
+<li><p><strong>Title</strong> – a title to display on the printed map.</p></li>
+<li><p><strong>Paper size</strong> – A4, A3, Letter, etc.</p></li>
+<li><p><strong>Resolution</strong> – 72, 150, or 300 dpi.</p></li>
+<li><p><strong>Layout</strong> – portrait or landscape.</p></li>
+</ul>
+</li>
+<li><p>Click <strong>Print</strong> to generate a PDF or image.</p></li>
+</ol>
+</section>
+<section id="share-permalink">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">4.7.2. </span>Share / Permalink</a><a class="headerlink" href="#share-permalink" title="Link to this heading">¶</a></h3>
+<p>To share the current map view (including zoom level, active layers, and centre point):</p>
+<ol class="arabic simple">
+<li><p>Click the <strong>Share</strong> button (link icon) in the toolbar.</p></li>
+<li><p>A permalink URL is generated. Copy and share this URL — recipients will open the map
+in the same state.</p></li>
+</ol>
+</section>
+<section id="embed">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">4.7.3. </span>Embed</a><a class="headerlink" href="#embed" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Click the <strong>Share</strong> button.</p></li>
+<li><p>Switch to the <strong>Embed</strong> tab.</p></li>
+<li><p>Copy the HTML <code class="docutils literal notranslate"><span class="pre">&lt;iframe&gt;</span></code> code and paste it into your website or report.</p></li>
+</ol>
+</section>
+</section>
+<section id="saving-changes-to-a-map">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">4.8. </span>Saving Changes to a Map</a><a class="headerlink" href="#saving-changes-to-a-map" title="Link to this heading">¶</a></h2>
+<p>If you have <strong>edit permission</strong> on a Map, you can save changes to layers, styles, and
+the initial view:</p>
+<ol class="arabic simple">
+<li><p>Make your changes in the map viewer (reorder layers, change styles, set a new
+initial extent, etc.).</p></li>
+<li><p>Click the <strong>Save</strong> button (💾 icon) in the toolbar.</p></li>
+<li><p>Choose <strong>Save</strong> (overwrite the existing map) or <strong>Save as</strong> (create a new map).</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Saving overwrites the map for all users who have access to it.
+If you want to experiment without affecting others, use <strong>Save as</strong> to create a
+personal copy first.</p>
+</div>
+</section>
+<section id="creating-a-new-map">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">4.9. </span>Creating a New Map</a><a class="headerlink" href="#creating-a-new-map" title="Link to this heading">¶</a></h2>
+<p>Members of the Pelagos Agreement group with appropriate permissions can create new Maps:</p>
+<ol class="arabic simple">
+<li><p>Go to <strong>Maps</strong> in the navigation bar.</p></li>
+<li><p>Click <strong>+ Create map</strong> (or the equivalent button at the top of the catalogue).</p></li>
+<li><p>The map viewer opens with an empty canvas.</p></li>
+<li><p>Use the <strong>Add layer</strong> button (+ icon in the Layer panel) to search for and add
+Datasets from the KMaP catalogue.</p></li>
+<li><p>Style each layer as needed.</p></li>
+<li><p>Click <strong>Save</strong> and provide a title, abstract, and keywords
+(remember to include <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> or <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>).</p></li>
+</ol>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">4. Exploring Maps</a><ul>
+<li><a class="reference internal" href="#finding-a-map">4.1. Finding a Map</a></li>
+<li><a class="reference internal" href="#the-map-viewer-interface">4.2. The Map Viewer Interface</a></li>
+<li><a class="reference internal" href="#navigating-the-map">4.3. Navigating the Map</a><ul>
+<li><a class="reference internal" href="#basic-navigation">4.3.1. Basic Navigation</a></li>
+<li><a class="reference internal" href="#going-to-a-specific-location">4.3.2. Going to a Specific Location</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#working-with-layers">4.4. Working with Layers</a><ul>
+<li><a class="reference internal" href="#opening-the-layer-panel">4.4.1. Opening the Layer Panel</a></li>
+<li><a class="reference internal" href="#toggling-layer-visibility">4.4.2. Toggling Layer Visibility</a></li>
+<li><a class="reference internal" href="#changing-layer-order">4.4.3. Changing Layer Order</a></li>
+<li><a class="reference internal" href="#adjusting-layer-opacity">4.4.4. Adjusting Layer Opacity</a></li>
+<li><a class="reference internal" href="#viewing-the-legend">4.4.5. Viewing the Legend</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#querying-features">4.5. Querying Features</a><ul>
+<li><a class="reference internal" href="#clicking-on-a-feature">4.5.1. Clicking on a Feature</a></li>
+<li><a class="reference internal" href="#identify-tool">4.5.2. Identify Tool</a></li>
+<li><a class="reference internal" href="#selecting-and-filtering-features">4.5.3. Selecting and Filtering Features</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#measurement-tools">4.6. Measurement Tools</a><ul>
+<li><a class="reference internal" href="#distance-measurement">4.6.1. Distance Measurement</a></li>
+<li><a class="reference internal" href="#area-measurement">4.6.2. Area Measurement</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#printing-and-exporting-the-map-view">4.7. Printing and Exporting the Map View</a><ul>
+<li><a class="reference internal" href="#print">4.7.1. Print</a></li>
+<li><a class="reference internal" href="#share-permalink">4.7.2. Share / Permalink</a></li>
+<li><a class="reference internal" href="#embed">4.7.3. Embed</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#saving-changes-to-a-map">4.8. Saving Changes to a Map</a></li>
+<li><a class="reference internal" href="#creating-a-new-map">4.9. Creating a New Map</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="03_managing_metadata.html"
+                          title="Previous page">&larr; <span class="section-number">3. </span>Managing Metadata</a></p>
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="03_managing_metadata.html" title="3. Managing Metadata"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Exploring Maps</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="pelagos-footer">
+  <div class="pelagos-footer-inner">
+    <span>Pelagos data on KMaP &mdash; <a href="https://pelagos-sanctuary.org" target="_blank">Pelagos Agreement</a></span>
+    <span class="pelagos-footer-sep">|</span>
+    <span><a href="https://kmap.info-rac.org" target="_blank">KMaP</a> &ndash; <a href="https://www.info-rac.org" target="_blank">INFO/RAC – UNEP/MAP</a></span>
+  </div>
+</div>
+  </body>
+</html>

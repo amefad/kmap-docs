@@ -1,0 +1,31 @@
+# Configuration file for the Sphinx documentation builder.
+# KMaP User Documentation – Pelagos Agreement Group
+
+project = "KMaP – Knowledge Management Platform"
+copyright = "2025, INFO/RAC – UNEP/MAP"
+author = "INFO/RAC"
+release = "1.0"
+
+extensions = [
+    "sphinx.ext.autosectionlabel",
+]
+
+templates_path = ["_templates"]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
+
+html_theme = "sphinx_rtd_theme"
+html_static_path = ["_static"]
+
+html_theme_options = {
+    "logo_only": False,
+    "display_version": True,
+    "collapse_navigation": False,
+    "sticky_navigation": True,
+    "navigation_depth": 3,
+}
+
+# -- Options for multi-language builds ----------------------------------------
+# Build each language separately:
+#   sphinx-build -b html en _build/en
+#   sphinx-build -b html it _build/it
+#   sphinx-build -b html fr _build/fr

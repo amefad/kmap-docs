@@ -1,0 +1,51 @@
+{%- extends "!cloud/layout.html" %}
+
+{%- block extrahead %}
+  {{ super() }}
+  <link rel="stylesheet" href="{{ pathto('_static/pelagos.css', 1) }}" type="text/css"/>
+{%- endblock %}
+
+{%- block header %}
+<div class="pelagos-header">
+  <div class="pelagos-header-left">
+    <a href="{{ pathto(master_doc) }}" class="pelagos-logo-link">
+      <div class="pelagos-logo-circle">
+        <img src="{{ pathto('_static/logo-pelagos-site.png', 1) }}"
+             alt="Pelagos Sanctuary"
+             class="pelagos-logo-main"/>
+      </div>
+    </a>
+  </div>
+  <div class="pelagos-header-center">
+    <a href="{{ pathto(master_doc) }}" class="pelagos-title-link">
+      <span class="pelagos-project-title">{{ project }}</span>
+    </a>
+  </div>
+  <div class="pelagos-header-right">
+    <a href="https://kmap.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="{{ pathto('_static/KMAP4-LOGO-2-white.svg', 1) }}"
+           alt="KMaP"
+           class="pelagos-logo-kmap"/>
+    </a>
+    <a href="https://www.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="{{ pathto('_static/LOGO_info_rac_nuovoUNEP.png', 1) }}"
+           alt="INFO/RAC – UNEP/MAP"
+           class="pelagos-logo-inforac"/>
+    </a>
+  </div>
+</div>
+{%- endblock %}
+
+{%- block footer %}
+<div class="pelagos-footer">
+  <div class="pelagos-footer-inner">
+    <span>{{ project }} &mdash; <a href="https://pelagos-sanctuary.org" target="_blank">Pelagos Agreement</a></span>
+    <span class="pelagos-footer-sep">|</span>
+    <span><a href="https://kmap.info-rac.org" target="_blank">KMaP</a> &ndash; <a href="https://www.info-rac.org" target="_blank">INFO/RAC – UNEP/MAP</a></span>
+    {%- if last_updated %}
+    <span class="pelagos-footer-sep">|</span>
+    <span>{{ _('Last updated: %(date)s', date=last_updated) }}</span>
+    {%- endif %}
+  </div>
+</div>
+{%- endblock %}

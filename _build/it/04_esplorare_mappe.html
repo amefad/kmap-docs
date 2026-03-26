@@ -1,0 +1,512 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Esplorare le Mappe &#8212; Pelagos data on KMaP 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../_static/pelagos.css?v=d9db40cc" />
+    <link rel="stylesheet" href="../" type="text/css" />
+    
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+    
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="KMaP – Knowledge Management Platform" href="../fr/index.html" />
+    <link rel="prev" title="3. Gestire i Metadati" href="03_gestire_metadati.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../fr/index.html" title="KMaP – Knowledge Management Platform"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="03_gestire_metadati.html" title="3. Gestire i Metadati"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">KMaP – Knowledge Management Platform</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Esplorare le Mappe</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="esplorare-le-mappe">
+<span id="maps-it"></span><h1><span class="section-number">4. </span>Esplorare le Mappe<a class="headerlink" href="#esplorare-le-mappe" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="in-questa-pagina">
+<p class="topic-title">In questa pagina</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#trovare-una-mappa" id="id1">Trovare una Mappa</a></p></li>
+<li><p><a class="reference internal" href="#l-interfaccia-del-visualizzatore-mappa" id="id2">L’Interfaccia del Visualizzatore Mappa</a></p></li>
+<li><p><a class="reference internal" href="#navigare-la-mappa" id="id3">Navigare la Mappa</a></p>
+<ul>
+<li><p><a class="reference internal" href="#navigazione-di-base" id="id4">Navigazione di Base</a></p></li>
+<li><p><a class="reference internal" href="#andare-a-una-posizione-specifica" id="id5">Andare a una Posizione Specifica</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#lavorare-con-i-layer" id="id6">Lavorare con i Layer</a></p>
+<ul>
+<li><p><a class="reference internal" href="#aprire-il-pannello-layer" id="id7">Aprire il Pannello Layer</a></p></li>
+<li><p><a class="reference internal" href="#attivare-disattivare-la-visibilita-dei-layer" id="id8">Attivare/Disattivare la Visibilità dei Layer</a></p></li>
+<li><p><a class="reference internal" href="#cambiare-l-ordine-dei-layer" id="id9">Cambiare l’Ordine dei Layer</a></p></li>
+<li><p><a class="reference internal" href="#regolare-l-opacita-del-layer" id="id10">Regolare l’Opacità del Layer</a></p></li>
+<li><p><a class="reference internal" href="#visualizzare-la-legenda" id="id11">Visualizzare la Legenda</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#interrogare-gli-elementi" id="id12">Interrogare gli Elementi</a></p>
+<ul>
+<li><p><a class="reference internal" href="#cliccare-su-un-elemento" id="id13">Cliccare su un Elemento</a></p></li>
+<li><p><a class="reference internal" href="#strumento-identifica" id="id14">Strumento Identifica</a></p></li>
+<li><p><a class="reference internal" href="#selezionare-e-filtrare-gli-elementi" id="id15">Selezionare e Filtrare gli Elementi</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#strumenti-di-misurazione" id="id16">Strumenti di Misurazione</a></p>
+<ul>
+<li><p><a class="reference internal" href="#misurazione-della-distanza" id="id17">Misurazione della Distanza</a></p></li>
+<li><p><a class="reference internal" href="#misurazione-dell-area" id="id18">Misurazione dell’Area</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#stampare-ed-esportare-la-vista-mappa" id="id19">Stampare ed Esportare la Vista Mappa</a></p>
+<ul>
+<li><p><a class="reference internal" href="#stampa" id="id20">Stampa</a></p></li>
+<li><p><a class="reference internal" href="#condividi-permalink" id="id21">Condividi / Permalink</a></p></li>
+<li><p><a class="reference internal" href="#incorpora" id="id22">Incorpora</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#salvare-le-modifiche-a-una-mappa" id="id23">Salvare le Modifiche a una Mappa</a></p></li>
+<li><p><a class="reference internal" href="#creare-una-nuova-mappa" id="id24">Creare una Nuova Mappa</a></p></li>
+</ul>
+</nav>
+<p>Una <strong>Mappa</strong> in KMaP è una mappa web interattiva a più strati, costruita da uno o più
+Dataset. Questa sezione spiega come trovare, aprire e navigare le Mappe, come lavorare
+con i layer e come estrarre informazioni dai dati visualizzati.</p>
+<section id="trovare-una-mappa">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">4.1. </span>Trovare una Mappa</a><a class="headerlink" href="#trovare-una-mappa" title="Link to this heading">¶</a></h2>
+<p>Le Mappe sono elencate nel catalogo insieme a tutti gli altri tipi di risorse.
+Per filtrare il catalogo e mostrare solo le Mappe:</p>
+<ol class="arabic simple">
+<li><p>Apri il catalogo: clicca <strong>Maps</strong> nella barra di navigazione in alto.</p></li>
+<li><p>Nel pannello dei filtri a sinistra, sotto <strong>Tipo di risorsa</strong>, seleziona <strong>Map</strong>.</p></li>
+<li><p>Per trovare mappe relative a Pelagos, applica anche il filtro per parola chiave:
+nel campo <strong>Parole chiave</strong>, digita <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> o <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>.</p></li>
+</ol>
+<p>In alternativa, cerca una mappa per titolo usando la barra di ricerca.</p>
+<p>Clicca su una scheda Mappa per aprire la relativa <strong>pagina di dettaglio</strong>. Da lì,
+clicca <strong>View map</strong> per aprirla nel visualizzatore mappa interattivo.</p>
+</section>
+<section id="l-interfaccia-del-visualizzatore-mappa">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">4.2. </span>L’Interfaccia del Visualizzatore Mappa</a><a class="headerlink" href="#l-interfaccia-del-visualizzatore-mappa" title="Link to this heading">¶</a></h2>
+<p>Il visualizzatore mappa (basato su <strong>MapStore</strong>) si apre in un layout a schermo intero.
+I suoi elementi principali sono:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Elemento</p></th>
+<th class="head"><p>Descrizione</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Area mappa principale</strong></p></td>
+<td><p>L’area mappa interattiva centrale.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Pannello layer</strong> (☰)</p></td>
+<td><p>Attiva/disattiva la visibilità dei layer, riordina i layer, accede alle impostazioni.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Selettore basemap</strong></p></td>
+<td><p>Cambia la mappa di sfondo (OpenStreetMap, immagini satellitari, …).</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Controlli zoom</strong> (+ / −)</p></td>
+<td><p>Zoom in e out. Supporta anche la rotella del mouse e il gesto di pizzico.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Barra degli strumenti</strong></p></td>
+<td><p>Riga di icone degli strumenti in cima o sul lato del canvas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Scala</strong></p></td>
+<td><p>Mostra la scala corrente della mappa.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Pannello coordinate</strong></p></td>
+<td><p>Mostra le coordinate geografiche della posizione del cursore.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="navigare-la-mappa">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.3. </span>Navigare la Mappa</a><a class="headerlink" href="#navigare-la-mappa" title="Link to this heading">¶</a></h2>
+<section id="navigazione-di-base">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.3.1. </span>Navigazione di Base</a><a class="headerlink" href="#navigazione-di-base" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Azione</p></th>
+<th class="head"><p>Come eseguirla</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Spostare la mappa (pan)</strong></p></td>
+<td><p>Clicca e trascina sul canvas della mappa.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zoom in</strong></p></td>
+<td><p>Scorri la rotella del mouse in avanti, clicca <strong>+</strong> o fai doppio clic sulla mappa.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom out</strong></p></td>
+<td><p>Scorri la rotella del mouse all’indietro o clicca <strong>−</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Torna all’estensione completa</strong></p></td>
+<td><p>Clicca l’icona <em>Home</em> (🏠) nella barra degli strumenti per tornare alla vista
+predefinita.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom su un layer</strong></p></td>
+<td><p>Nel pannello layer, fai clic destro su un layer e seleziona <em>Zoom all’estensione
+del layer</em>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="andare-a-una-posizione-specifica">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.3.2. </span>Andare a una Posizione Specifica</a><a class="headerlink" href="#andare-a-una-posizione-specifica" title="Link to this heading">¶</a></h3>
+<p>Usa lo strumento <strong>Ricerca / Geocodificatore</strong> nella barra degli strumenti (icona 🔍)
+per cercare un nome di luogo. Digita il nome e premi Invio — la mappa si sposterà
+su quella posizione.</p>
+</section>
+</section>
+<section id="lavorare-con-i-layer">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.4. </span>Lavorare con i Layer</a><a class="headerlink" href="#lavorare-con-i-layer" title="Link to this heading">¶</a></h2>
+<section id="aprire-il-pannello-layer">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.4.1. </span>Aprire il Pannello Layer</a><a class="headerlink" href="#aprire-il-pannello-layer" title="Link to this heading">¶</a></h3>
+<p>Clicca l’icona <strong>☰</strong> (hamburger) per aprire il pannello dei layer. Elenca tutti i
+layer inclusi nella mappa, raggruppati in:</p>
+<ul class="simple">
+<li><p><strong>Overlay</strong> – gli strati di dati tematici (es. confine del Santuario Pelagos, punti
+di avvistamento di cetacei, rotte navali).</p></li>
+<li><p><strong>Layer di sfondo</strong> – le opzioni basemap (solo una può essere attiva alla volta).</p></li>
+</ul>
+</section>
+<section id="attivare-disattivare-la-visibilita-dei-layer">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.4.2. </span>Attivare/Disattivare la Visibilità dei Layer</a><a class="headerlink" href="#attivare-disattivare-la-visibilita-dei-layer" title="Link to this heading">¶</a></h3>
+<p>Ogni layer nel pannello ha un’<strong>icona occhio</strong> (👁). Cliccala per mostrare o nascondere
+quel layer. I layer nascosti rimangono nella composizione della mappa ma non vengono
+visualizzati sul canvas.</p>
+</section>
+<section id="cambiare-l-ordine-dei-layer">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">4.4.3. </span>Cambiare l’Ordine dei Layer</a><a class="headerlink" href="#cambiare-l-ordine-dei-layer" title="Link to this heading">¶</a></h3>
+<p>I layer sono disegnati nell’ordine in cui appaiono nel pannello (i layer in cima sono
+disegnati sopra). Per riordinare:</p>
+<ol class="arabic simple">
+<li><p>Clicca e tieni premuto un nome di layer nel pannello.</p></li>
+<li><p>Trascinalo su o giù nella posizione desiderata.</p></li>
+<li><p>Rilascia per posizionarlo.</p></li>
+</ol>
+</section>
+<section id="regolare-l-opacita-del-layer">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">4.4.4. </span>Regolare l’Opacità del Layer</a><a class="headerlink" href="#regolare-l-opacita-del-layer" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Nel pannello layer, clicca l’icona <strong>⋮</strong> (opzioni) accanto a un layer.</p></li>
+<li><p>Seleziona <strong>Impostazioni</strong> (o l’icona del cursore).</p></li>
+<li><p>Usa il cursore <strong>Opacità</strong> per impostare la trasparenza tra 0% (invisibile) e 100%
+(solido).</p></li>
+</ol>
+</section>
+<section id="visualizzare-la-legenda">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">4.4.5. </span>Visualizzare la Legenda</a><a class="headerlink" href="#visualizzare-la-legenda" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Clicca l’icona <strong>⋮</strong> (opzioni) accanto a un layer.</p></li>
+<li><p>Seleziona <strong>Legenda</strong> per espandere la chiave dei simboli per quel layer.</p></li>
+</ol>
+<p>In alternativa, alcune configurazioni di mappa mostrano un pannello legenda persistente
+sul lato del canvas.</p>
+</section>
+</section>
+<section id="interrogare-gli-elementi">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">4.5. </span>Interrogare gli Elementi</a><a class="headerlink" href="#interrogare-gli-elementi" title="Link to this heading">¶</a></h2>
+<section id="cliccare-su-un-elemento">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">4.5.1. </span>Cliccare su un Elemento</a><a class="headerlink" href="#cliccare-su-un-elemento" title="Link to this heading">¶</a></h3>
+<p>Clicca su qualsiasi elemento visibile (punto, linea o poligono) sul canvas della mappa
+per aprire un <strong>pop-up con gli attributi</strong>. Il pop-up mostra i valori degli attributi
+associati a quell’elemento — ad esempio, il nome di un’area marina protetta, il nome
+di una specie o un valore di monitoraggio.</p>
+<p>Se più layer si sovrappongono nel punto cliccato, il pop-up può mostrare risultati
+da tutti i layer sovrapposti. Usa i pulsanti freccia nel pop-up per navigare tra di essi.</p>
+</section>
+<section id="strumento-identifica">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">4.5.2. </span>Strumento Identifica</a><a class="headerlink" href="#strumento-identifica" title="Link to this heading">¶</a></h3>
+<p>Lo strumento <strong>Identifica</strong> (icona ℹ️ nella barra degli strumenti) funziona in modo
+simile al clic diretto sulla mappa. Interroga tutti i layer visibili nel punto cliccato
+e restituisce i loro attributi in un pannello.</p>
+</section>
+<section id="selezionare-e-filtrare-gli-elementi">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">4.5.3. </span>Selezionare e Filtrare gli Elementi</a><a class="headerlink" href="#selezionare-e-filtrare-gli-elementi" title="Link to this heading">¶</a></h3>
+<p>Per i layer vettoriali, MapStore offre uno strumento <strong>Filtro</strong>:</p>
+<ol class="arabic simple">
+<li><p>Nel pannello layer, clicca <strong>⋮</strong> accanto al layer desiderato.</p></li>
+<li><p>Seleziona <strong>Filtro</strong>.</p></li>
+<li><p>Definisci una condizione di filtro usando i campi attributo
+(es. mostra solo i record dove <em>paese = “Italia”</em>).</p></li>
+<li><p>Clicca <strong>Applica</strong>. Vengono visualizzati solo gli elementi che corrispondono al filtro.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Usa lo strumento filtro per concentrarti su un sottoinsieme specifico di dati Pelagos —
+ad esempio, mostrando solo gli avvistamenti di cetacei di un anno specifico, o solo le
+rotte che attraversano il santuario.</p>
+</div>
+</section>
+</section>
+<section id="strumenti-di-misurazione">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">4.6. </span>Strumenti di Misurazione</a><a class="headerlink" href="#strumenti-di-misurazione" title="Link to this heading">¶</a></h2>
+<section id="misurazione-della-distanza">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">4.6.1. </span>Misurazione della Distanza</a><a class="headerlink" href="#misurazione-della-distanza" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Clicca lo strumento <strong>Misura</strong> (icona 📐) nella barra degli strumenti.</p></li>
+<li><p>Seleziona <strong>Distanza</strong>.</p></li>
+<li><p>Clicca punti sulla mappa per definire una linea. Doppio clic per terminare.</p></li>
+<li><p>La distanza totale viene mostrata nell’unità scelta (km, miglia, mn).</p></li>
+</ol>
+</section>
+<section id="misurazione-dell-area">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">4.6.2. </span>Misurazione dell’Area</a><a class="headerlink" href="#misurazione-dell-area" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Clicca lo strumento <strong>Misura</strong>.</p></li>
+<li><p>Seleziona <strong>Area</strong>.</p></li>
+<li><p>Clicca per definire i vertici di un poligono. Doppio clic per chiudere.</p></li>
+<li><p>L’area calcolata viene visualizzata.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Le misurazioni vengono eseguite sulla proiezione della mappa e possono presentare
+piccole imprecisioni geometriche per aree grandi. Per misurazioni precise, usa
+un’applicazione GIS desktop.</p>
+</div>
+</section>
+</section>
+<section id="stampare-ed-esportare-la-vista-mappa">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">4.7. </span>Stampare ed Esportare la Vista Mappa</a><a class="headerlink" href="#stampare-ed-esportare-la-vista-mappa" title="Link to this heading">¶</a></h2>
+<section id="stampa">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">4.7.1. </span>Stampa</a><a class="headerlink" href="#stampa" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Clicca lo strumento <strong>Stampa</strong> (icona 🖨) nella barra degli strumenti.</p></li>
+<li><p>Appare una finestra di dialogo per la stampa. Configura:</p>
+<ul class="simple">
+<li><p><strong>Titolo</strong> – un titolo da visualizzare sulla mappa stampata.</p></li>
+<li><p><strong>Formato carta</strong> – A4, A3, Letter, ecc.</p></li>
+<li><p><strong>Risoluzione</strong> – 72, 150 o 300 dpi.</p></li>
+<li><p><strong>Layout</strong> – verticale o orizzontale.</p></li>
+</ul>
+</li>
+<li><p>Clicca <strong>Stampa</strong> per generare un PDF o un’immagine.</p></li>
+</ol>
+</section>
+<section id="condividi-permalink">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">4.7.2. </span>Condividi / Permalink</a><a class="headerlink" href="#condividi-permalink" title="Link to this heading">¶</a></h3>
+<p>Per condividere la vista corrente della mappa (inclusi livello di zoom, layer attivi
+e punto centrale):</p>
+<ol class="arabic simple">
+<li><p>Clicca il pulsante <strong>Condividi</strong> (icona link) nella barra degli strumenti.</p></li>
+<li><p>Viene generato un URL permalink. Copia e condividi questo URL — chi lo riceve aprirà
+la mappa nello stesso stato.</p></li>
+</ol>
+</section>
+<section id="incorpora">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">4.7.3. </span>Incorpora</a><a class="headerlink" href="#incorpora" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Clicca il pulsante <strong>Condividi</strong>.</p></li>
+<li><p>Passa alla scheda <strong>Incorpora</strong>.</p></li>
+<li><p>Copia il codice HTML <code class="docutils literal notranslate"><span class="pre">&lt;iframe&gt;</span></code> e incollalo nel tuo sito web o rapporto.</p></li>
+</ol>
+</section>
+</section>
+<section id="salvare-le-modifiche-a-una-mappa">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">4.8. </span>Salvare le Modifiche a una Mappa</a><a class="headerlink" href="#salvare-le-modifiche-a-una-mappa" title="Link to this heading">¶</a></h2>
+<p>Se hai il <strong>permesso di modifica</strong> su una Mappa, puoi salvare le modifiche a layer,
+stili e vista iniziale:</p>
+<ol class="arabic simple">
+<li><p>Effettua le modifiche nel visualizzatore mappa (riordina i layer, cambia gli stili,
+imposta una nuova estensione iniziale, ecc.).</p></li>
+<li><p>Clicca il pulsante <strong>Salva</strong> (icona 💾) nella barra degli strumenti.</p></li>
+<li><p>Scegli <strong>Salva</strong> (sovrascrivi la mappa esistente) o <strong>Salva come</strong> (crea una nuova mappa).</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Il salvataggio sovrascrive la mappa per tutti gli utenti che vi hanno accesso.
+Se vuoi sperimentare senza influenzare gli altri, usa prima <strong>Salva come</strong> per
+creare una copia personale.</p>
+</div>
+</section>
+<section id="creare-una-nuova-mappa">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">4.9. </span>Creare una Nuova Mappa</a><a class="headerlink" href="#creare-una-nuova-mappa" title="Link to this heading">¶</a></h2>
+<p>I membri del gruppo Accordo Pelagos con le autorizzazioni appropriate possono creare
+nuove Mappe:</p>
+<ol class="arabic simple">
+<li><p>Vai su <strong>Maps</strong> nella barra di navigazione.</p></li>
+<li><p>Clicca <strong>+ Crea mappa</strong> (o il pulsante equivalente in cima al catalogo).</p></li>
+<li><p>Il visualizzatore mappa si apre con un canvas vuoto.</p></li>
+<li><p>Usa il pulsante <strong>Aggiungi layer</strong> (icona + nel pannello layer) per cercare e aggiungere
+Dataset dal catalogo KMaP.</p></li>
+<li><p>Personalizza lo stile di ogni layer secondo necessità.</p></li>
+<li><p>Clicca <strong>Salva</strong> e fornisci un titolo, un abstract e delle parole chiave
+(ricorda di includere <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> o <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>).</p></li>
+</ol>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">4. Esplorare le Mappe</a><ul>
+<li><a class="reference internal" href="#trovare-una-mappa">4.1. Trovare una Mappa</a></li>
+<li><a class="reference internal" href="#l-interfaccia-del-visualizzatore-mappa">4.2. L’Interfaccia del Visualizzatore Mappa</a></li>
+<li><a class="reference internal" href="#navigare-la-mappa">4.3. Navigare la Mappa</a><ul>
+<li><a class="reference internal" href="#navigazione-di-base">4.3.1. Navigazione di Base</a></li>
+<li><a class="reference internal" href="#andare-a-una-posizione-specifica">4.3.2. Andare a una Posizione Specifica</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#lavorare-con-i-layer">4.4. Lavorare con i Layer</a><ul>
+<li><a class="reference internal" href="#aprire-il-pannello-layer">4.4.1. Aprire il Pannello Layer</a></li>
+<li><a class="reference internal" href="#attivare-disattivare-la-visibilita-dei-layer">4.4.2. Attivare/Disattivare la Visibilità dei Layer</a></li>
+<li><a class="reference internal" href="#cambiare-l-ordine-dei-layer">4.4.3. Cambiare l’Ordine dei Layer</a></li>
+<li><a class="reference internal" href="#regolare-l-opacita-del-layer">4.4.4. Regolare l’Opacità del Layer</a></li>
+<li><a class="reference internal" href="#visualizzare-la-legenda">4.4.5. Visualizzare la Legenda</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interrogare-gli-elementi">4.5. Interrogare gli Elementi</a><ul>
+<li><a class="reference internal" href="#cliccare-su-un-elemento">4.5.1. Cliccare su un Elemento</a></li>
+<li><a class="reference internal" href="#strumento-identifica">4.5.2. Strumento Identifica</a></li>
+<li><a class="reference internal" href="#selezionare-e-filtrare-gli-elementi">4.5.3. Selezionare e Filtrare gli Elementi</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#strumenti-di-misurazione">4.6. Strumenti di Misurazione</a><ul>
+<li><a class="reference internal" href="#misurazione-della-distanza">4.6.1. Misurazione della Distanza</a></li>
+<li><a class="reference internal" href="#misurazione-dell-area">4.6.2. Misurazione dell’Area</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#stampare-ed-esportare-la-vista-mappa">4.7. Stampare ed Esportare la Vista Mappa</a><ul>
+<li><a class="reference internal" href="#stampa">4.7.1. Stampa</a></li>
+<li><a class="reference internal" href="#condividi-permalink">4.7.2. Condividi / Permalink</a></li>
+<li><a class="reference internal" href="#incorpora">4.7.3. Incorpora</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#salvare-le-modifiche-a-una-mappa">4.8. Salvare le Modifiche a una Mappa</a></li>
+<li><a class="reference internal" href="#creare-una-nuova-mappa">4.9. Creare una Nuova Mappa</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="03_gestire_metadati.html"
+                          title="Previous page">&larr; <span class="section-number">3. </span>Gestire i Metadati</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="../fr/index.html"
+                          title="Next page">&rarr; KMaP – Knowledge Management Platform</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/it/04_esplorare_mappe.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                
+                <span class="show-for-small">hide menu</span>
+                 »
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                 «
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../fr/index.html" title="KMaP – Knowledge Management Platform"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="03_gestire_metadati.html" title="3. Gestire i Metadati"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >KMaP – Knowledge Management Platform</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Esplorare le Mappe</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2026, Pelagos Agreement.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

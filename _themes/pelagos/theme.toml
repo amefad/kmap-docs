@@ -1,0 +1,12 @@
+[theme]
+inherit = "cloud"
+stylesheets = [
+    "cloud.css",
+    "pelagos.css",
+]
+pygments_style = { default = "friendly" }
+sidebars = [
+    "localtoc.html",
+    "relations.html",
+    "searchbox.html",
+]

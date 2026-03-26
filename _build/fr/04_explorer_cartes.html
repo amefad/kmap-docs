@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>4. Explorer les Cartes &#8212; Pelagos data on KMaP 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+    <link rel="stylesheet" type="text/css" href="../_static/pelagos.css?v=d9db40cc" />
+    <link rel="stylesheet" href="../" type="text/css" />
+    
+    <script src="../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+
+    
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="3. Gérer les Métadonnées" href="03_gerer_metadonnees.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="03_gerer_metadonnees.html" title="3. Gérer les Métadonnées"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" accesskey="U">KMaP – Knowledge Management Platform</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Explorer les Cartes</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="explorer-les-cartes">
+<span id="maps-fr"></span><h1><span class="section-number">4. </span>Explorer les Cartes<a class="headerlink" href="#explorer-les-cartes" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="sur-cette-page">
+<p class="topic-title">Sur cette page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#trouver-une-carte" id="id1">Trouver une Carte</a></p></li>
+<li><p><a class="reference internal" href="#l-interface-du-visualiseur-de-carte" id="id2">L’Interface du Visualiseur de Carte</a></p></li>
+<li><p><a class="reference internal" href="#naviguer-dans-la-carte" id="id3">Naviguer dans la Carte</a></p>
+<ul>
+<li><p><a class="reference internal" href="#navigation-de-base" id="id4">Navigation de Base</a></p></li>
+<li><p><a class="reference internal" href="#aller-a-un-emplacement-specifique" id="id5">Aller à un Emplacement Spécifique</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#travailler-avec-les-couches" id="id6">Travailler avec les Couches</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ouvrir-le-panneau-de-couches" id="id7">Ouvrir le Panneau de Couches</a></p></li>
+<li><p><a class="reference internal" href="#basculer-la-visibilite-des-couches" id="id8">Basculer la Visibilité des Couches</a></p></li>
+<li><p><a class="reference internal" href="#changer-l-ordre-des-couches" id="id9">Changer l’Ordre des Couches</a></p></li>
+<li><p><a class="reference internal" href="#ajuster-l-opacite-d-une-couche" id="id10">Ajuster l’Opacité d’une Couche</a></p></li>
+<li><p><a class="reference internal" href="#afficher-la-legende" id="id11">Afficher la Légende</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#interroger-les-elements" id="id12">Interroger les Éléments</a></p>
+<ul>
+<li><p><a class="reference internal" href="#cliquer-sur-un-element" id="id13">Cliquer sur un Élément</a></p></li>
+<li><p><a class="reference internal" href="#outil-identifier" id="id14">Outil Identifier</a></p></li>
+<li><p><a class="reference internal" href="#selectionner-et-filtrer-les-elements" id="id15">Sélectionner et Filtrer les Éléments</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#outils-de-mesure" id="id16">Outils de Mesure</a></p>
+<ul>
+<li><p><a class="reference internal" href="#mesure-de-distance" id="id17">Mesure de Distance</a></p></li>
+<li><p><a class="reference internal" href="#mesure-de-surface" id="id18">Mesure de Surface</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#imprimer-et-exporter-la-vue-de-la-carte" id="id19">Imprimer et Exporter la Vue de la Carte</a></p>
+<ul>
+<li><p><a class="reference internal" href="#imprimer" id="id20">Imprimer</a></p></li>
+<li><p><a class="reference internal" href="#partager-permalien" id="id21">Partager / Permalien</a></p></li>
+<li><p><a class="reference internal" href="#integrer-embed" id="id22">Intégrer (Embed)</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#enregistrer-les-modifications-d-une-carte" id="id23">Enregistrer les Modifications d’une Carte</a></p></li>
+<li><p><a class="reference internal" href="#creer-une-nouvelle-carte" id="id24">Créer une Nouvelle Carte</a></p></li>
+</ul>
+</nav>
+<p>Une <strong>Carte</strong> dans KMaP est une carte web interactive à plusieurs couches, construite
+à partir d’un ou plusieurs Datasets. Cette section explique comment trouver, ouvrir et
+naviguer dans les Cartes, comment travailler avec les couches, et comment extraire des
+informations des données affichées.</p>
+<section id="trouver-une-carte">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">4.1. </span>Trouver une Carte</a><a class="headerlink" href="#trouver-une-carte" title="Link to this heading">¶</a></h2>
+<p>Les Cartes sont répertoriées dans le catalogue aux côtés de tous les autres types de
+ressources. Pour filtrer le catalogue afin d’afficher uniquement les Cartes :</p>
+<ol class="arabic simple">
+<li><p>Ouvrez le catalogue : cliquez sur <strong>Maps</strong> dans la barre de navigation en haut.</p></li>
+<li><p>Dans le panneau de filtres à gauche, sous <strong>Type de ressource</strong>, sélectionnez <strong>Map</strong>.</p></li>
+<li><p>Pour trouver des cartes liées à Pelagos, appliquez également le filtre par mot-clé :
+dans le champ <strong>Mots-clés</strong>, tapez <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> ou <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>.</p></li>
+</ol>
+<p>Alternativement, recherchez une carte par titre en utilisant la barre de recherche.</p>
+<p>Cliquez sur une carte de ressource pour ouvrir sa <strong>page de détail</strong>. De là, cliquez
+sur <strong>View map</strong> pour l’ouvrir dans le visualiseur de carte interactif.</p>
+</section>
+<section id="l-interface-du-visualiseur-de-carte">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">4.2. </span>L’Interface du Visualiseur de Carte</a><a class="headerlink" href="#l-interface-du-visualiseur-de-carte" title="Link to this heading">¶</a></h2>
+<p>Le visualiseur de carte (basé sur <strong>MapStore</strong>) s’ouvre en plein écran. Ses principaux
+éléments d’interface sont :</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Élément</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Zone de carte principale</strong></p></td>
+<td><p>La zone de carte interactive centrale.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Panneau de couches</strong> (☰)</p></td>
+<td><p>Bascule la visibilité des couches, les réordonne, accède aux paramètres.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Sélecteur de fond de carte</strong></p></td>
+<td><p>Change le fond de carte (OpenStreetMap, imagerie satellitaire, …).</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Contrôles de zoom</strong> (+ / −)</p></td>
+<td><p>Zoom avant et arrière. Prend également en charge la molette de la souris et le
+geste de pincement.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Barre d’outils</strong></p></td>
+<td><p>Rangée d’icônes d’outils en haut ou sur le côté du canvas.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Barre d’échelle</strong></p></td>
+<td><p>Affiche l’échelle actuelle de la carte.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Panneau de coordonnées</strong></p></td>
+<td><p>Affiche les coordonnées géographiques de la position du curseur.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="naviguer-dans-la-carte">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">4.3. </span>Naviguer dans la Carte</a><a class="headerlink" href="#naviguer-dans-la-carte" title="Link to this heading">¶</a></h2>
+<section id="navigation-de-base">
+<h3><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">4.3.1. </span>Navigation de Base</a><a class="headerlink" href="#navigation-de-base" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 35.0%" />
+<col style="width: 65.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Action</p></th>
+<th class="head"><p>Comment l’effectuer</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Déplacer la carte (pan)</strong></p></td>
+<td><p>Cliquez et faites glisser sur le canvas de la carte.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Zoom avant</strong></p></td>
+<td><p>Faites défiler la molette de la souris vers l’avant, cliquez sur <strong>+</strong> ou
+double-cliquez sur la carte.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom arrière</strong></p></td>
+<td><p>Faites défiler la molette de la souris vers l’arrière ou cliquez sur <strong>−</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Revenir à l’étendue complète</strong></p></td>
+<td><p>Cliquez sur l’icône <em>Accueil</em> (🏠) dans la barre d’outils pour revenir à la
+vue par défaut.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Zoom sur une couche</strong></p></td>
+<td><p>Dans le panneau de couches, faites un clic droit sur une couche et sélectionnez
+<em>Zoomer sur l’étendue de la couche</em>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aller-a-un-emplacement-specifique">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">4.3.2. </span>Aller à un Emplacement Spécifique</a><a class="headerlink" href="#aller-a-un-emplacement-specifique" title="Link to this heading">¶</a></h3>
+<p>Utilisez l’outil <strong>Recherche / Géocodeur</strong> dans la barre d’outils (icône 🔍) pour
+rechercher un nom de lieu. Tapez le nom et appuyez sur Entrée — la carte se déplacera
+vers cet emplacement.</p>
+</section>
+</section>
+<section id="travailler-avec-les-couches">
+<h2><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">4.4. </span>Travailler avec les Couches</a><a class="headerlink" href="#travailler-avec-les-couches" title="Link to this heading">¶</a></h2>
+<section id="ouvrir-le-panneau-de-couches">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">4.4.1. </span>Ouvrir le Panneau de Couches</a><a class="headerlink" href="#ouvrir-le-panneau-de-couches" title="Link to this heading">¶</a></h3>
+<p>Cliquez sur l’icône <strong>☰</strong> (hamburger) pour ouvrir le panneau de couches. Il liste
+toutes les couches incluses dans la carte, regroupées en :</p>
+<ul class="simple">
+<li><p><strong>Superpositions (Overlays)</strong> – les couches de données thématiques (ex. limite du
+Sanctuaire Pelagos, points d’observation de cétacés, routes maritimes).</p></li>
+<li><p><strong>Couches de fond (Background)</strong> – les options de fond de carte (une seule peut être
+active à la fois).</p></li>
+</ul>
+</section>
+<section id="basculer-la-visibilite-des-couches">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">4.4.2. </span>Basculer la Visibilité des Couches</a><a class="headerlink" href="#basculer-la-visibilite-des-couches" title="Link to this heading">¶</a></h3>
+<p>Chaque couche dans le panneau possède une <strong>icône œil</strong> (👁). Cliquez dessus pour
+afficher ou masquer cette couche. Les couches masquées restent dans la composition de
+la carte mais ne sont pas affichées sur le canvas.</p>
+</section>
+<section id="changer-l-ordre-des-couches">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">4.4.3. </span>Changer l’Ordre des Couches</a><a class="headerlink" href="#changer-l-ordre-des-couches" title="Link to this heading">¶</a></h3>
+<p>Les couches sont dessinées dans l’ordre où elles apparaissent dans le panneau (les
+couches du haut sont dessinées par-dessus). Pour réordonner :</p>
+<ol class="arabic simple">
+<li><p>Cliquez et maintenez un nom de couche dans le panneau.</p></li>
+<li><p>Faites-le glisser vers le haut ou le bas jusqu’à la position souhaitée.</p></li>
+<li><p>Relâchez pour le déposer.</p></li>
+</ol>
+</section>
+<section id="ajuster-l-opacite-d-une-couche">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">4.4.4. </span>Ajuster l’Opacité d’une Couche</a><a class="headerlink" href="#ajuster-l-opacite-d-une-couche" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Dans le panneau de couches, cliquez sur l’icône <strong>⋮</strong> (options) à côté d’une couche.</p></li>
+<li><p>Sélectionnez <strong>Paramètres</strong> (ou l’icône de curseur).</p></li>
+<li><p>Utilisez le curseur <strong>Opacité</strong> pour régler la transparence entre 0 % (invisible)
+et 100 % (plein).</p></li>
+</ol>
+</section>
+<section id="afficher-la-legende">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">4.4.5. </span>Afficher la Légende</a><a class="headerlink" href="#afficher-la-legende" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Cliquez sur l’icône <strong>⋮</strong> (options) à côté d’une couche.</p></li>
+<li><p>Sélectionnez <strong>Légende</strong> pour développer la clé des symboles de cette couche.</p></li>
+</ol>
+<p>Certaines configurations de carte affichent également un panneau de légende persistant
+sur le côté du canvas.</p>
+</section>
+</section>
+<section id="interroger-les-elements">
+<h2><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">4.5. </span>Interroger les Éléments</a><a class="headerlink" href="#interroger-les-elements" title="Link to this heading">¶</a></h2>
+<section id="cliquer-sur-un-element">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">4.5.1. </span>Cliquer sur un Élément</a><a class="headerlink" href="#cliquer-sur-un-element" title="Link to this heading">¶</a></h3>
+<p>Cliquez sur tout élément visible (point, ligne ou polygone) sur le canvas de la carte
+pour ouvrir une <strong>fenêtre contextuelle d’attributs</strong>. Celle-ci affiche les valeurs
+d’attributs associées à cet élément — par exemple, le nom d’une aire marine protégée,
+un nom d’espèce ou une valeur de surveillance.</p>
+<p>Si plusieurs couches se superposent à l’emplacement cliqué, la fenêtre contextuelle
+peut afficher des résultats de toutes les couches superposées. Utilisez les boutons
+fléchés dans la fenêtre pour naviguer entre eux.</p>
+</section>
+<section id="outil-identifier">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">4.5.2. </span>Outil Identifier</a><a class="headerlink" href="#outil-identifier" title="Link to this heading">¶</a></h3>
+<p>L’outil <strong>Identifier</strong> (icône ℹ️ dans la barre d’outils) fonctionne de manière
+similaire au clic direct sur la carte. Il interroge toutes les couches visibles au
+point cliqué et renvoie leurs attributs dans un panneau.</p>
+</section>
+<section id="selectionner-et-filtrer-les-elements">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">4.5.3. </span>Sélectionner et Filtrer les Éléments</a><a class="headerlink" href="#selectionner-et-filtrer-les-elements" title="Link to this heading">¶</a></h3>
+<p>Pour les couches vectorielles, MapStore propose un outil <strong>Filtrer</strong> :</p>
+<ol class="arabic simple">
+<li><p>Dans le panneau de couches, cliquez sur <strong>⋮</strong> à côté de la couche souhaitée.</p></li>
+<li><p>Sélectionnez <strong>Filtrer</strong>.</p></li>
+<li><p>Définissez une condition de filtre en utilisant les champs d’attributs
+(ex. afficher uniquement les enregistrements où <em>pays = “France”</em>).</p></li>
+<li><p>Cliquez sur <strong>Appliquer</strong>. Seuls les éléments correspondant au filtre sont affichés.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Utilisez l’outil de filtre pour vous concentrer sur un sous-ensemble spécifique de
+données Pelagos — par exemple, en affichant uniquement les observations de cétacés
+d’une année spécifique, ou uniquement les routes traversant le sanctuaire.</p>
+</div>
+</section>
+</section>
+<section id="outils-de-mesure">
+<h2><a class="toc-backref" href="#id16" role="doc-backlink"><span class="section-number">4.6. </span>Outils de Mesure</a><a class="headerlink" href="#outils-de-mesure" title="Link to this heading">¶</a></h2>
+<section id="mesure-de-distance">
+<h3><a class="toc-backref" href="#id17" role="doc-backlink"><span class="section-number">4.6.1. </span>Mesure de Distance</a><a class="headerlink" href="#mesure-de-distance" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Cliquez sur l’outil <strong>Mesure</strong> (icône 📐) dans la barre d’outils.</p></li>
+<li><p>Sélectionnez <strong>Distance</strong>.</p></li>
+<li><p>Cliquez des points sur la carte pour définir une ligne. Double-cliquez pour terminer.</p></li>
+<li><p>La distance totale est affichée dans l’unité de votre choix (km, miles, nm).</p></li>
+</ol>
+</section>
+<section id="mesure-de-surface">
+<h3><a class="toc-backref" href="#id18" role="doc-backlink"><span class="section-number">4.6.2. </span>Mesure de Surface</a><a class="headerlink" href="#mesure-de-surface" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Cliquez sur l’outil <strong>Mesure</strong>.</p></li>
+<li><p>Sélectionnez <strong>Surface</strong>.</p></li>
+<li><p>Cliquez pour définir les sommets d’un polygone. Double-cliquez pour fermer.</p></li>
+<li><p>La surface calculée est affichée.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les mesures sont effectuées sur la projection de la carte et peuvent présenter de
+légères imprécisions géométriques pour les grandes surfaces. Pour des mesures
+précises, utilisez une application SIG de bureau.</p>
+</div>
+</section>
+</section>
+<section id="imprimer-et-exporter-la-vue-de-la-carte">
+<h2><a class="toc-backref" href="#id19" role="doc-backlink"><span class="section-number">4.7. </span>Imprimer et Exporter la Vue de la Carte</a><a class="headerlink" href="#imprimer-et-exporter-la-vue-de-la-carte" title="Link to this heading">¶</a></h2>
+<section id="imprimer">
+<h3><a class="toc-backref" href="#id20" role="doc-backlink"><span class="section-number">4.7.1. </span>Imprimer</a><a class="headerlink" href="#imprimer" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Cliquez sur l’outil <strong>Imprimer</strong> (icône 🖨) dans la barre d’outils.</p></li>
+<li><p>Une boîte de dialogue d’impression apparaît. Configurez :</p>
+<ul class="simple">
+<li><p><strong>Titre</strong> – un titre à afficher sur la carte imprimée.</p></li>
+<li><p><strong>Format de papier</strong> – A4, A3, Letter, etc.</p></li>
+<li><p><strong>Résolution</strong> – 72, 150 ou 300 dpi.</p></li>
+<li><p><strong>Mise en page</strong> – portrait ou paysage.</p></li>
+</ul>
+</li>
+<li><p>Cliquez sur <strong>Imprimer</strong> pour générer un PDF ou une image.</p></li>
+</ol>
+</section>
+<section id="partager-permalien">
+<h3><a class="toc-backref" href="#id21" role="doc-backlink"><span class="section-number">4.7.2. </span>Partager / Permalien</a><a class="headerlink" href="#partager-permalien" title="Link to this heading">¶</a></h3>
+<p>Pour partager la vue actuelle de la carte (y compris le niveau de zoom, les couches
+actives et le point central) :</p>
+<ol class="arabic simple">
+<li><p>Cliquez sur le bouton <strong>Partager</strong> (icône de lien) dans la barre d’outils.</p></li>
+<li><p>Un URL permanent est généré. Copiez et partagez cet URL — les destinataires
+ouvriront la carte dans le même état.</p></li>
+</ol>
+</section>
+<section id="integrer-embed">
+<h3><a class="toc-backref" href="#id22" role="doc-backlink"><span class="section-number">4.7.3. </span>Intégrer (Embed)</a><a class="headerlink" href="#integrer-embed" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Cliquez sur le bouton <strong>Partager</strong>.</p></li>
+<li><p>Passez à l’onglet <strong>Intégrer</strong>.</p></li>
+<li><p>Copiez le code HTML <code class="docutils literal notranslate"><span class="pre">&lt;iframe&gt;</span></code> et collez-le dans votre site web ou rapport.</p></li>
+</ol>
+</section>
+</section>
+<section id="enregistrer-les-modifications-d-une-carte">
+<h2><a class="toc-backref" href="#id23" role="doc-backlink"><span class="section-number">4.8. </span>Enregistrer les Modifications d’une Carte</a><a class="headerlink" href="#enregistrer-les-modifications-d-une-carte" title="Link to this heading">¶</a></h2>
+<p>Si vous avez la <strong>permission de modification</strong> sur une Carte, vous pouvez enregistrer
+les modifications apportées aux couches, aux styles et à la vue initiale :</p>
+<ol class="arabic simple">
+<li><p>Effectuez vos modifications dans le visualiseur de carte (réordonnez les couches,
+modifiez les styles, définissez une nouvelle étendue initiale, etc.).</p></li>
+<li><p>Cliquez sur le bouton <strong>Enregistrer</strong> (icône 💾) dans la barre d’outils.</p></li>
+<li><p>Choisissez <strong>Enregistrer</strong> (écraser la carte existante) ou <strong>Enregistrer sous</strong>
+(créer une nouvelle carte).</p></li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>L’enregistrement écrase la carte pour tous les utilisateurs qui y ont accès. Si vous
+souhaitez expérimenter sans affecter les autres, utilisez d’abord <strong>Enregistrer sous</strong>
+pour créer une copie personnelle.</p>
+</div>
+</section>
+<section id="creer-une-nouvelle-carte">
+<h2><a class="toc-backref" href="#id24" role="doc-backlink"><span class="section-number">4.9. </span>Créer une Nouvelle Carte</a><a class="headerlink" href="#creer-une-nouvelle-carte" title="Link to this heading">¶</a></h2>
+<p>Les membres du groupe Accord Pelagos disposant des autorisations appropriées peuvent
+créer de nouvelles Cartes :</p>
+<ol class="arabic simple">
+<li><p>Allez dans <strong>Maps</strong> dans la barre de navigation.</p></li>
+<li><p>Cliquez sur <strong>+ Créer une carte</strong> (ou le bouton équivalent en haut du catalogue).</p></li>
+<li><p>Le visualiseur de carte s’ouvre avec un canvas vide.</p></li>
+<li><p>Utilisez le bouton <strong>Ajouter une couche</strong> (icône + dans le panneau de couches) pour
+rechercher et ajouter des Datasets depuis le catalogue KMaP.</p></li>
+<li><p>Stylisez chaque couche selon vos besoins.</p></li>
+<li><p>Cliquez sur <strong>Enregistrer</strong> et fournissez un titre, un résumé et des mots-clés
+(n’oubliez pas d’inclure <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> ou <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>).</p></li>
+</ol>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="../index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">4. Explorer les Cartes</a><ul>
+<li><a class="reference internal" href="#trouver-une-carte">4.1. Trouver une Carte</a></li>
+<li><a class="reference internal" href="#l-interface-du-visualiseur-de-carte">4.2. L’Interface du Visualiseur de Carte</a></li>
+<li><a class="reference internal" href="#naviguer-dans-la-carte">4.3. Naviguer dans la Carte</a><ul>
+<li><a class="reference internal" href="#navigation-de-base">4.3.1. Navigation de Base</a></li>
+<li><a class="reference internal" href="#aller-a-un-emplacement-specifique">4.3.2. Aller à un Emplacement Spécifique</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#travailler-avec-les-couches">4.4. Travailler avec les Couches</a><ul>
+<li><a class="reference internal" href="#ouvrir-le-panneau-de-couches">4.4.1. Ouvrir le Panneau de Couches</a></li>
+<li><a class="reference internal" href="#basculer-la-visibilite-des-couches">4.4.2. Basculer la Visibilité des Couches</a></li>
+<li><a class="reference internal" href="#changer-l-ordre-des-couches">4.4.3. Changer l’Ordre des Couches</a></li>
+<li><a class="reference internal" href="#ajuster-l-opacite-d-une-couche">4.4.4. Ajuster l’Opacité d’une Couche</a></li>
+<li><a class="reference internal" href="#afficher-la-legende">4.4.5. Afficher la Légende</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#interroger-les-elements">4.5. Interroger les Éléments</a><ul>
+<li><a class="reference internal" href="#cliquer-sur-un-element">4.5.1. Cliquer sur un Élément</a></li>
+<li><a class="reference internal" href="#outil-identifier">4.5.2. Outil Identifier</a></li>
+<li><a class="reference internal" href="#selectionner-et-filtrer-les-elements">4.5.3. Sélectionner et Filtrer les Éléments</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#outils-de-mesure">4.6. Outils de Mesure</a><ul>
+<li><a class="reference internal" href="#mesure-de-distance">4.6.1. Mesure de Distance</a></li>
+<li><a class="reference internal" href="#mesure-de-surface">4.6.2. Mesure de Surface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#imprimer-et-exporter-la-vue-de-la-carte">4.7. Imprimer et Exporter la Vue de la Carte</a><ul>
+<li><a class="reference internal" href="#imprimer">4.7.1. Imprimer</a></li>
+<li><a class="reference internal" href="#partager-permalien">4.7.2. Partager / Permalien</a></li>
+<li><a class="reference internal" href="#integrer-embed">4.7.3. Intégrer (Embed)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#enregistrer-les-modifications-d-une-carte">4.8. Enregistrer les Modifications d’une Carte</a></li>
+<li><a class="reference internal" href="#creer-une-nouvelle-carte">4.9. Créer une Nouvelle Carte</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="03_gerer_metadonnees.html"
+                          title="Previous page">&larr; <span class="section-number">3. </span>Gérer les Métadonnées</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/fr/04_explorer_cartes.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                
+                <span class="show-for-small">hide menu</span>
+                 »
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                 «
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="03_gerer_metadonnees.html" title="3. Gérer les Métadonnées"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="index.html" >KMaP – Knowledge Management Platform</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">4. </span>Explorer les Cartes</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2026, Pelagos Agreement.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>

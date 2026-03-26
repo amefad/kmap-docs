@@ -1,0 +1,511 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>3. Managing Metadata &#8212; Pelagos data on KMaP 0.1 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=736b8b63" />
+    <link rel="stylesheet" type="text/css" href="_static/pelagos.css?v=a161a970" />
+    <link rel="stylesheet" href="./" type="text/css" />
+    
+    <script src="_static/documentation_options.js?v=2709fde1"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+
+    
+    
+     
+        <script src="_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="4. Exploring Maps" href="04_exploring_maps.html" />
+    <link rel="prev" title="2. How to Find and Visualise Your Data" href="02_find_and_visualize.html" />
+   
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="_static/pelagos.css" type="text/css"/>
+  </head><body>
+<div class="pelagos-header">
+  <div class="pelagos-header-left">
+    <a href="index.html" class="pelagos-logo-link">
+      <div class="pelagos-logo-circle">
+        <img src="_static/logo-pelagos-site.png"
+             alt="Pelagos Sanctuary"
+             class="pelagos-logo-main"/>
+      </div>
+    </a>
+  </div>
+  <div class="pelagos-header-center">
+    <a href="index.html" class="pelagos-title-link">
+      <span class="pelagos-project-title">Pelagos data on KMaP</span>
+    </a>
+  </div>
+  <div class="pelagos-header-right">
+    <a href="https://kmap.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="_static/KMAP4-LOGO-2-white.svg"
+           alt="KMaP"
+           class="pelagos-logo-kmap"/>
+    </a>
+    <a href="https://www.info-rac.org" target="_blank" class="pelagos-partner-link">
+      <img src="_static/LOGO_info_rac_nuovoUNEP.png"
+           alt="INFO/RAC – UNEP/MAP"
+           class="pelagos-logo-inforac"/>
+    </a>
+  </div>
+</div>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="04_exploring_maps.html" title="4. Exploring Maps"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="02_find_and_visualize.html" title="2. How to Find and Visualise Your Data"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Managing Metadata</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="managing-metadata">
+<span id="metadata-en"></span><h1><span class="section-number">3. </span>Managing Metadata<a class="headerlink" href="#managing-metadata" title="Link to this heading">¶</a></h1>
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On this page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#who-can-edit-metadata" id="id1">Who Can Edit Metadata?</a></p></li>
+<li><p><a class="reference internal" href="#opening-the-metadata-editor" id="id2">Opening the Metadata Editor</a></p></li>
+<li><p><a class="reference internal" href="#overview-of-the-metadata-editor" id="id3">Overview of the Metadata Editor</a></p></li>
+<li><p><a class="reference internal" href="#editing-key-metadata-fields" id="id4">Editing Key Metadata Fields</a></p>
+<ul>
+<li><p><a class="reference internal" href="#title" id="id5">Title</a></p></li>
+<li><p><a class="reference internal" href="#abstract" id="id6">Abstract</a></p></li>
+<li><p><a class="reference internal" href="#keywords" id="id7">Keywords</a></p></li>
+<li><p><a class="reference internal" href="#category" id="id8">Category</a></p></li>
+<li><p><a class="reference internal" href="#spatial-extent" id="id9">Spatial Extent</a></p></li>
+<li><p><a class="reference internal" href="#date-fields" id="id10">Date Fields</a></p></li>
+<li><p><a class="reference internal" href="#licence" id="id11">Licence</a></p></li>
+<li><p><a class="reference internal" href="#point-of-contact" id="id12">Point of Contact</a></p></li>
+<li><p><a class="reference internal" href="#thumbnail" id="id13">Thumbnail</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#saving-your-changes" id="id14">Saving Your Changes</a></p></li>
+<li><p><a class="reference internal" href="#metadata-completeness-checklist" id="id15">Metadata Completeness Checklist</a></p></li>
+</ul>
+</nav>
+<p>Good metadata is what makes a resource discoverable and trustworthy. This section
+explains how to view and edit the metadata of a Dataset or Document in KMaP.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can only edit the metadata of resources that you <strong>own</strong> or for which you have
+been granted <strong>edit permissions</strong>. Members of the Pelagos Agreement group may have
+edit rights on resources shared within the group — check with your group administrator
+if you are unsure.</p>
+</div>
+<section id="who-can-edit-metadata">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">3.1. </span>Who Can Edit Metadata?</a><a class="headerlink" href="#who-can-edit-metadata" title="Link to this heading">¶</a></h2>
+<p>KMaP has a permission model with several levels:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Role</p></th>
+<th class="head"><p>Metadata editing rights</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Resource owner</strong></p></td>
+<td><p>Full edit rights on all metadata fields.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Group manager</strong></p></td>
+<td><p>Can edit resources owned by any member of their group.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Group member (editor)</strong></p></td>
+<td><p>Can edit resources explicitly shared with the group with <em>edit</em> permission.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Viewer / public</strong></p></td>
+<td><p>Read-only access. Cannot edit metadata.</p></td>
+</tr>
+</tbody>
+</table>
+<p>If you see an <strong>Edit</strong> button on the resource detail page, you have the right to edit
+that resource’s metadata.</p>
+</section>
+<section id="opening-the-metadata-editor">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">3.2. </span>Opening the Metadata Editor</a><a class="headerlink" href="#opening-the-metadata-editor" title="Link to this heading">¶</a></h2>
+<p>There are two ways to open the metadata editor:</p>
+<p><strong>From the detail page:</strong></p>
+<ol class="arabic simple">
+<li><p>Navigate to the resource detail page (see <a class="reference internal" href="02_find_and_visualize.html#find-en"><span class="std std-ref">How to Find and Visualise Your Data</span></a> for how to find a resource).</p></li>
+<li><p>Click the <strong>Edit</strong> button (pencil icon) in the top-right action bar.</p></li>
+<li><p>A dropdown menu appears. Select <strong>Edit metadata</strong>.</p></li>
+</ol>
+<p><strong>From the catalogue:</strong></p>
+<ol class="arabic simple">
+<li><p>In the catalogue, hover over a resource card.</p></li>
+<li><p>Click the <strong>⋮</strong> (more options) menu that appears.</p></li>
+<li><p>Select <strong>Edit metadata</strong>.</p></li>
+</ol>
+<p>The metadata editor opens as a multi-tab form.</p>
+</section>
+<section id="overview-of-the-metadata-editor">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">3.3. </span>Overview of the Metadata Editor</a><a class="headerlink" href="#overview-of-the-metadata-editor" title="Link to this heading">¶</a></h2>
+<p>The metadata editor is organised into tabs. The most important tabs are:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 25.0%" />
+<col style="width: 75.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Tab</p></th>
+<th class="head"><p>Content</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Basic info</strong></p></td>
+<td><p>Title, abstract, language, category, keywords, point of contact.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Location and licences</strong></p></td>
+<td><p>Spatial extent, CRS, date fields, licence, attribution.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Optional metadata</strong></p></td>
+<td><p>Additional ISO 19115 fields (edition, purpose, supplemental information, …).</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Settings</strong></p></td>
+<td><p>Permissions, featured status, advertised status.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="editing-key-metadata-fields">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">3.4. </span>Editing Key Metadata Fields</a><a class="headerlink" href="#editing-key-metadata-fields" title="Link to this heading">¶</a></h2>
+<section id="title">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">3.4.1. </span>Title</a><a class="headerlink" href="#title" title="Link to this heading">¶</a></h3>
+<p>The <strong>title</strong> is the primary way users find your resource. It should be:</p>
+<ul class="simple">
+<li><p>Descriptive and specific (avoid generic titles like “Data” or “Map layer”).</p></li>
+<li><p>Consistent with the naming conventions used by the Pelagos Agreement group.</p></li>
+</ul>
+<p>To edit: click on the <strong>Title</strong> field in the <em>Basic info</em> tab and type your changes.</p>
+</section>
+<section id="abstract">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">3.4.2. </span>Abstract</a><a class="headerlink" href="#abstract" title="Link to this heading">¶</a></h3>
+<p>The <strong>abstract</strong> is a plain-language description of the resource. A good abstract answers:</p>
+<ul class="simple">
+<li><p>What does this resource contain?</p></li>
+<li><p>What geographic area does it cover?</p></li>
+<li><p>What time period does it represent?</p></li>
+<li><p>What is it used for?</p></li>
+<li><p>What are its known limitations?</p></li>
+</ul>
+<p>The abstract field supports basic formatting. Aim for at least two or three sentences.</p>
+</section>
+<section id="keywords">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">3.4.3. </span>Keywords</a><a class="headerlink" href="#keywords" title="Link to this heading">¶</a></h3>
+<p>Keywords are the primary mechanism for filtering and discovering resources in KMaP.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>All resources related to the Pelagos Agreement <strong>must include</strong> at least one of the
+following keywords:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code></p></li>
+</ul>
+<p>Without these keywords, your resource will not appear when other group members
+filter the catalogue by these terms.</p>
+</div>
+<p>To add a keyword:</p>
+<ol class="arabic simple">
+<li><p>In the <strong>Keywords</strong> field, start typing the keyword.</p></li>
+<li><p>If the keyword already exists in the system, it will appear in a dropdown — select it.</p></li>
+<li><p>If it is new, type the full keyword and press <strong>Enter</strong> or click <strong>Add</strong>.</p></li>
+<li><p>To remove a keyword, click the <strong>×</strong> next to it.</p></li>
+</ol>
+</section>
+<section id="category">
+<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">3.4.4. </span>Category</a><a class="headerlink" href="#category" title="Link to this heading">¶</a></h3>
+<p>The <strong>category</strong> assigns the resource to a thematic classification.
+Select the most appropriate category from the dropdown:</p>
+<ul class="simple">
+<li><p>Fishery and Aquaculture</p></li>
+<li><p>Marine Biodiversity</p></li>
+<li><p>Pollution</p></li>
+<li><p>Climate Change</p></li>
+<li><p>Marine Spatial Planning</p></li>
+<li><p>Sustainability and Blue Economy</p></li>
+<li><p>Governance</p></li>
+</ul>
+<p>A resource can belong to only one primary category. Use keywords for additional
+thematic tagging.</p>
+</section>
+<section id="spatial-extent">
+<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">3.4.5. </span>Spatial Extent</a><a class="headerlink" href="#spatial-extent" title="Link to this heading">¶</a></h3>
+<p>The <strong>spatial extent</strong> defines the geographic bounding box of the resource. For datasets,
+this is usually set automatically when the data is uploaded. You can refine it manually:</p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Location and licences</strong> tab.</p></li>
+<li><p>In the <em>Spatial extent</em> section, use the map widget to draw or adjust the bounding box,
+or enter coordinates (min/max longitude and latitude) manually.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For Pelagos-related resources, the spatial extent should cover at least the Pelagos
+Sanctuary area (approximately between France, Italy, and Monaco in the Ligurian Sea and
+adjacent western Mediterranean).</p>
+</div>
+</section>
+<section id="date-fields">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">3.4.6. </span>Date Fields</a><a class="headerlink" href="#date-fields" title="Link to this heading">¶</a></h3>
+<p>Three date fields are available:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 30.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Date</strong> (creation date)</p></td>
+<td><p>When the resource was originally created or the data was collected.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Publication date</strong></p></td>
+<td><p>When the resource was published on KMaP.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Revision date</strong></p></td>
+<td><p>When the resource was last updated.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Keep these dates accurate — they are used to filter and sort resources in the catalogue.</p>
+</section>
+<section id="licence">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">3.4.7. </span>Licence</a><a class="headerlink" href="#licence" title="Link to this heading">¶</a></h3>
+<p>The <strong>licence</strong> defines how others may use the resource.</p>
+<ol class="arabic simple">
+<li><p>Go to the <strong>Location and licences</strong> tab.</p></li>
+<li><p>Select a licence from the dropdown. Common options include:</p>
+<ul class="simple">
+<li><p><em>Creative Commons Attribution (CC BY)</em> – free reuse with attribution.</p></li>
+<li><p><em>Creative Commons Attribution ShareAlike (CC BY-SA)</em> – reuse with attribution and
+same licence.</p></li>
+<li><p><em>Open Database Licence (ODbL)</em> – for datasets.</p></li>
+<li><p><em>No restrictions</em> – public domain.</p></li>
+</ul>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are unsure which licence to apply, consult your group administrator. Applying
+the wrong licence may restrict the reuse of your data inappropriately.</p>
+</div>
+</section>
+<section id="point-of-contact">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">3.4.8. </span>Point of Contact</a><a class="headerlink" href="#point-of-contact" title="Link to this heading">¶</a></h3>
+<p>The <strong>point of contact</strong> identifies who to contact for questions about the resource.
+It can be a person or an organisation.</p>
+<ol class="arabic simple">
+<li><p>In the <em>Basic info</em> tab, find the <strong>Point of contact</strong> field.</p></li>
+<li><p>Start typing a name to search registered KMaP users, or enter an organisation name.</p></li>
+</ol>
+</section>
+<section id="thumbnail">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">3.4.9. </span>Thumbnail</a><a class="headerlink" href="#thumbnail" title="Link to this heading">¶</a></h3>
+<p>The <strong>thumbnail</strong> is the preview image displayed in catalogue cards. It is generated
+automatically for Datasets and Maps, but can be replaced manually:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Edit</strong> on the detail page.</p></li>
+<li><p>Select <strong>Edit thumbnail</strong>.</p></li>
+<li><p>Upload a new image (recommended: 600 × 400 px, JPEG or PNG).</p></li>
+</ol>
+</section>
+</section>
+<section id="saving-your-changes">
+<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">3.5. </span>Saving Your Changes</a><a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
+<p>When you have finished editing, scroll to the bottom of the editor and click
+<strong>Save</strong> (or <strong>Update</strong> — the label may vary). A confirmation message will appear.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Metadata changes are applied immediately and are visible to all users with access to
+the resource. There is no draft or staging mode.</p>
+</div>
+<p>After saving, you are returned to the resource detail page where you can verify that
+all fields have been updated correctly.</p>
+</section>
+<section id="metadata-completeness-checklist">
+<h2><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">3.6. </span>Metadata Completeness Checklist</a><a class="headerlink" href="#metadata-completeness-checklist" title="Link to this heading">¶</a></h2>
+<p>Use the following checklist before publishing or sharing a resource:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 10.0%" />
+<col style="width: 90.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>✓</p></th>
+<th class="head"><p>Item</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>☐</p></td>
+<td><p>Title is descriptive and specific.</p></td>
+</tr>
+<tr class="row-odd"><td><p>☐</p></td>
+<td><p>Abstract explains what, where, when, and why.</p></td>
+</tr>
+<tr class="row-even"><td><p>☐</p></td>
+<td><p>At least one Pelagos keyword is present (<code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> or
+<code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>).</p></td>
+</tr>
+<tr class="row-odd"><td><p>☐</p></td>
+<td><p>Category is set.</p></td>
+</tr>
+<tr class="row-even"><td><p>☐</p></td>
+<td><p>Spatial extent is defined and covers the correct area.</p></td>
+</tr>
+<tr class="row-odd"><td><p>☐</p></td>
+<td><p>Date fields are filled in.</p></td>
+</tr>
+<tr class="row-even"><td><p>☐</p></td>
+<td><p>Licence is set.</p></td>
+</tr>
+<tr class="row-odd"><td><p>☐</p></td>
+<td><p>Point of contact is identified.</p></td>
+</tr>
+<tr class="row-even"><td><p>☐</p></td>
+<td><p>Thumbnail is representative.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper"><div class="sphinx-toc sphinxlocaltoc">
+    <h3><a href="index.html">Page contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">3. Managing Metadata</a><ul>
+<li><a class="reference internal" href="#who-can-edit-metadata">3.1. Who Can Edit Metadata?</a></li>
+<li><a class="reference internal" href="#opening-the-metadata-editor">3.2. Opening the Metadata Editor</a></li>
+<li><a class="reference internal" href="#overview-of-the-metadata-editor">3.3. Overview of the Metadata Editor</a></li>
+<li><a class="reference internal" href="#editing-key-metadata-fields">3.4. Editing Key Metadata Fields</a><ul>
+<li><a class="reference internal" href="#title">3.4.1. Title</a></li>
+<li><a class="reference internal" href="#abstract">3.4.2. Abstract</a></li>
+<li><a class="reference internal" href="#keywords">3.4.3. Keywords</a></li>
+<li><a class="reference internal" href="#category">3.4.4. Category</a></li>
+<li><a class="reference internal" href="#spatial-extent">3.4.5. Spatial Extent</a></li>
+<li><a class="reference internal" href="#date-fields">3.4.6. Date Fields</a></li>
+<li><a class="reference internal" href="#licence">3.4.7. Licence</a></li>
+<li><a class="reference internal" href="#point-of-contact">3.4.8. Point of Contact</a></li>
+<li><a class="reference internal" href="#thumbnail">3.4.9. Thumbnail</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#saving-your-changes">3.5. Saving Your Changes</a></li>
+<li><a class="reference internal" href="#metadata-completeness-checklist">3.6. Metadata Completeness Checklist</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div class="sphinxprev">
+    <h4>Previous page</h4>
+    <p class="topless"><a href="02_find_and_visualize.html"
+                          title="Previous page">&larr; <span class="section-number">2. </span>How to Find and Visualise Your Data</a></p>
+  </div>
+  <div class="sphinxnext">
+    <h4>Next page</h4>
+    <p class="topless"><a href="04_exploring_maps.html"
+                          title="Next page">&rarr; <span class="section-number">4. </span>Exploring Maps</a></p>
+  </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="04_exploring_maps.html" title="4. Exploring Maps"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="02_find_and_visualize.html" title="2. How to Find and Visualise Your Data"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="index.html">Pelagos data on KMaP 0.1 documentation</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href=""><span class="section-number">3. </span>Managing Metadata</a></li> 
+      </ul>
+    </div>
+    </div>
+
+<div class="pelagos-footer">
+  <div class="pelagos-footer-inner">
+    <span>Pelagos data on KMaP &mdash; <a href="https://pelagos-sanctuary.org" target="_blank">Pelagos Agreement</a></span>
+    <span class="pelagos-footer-sep">|</span>
+    <span><a href="https://kmap.info-rac.org" target="_blank">KMaP</a> &ndash; <a href="https://www.info-rac.org" target="_blank">INFO/RAC – UNEP/MAP</a></span>
+  </div>
+</div>
+  </body>
+</html>

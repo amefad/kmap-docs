@@ -1,0 +1,48 @@
+/* ── KMaP tri-logo header ─────────────────────────────── */
+.pelagos-header {
+  background-color: #02263c;   /* match your brand blue */
+  padding: 12px 24px;
+  border-bottom: 3px solid #5296f7;
+}
+
+.pelagos-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.pelagos-logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* makes dark logos white — remove if logos are already light-coloured */
+  transition: opacity 0.2s;
+}
+
+.pelagos-logo:hover {
+  opacity: 0.8;
+}
+
+.pelagos-logo--center {
+  height: 64px;   /* KMaP logo slightly larger as the platform brand */
+}
+
+.pelagos-header-title {
+  text-align: center;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  margin-top: 6px;
+}
+
+/* ── Prevent RTD's own header from duplicating the logo ── */
+.wy-side-nav-search {
+  background-color: #1B5E8B;
+}
+
+.wy-side-nav-search > a img.logo {
+  display: none;   /* hide the single logo RTD puts in the sidebar if you set html_logo */
+}
