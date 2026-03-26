@@ -26,14 +26,16 @@ The platform is structured around three hubs:
      - Access
      - Description
    * - **Data Hub**
-     - *Maps* button
+     - *Maps* |mapsbut|
      - Geospatial data: datasets, interactive maps, dashboards, and geostories.
    * - **Knowledge Hub**
-     - *Library* button
+     - *Library* |librarybut|
      - Documentary heritage: reports, publications, and reference documents.
    * - **Exchange Hub**
-     - *Network* button
-     - Collaboration and knowledge exchange (currently in preparation).
+     - *Network* |networkbut|
+     - Collaboration and knowledge exchange.
+
+.. |mapsbut| image::'../_static/maps.png'
 
 .. note::
    As a member of the **Pelagos Agreement** group, you have access to specific resources,
@@ -198,28 +200,56 @@ On any Dataset detail page, click the **OGC Services** tab (or look for the
 *Download / OGC* section). The WMS, WFS, and WCS endpoint URLs are listed there
 and can be copied directly into QGIS or any other OGC-compatible client.
 
+.. figure:: 
+
 .. tip::
    In QGIS, go to **Layer → Add Layer → Add WMS/WMTS Layer**, paste the WMS URL,
    and browse the list of available layers to add KMaP data directly to your project
    without downloading any files. 
-   Consider also the `QGIS Geonode Plugin <https://geonode.org/QGISGeoNodePlugin/>`
+   Consider also the `QGIS Geonode Plugin <https://geonode.org/QGISGeoNodePlugin/>`_
    to connect directly with kmap resources.
 
 
 Themes Available on KMaP
 =========================
 
-KMaP organises its datasets following the themes accordin with UNEP-MAP:
+KMaP organises its datasets into the the following categories according with UNEP-MAP themes:
 
-*   **Fishery and Aquaculture**
-*   **Marine Biodiversity**
-*   |Pollution| **Pollution**
-*   **Climate Change**
-*   **Marine Spatial Planning**
-*   **Sustainability and Blue Economy**
-*   **Governance**
+*   |pollution| **Pollution**
+*   |biodiversity| **Marine Biodiversity**
+*   |sustainability| **Sustainability and Blue Economy**
+*   |climate_change| **Climate Change**
+*   |msp| **Marine Spatial Planning**
+*   |fishery| **Fishery and Aquaculture**
+*   |governance| **Governance**
 
+.. |pollution| image:: ../_static/01pollution.svg
+  :height: 3.5em
+  :alt: Pollution
 
+.. |biodiversity| image:: ../_static/02biodiversity.svg
+  :height: 3.5em
+  :alt: Biodiversity
 
-Resources related to the `Scientific Studies financied by Pelagos Agreement <https://pelagos-sanctuary.org/scientific-studies/>` appear across
-different themes, mainly Marine Biodiversity  and Pollution.
+.. |sustainability| image:: ../_static/03sustainability.svg
+  :height: 3.5em
+  :alt: Sustainability  
+
+.. |climate_change| image:: ../_static/04climate_change.svg
+  :height: 3.5em
+  :alt: Climate change  
+
+.. |msp| image:: ../_static/05MSP.svg
+  :height: 3.5em
+  :alt: MSP  
+
+.. |fishery| image:: ../_static/06fishery.svg
+  :height: 3.5em
+  :alt: Fishery  
+
+.. |governance| image:: ../_static/07governance.svg
+  :height: 3.5em
+  :alt: Governance  
+
+Resources related to the `Scientific Studies financied by Pelagos Agreement <https://pelagos-sanctuary.org/scientific-studies/>`_ 
+are categorized under dtheir respective themes, mainly Marine Biodiversity  and Pollution.
