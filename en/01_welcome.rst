@@ -35,7 +35,11 @@ The platform is structured around three hubs:
      - *Network* |networkbut|
      - Collaboration and knowledge exchange.
 
-.. |mapsbut| image::'../_static/maps.png'
+.. |mapsbut| image:: ../_static/maps.png
+
+.. |librarybut| image:: ../_static/library.png
+
+.. |networkbut| image:: ../_static/network.png
 
 .. note::
    As a member of the **Pelagos Agreement** group, you have access to specific resources,
@@ -200,7 +204,11 @@ On any Dataset detail page, click the **OGC Services** tab (or look for the
 *Download / OGC* section). The WMS, WFS, and WCS endpoint URLs are listed there
 and can be copied directly into QGIS or any other OGC-compatible client.
 
-.. figure:: 
+.. figure:: ../_static/ogc_services.png
+  :alt: Ogc service section
+
+  The ogc service links in metadata section
+
 
 .. tip::
    In QGIS, go to **Layer → Add Layer → Add WMS/WMTS Layer**, paste the WMS URL,

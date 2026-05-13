@@ -145,7 +145,7 @@ basemap. You can:
 
 * Pan and zoom using mouse or touch gestures.
 * Click on a feature to open a **pop-up** showing its attribute values.
-* Use the layer panel (☰ icon) to toggle visibility or inspect the legend.
+* Use the layer panel ( icon) to toggle visibility or inspect the legend.
 
 .. note::
    The preview is a live, interactive map — not a static image. You can explore the
