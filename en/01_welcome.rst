@@ -16,6 +16,13 @@ KMaP is built on `GeoNode <https://geonode.org/>`_, an open-source web platform 
 managing and sharing geospatial information. It acts as a unified access hub to the
 environmental and spatial knowledge heritage of the Mediterranean region.
 
+.. figure:: ../_static/kmap_home.png
+    :align: center
+    :width: 512px
+    :alt: kmap home page
+
+    Screenshot of KMaP Home Page
+
 The platform is structured around three hubs:
 
 .. list-table::
@@ -35,7 +42,11 @@ The platform is structured around three hubs:
      - *Network* |networkbut|
      - Collaboration and knowledge exchange.
 
-.. |mapsbut| image::'../_static/maps.png'
+.. |mapsbut| image:: ../_static/maps.png
+
+.. |librarybut| image:: ../_static/library.png
+
+.. |networkbut| image:: ../_static/network.png
 
 .. note::
    As a member of the **Pelagos Agreement** group, you have access to specific resources,
@@ -55,6 +66,13 @@ Dataset
 A **Dataset** is a geographic data layer representing real-world features or measurements.
 It is the foundational building block of the platform — the raw material from which maps,
 dashboards, and analyses are constructed.
+
+.. figure:: ../_static/01_dataset.png
+    :align: center
+    :width: 512px
+    :alt: dataset page
+
+    Dataset Page
 
 Datasets can be:
 
@@ -89,12 +107,27 @@ can be searched and filtered, and can be linked to Datasets or Maps.
 Supported file types include: ``.pdf``, ``.docx``, ``.xlsx``, ``.pptx``, ``.jpg``,
 ``.png``, ``.tif``, ``.mp4``, ``.zip``, and many others.
 
+.. figure:: ../_static/01_dataset.png
+    :align: center
+    :width: 512px
+    :alt: dataset page
+
+    Dataset Page
+
+
 
 Map
 ---
 
 A **Map** is an interactive, multi-layer web map created by composing one or more
 Datasets. Maps are built and viewed using the integrated **MapStore** map viewer.
+
+.. figure:: ../_static/call1_map_zoom.png
+    :align: center
+    :width: 512px
+    :alt: dataset page
+
+    Dataset Page
 
 Each Map:
 
@@ -200,7 +233,11 @@ On any Dataset detail page, click the **OGC Services** tab (or look for the
 *Download / OGC* section). The WMS, WFS, and WCS endpoint URLs are listed there
 and can be copied directly into QGIS or any other OGC-compatible client.
 
-.. figure:: 
+.. figure:: ../_static/ogc_services.png
+  :alt: Ogc service section
+
+  The ogc service links in metadata section
+
 
 .. tip::
    In QGIS, go to **Layer → Add Layer → Add WMS/WMTS Layer**, paste the WMS URL,

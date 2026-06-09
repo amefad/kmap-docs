@@ -4,22 +4,20 @@
 Benvenuto su KMaP
 ======================
 
-.. contents:: In questa pagina
-   :local:
-   :depth: 2
 
-Cos'è KMaP?
+Presentazione di KMaP
 ============
 
 **KMaP** (Knowledge Management Platform) è l'Infrastruttura di Dati Spaziali sviluppata
-da **INFO/RAC**, il Centro di Attività Regionale per l'Informazione e la Comunicazione del
-`Piano d'Azione per il Mediterraneo <https://www.unep.org/unepmap/>`_ (UNEP/MAP).
+da **INFO/RAC**, il Centro di Informazione e Comunicazione INFO/RAC del 
+Piano d'Azione per il Mediterraneo `(Mediteranean Action Plan - MAP) <https://www.unep.org/unepmap/>`_ 
+del Programma Ambiente delle Nazioni Unite (United Nation Environment Program - UNEP)..
 
 KMaP è basata su `GeoNode <https://geonode.org/>`_, una piattaforma web open-source per
-la gestione e la condivisione di informazioni geospaziali. Rappresenta un punto di accesso
-unificato al patrimonio di conoscenze ambientali e spaziali del Mediterraneo.
+la gestione e la condivisione di dati geografici. 
+Costituisce il punto di accesso principale al patrimonio di dati ambientali e spaziali del Mediterraneo.
 
-La piattaforma è strutturata attorno a tre hub:
+La piattaforma è suddivisa su tre aree:
 
 .. list-table::
    :widths: 20 15 65
@@ -29,19 +27,25 @@ La piattaforma è strutturata attorno a tre hub:
      - Accesso
      - Descrizione
    * - **Data Hub**
-     - Pulsante *Maps*
-     - Dati geospaziali: dataset, mappe interattive, dashboard e geostorie.
+     - |mapsbut| *Maps*
+     - Dati geografici: dataset, mappe interattive, dashboard e geostorie.
    * - **Knowledge Hub**
-     - Pulsante *Library*
+     - |librarybut| *Library*
      - Patrimonio documentale: rapporti, pubblicazioni e documenti di riferimento.
    * - **Exchange Hub**
-     - Pulsante *Network*
-     - Collaborazione e scambio di conoscenze (attualmente in preparazione).
+     - |networkbut| *Network*
+     - Strumenti di collaborazione e scambio di conoscenze.
+  
+.. |mapsbut| image::'../_static/maps.png'
+
+.. |librarybut| image::'../_static/library.png'
+
+.. |networkbut| image::'../_static/network.png'
 
 .. note::
-   In quanto membro del gruppo **Accordo Pelagos**, hai accesso a risorse specifiche,
+   In quanto membri del gruppo **Accordo Pelagos**, avrete accesso a risorse specifiche,
    diritti di modifica dei metadati e autorizzazioni a livello di gruppo non disponibili
-   agli utenti pubblici.
+   a tutti gli utenti.
 
 
 Tipi di Risorse

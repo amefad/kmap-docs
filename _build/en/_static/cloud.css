@@ -232,54 +232,14 @@ body
 div.related
 {
     margin: 0 auto;
-    max-width: none;
     background: black;
     line-height: 1.5em;
     padding: .75em 0;
     color: #ffffff;
     text-shadow: 1px 1px 1px rgba(0,0,0,.3);
-
-    
-
     
 }
 
-div.relbar-top div.related
-{
-    
-    
-        -moz-border-radius: .7em .7em 0 0;
-        -webkit-border-radius: .7em .7em 0 0;
-        -o-border-radius: .7em .7em 0 0;
-        -ms-border-radius: .7em .7em 0 0;
-        border-radius: .7em .7em 0 0;
-    
-
-
-}
-
-div.relbar-bottom div.related
-{
-    
-    
-        -moz-border-radius: 0 0 .7em .7em;
-        -webkit-border-radius: 0 0 .7em .7em;
-        -o-border-radius: 0 0 .7em .7em;
-        -ms-border-radius: 0 0 .7em .7em;
-        border-radius: 0 0 .7em .7em;
-    
-
-
-
-    
-}
-
-
-
-    
-    
-    
-    
 
 
 
@@ -344,7 +304,7 @@ div.document
     
     position: relative;
     margin: 0 auto;
-    max-width: none;
+    max-width: 11.5in;
     background: #F2F2F2;
 
     
@@ -360,7 +320,7 @@ div.documentwrapper
 
 div.bodywrapper
 {
-        margin: 0 0 0 3in;
+        margin: 0 3in 0 0;
     
 }
 
@@ -381,7 +341,7 @@ div.bodywrapper
 
 
 div.document.sidebar-hidden div.bodywrapper {
-    margin-left: 0;
+    margin-right: 0;
 }
 
 div.body
@@ -391,16 +351,16 @@ div.body
 
     
     background-color: #ffffff;
-    border-left: 1px solid rgba(0,0,0,.05);
+    border-right: 1px solid rgba(0,0,0,.05);
     
         
             
     
-        -moz-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -webkit-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -o-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        -ms-box-shadow: -1px 0 2px rgba(0,0,0,.05);
-        box-shadow: -1px 0 2px rgba(0,0,0,.05);
+        -moz-box-shadow: 1px 0 2px rgba(0,0,0,.05);
+        -webkit-box-shadow: 1px 0 2px rgba(0,0,0,.05);
+        -o-box-shadow: 1px 0 2px rgba(0,0,0,.05);
+        -ms-box-shadow: 1px 0 2px rgba(0,0,0,.05);
+        box-shadow: 1px 0 2px rgba(0,0,0,.05);
     
 
 
@@ -436,6 +396,7 @@ div.sphinxsidebar
 {
     margin-top: 0;
     width: 3in;
+        float: right;
 
     font-size: 90%;
     line-height: 1.25em;
@@ -823,7 +784,7 @@ div.sphinxsidebar .searchtip
     position: absolute;
     width: 3in;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 1;
 }
 
@@ -870,7 +831,7 @@ button#sidebar-hide
     position: absolute;
     
         top: 0;
-        right: -1px;
+        left: -1px;
     
 
     background: transparent;
@@ -879,7 +840,7 @@ button#sidebar-hide
         border-top-width: 0;
     
 
-    border-bottom-left-radius: 0.7em;
+    border-bottom-right-radius: 0.7em;
     
 }
 
@@ -895,7 +856,7 @@ button#sidebar-show
     position: absolute;
     top: 0;
     
-        left: 0;
+        right: 0;
     
 
     background: #F2F2F2;
@@ -904,7 +865,7 @@ button#sidebar-show
         border-top-width: 0;
     
 
-    border-bottom-right-radius: 0.7em;
+    border-bottom-left-radius: 0.7em;
     
 }
 
@@ -1354,15 +1315,10 @@ a.headerlink:hover:active
 
     div.body .clear-none > h3 { clear: none; }
 
-.hidden { display: none; }div.body p
-{
-    text-align: justify;
-    
-    
-        
-    
-    
-        
+.hidden { display: none; }
+
+div.body p
+{       
     margin: 1.5em
     0
     1.5em
@@ -1370,7 +1326,11 @@ a.headerlink:hover:active
 
 }
 
-
+iv.figure p.caption span.caption-text, figcaption span.caption-text {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8em;
+}
 
 div.body li,
 div.body dd
@@ -2187,7 +2147,7 @@ table.indextable td > dl > dd > dl
 }
 
 
-@media only screen and (min-width: none)
+@media only screen and (min-width: 11.5in)
 {
     
     
@@ -2206,7 +2166,7 @@ table.indextable td > dl > dd > dl
 }
 
 
-@media only screen and (max-width: none),
+@media only screen and (max-width: 11.5in),
        only screen and (max-width: 700px),
        only screen and (max-device-width: 700px),
        handheld
@@ -2237,7 +2197,7 @@ table.indextable td > dl > dd > dl
 
         div.bodywrapper
         {
-                margin: 0 0 0 2.5in;
+                margin: 0 2.5in 0 0;
             
         }
     
@@ -2269,7 +2229,7 @@ table.indextable td > dl > dd > dl
 
     div.bodywrapper
     {
-        margin-left: 0;
+        margin-right: 0;
     }
 
 
