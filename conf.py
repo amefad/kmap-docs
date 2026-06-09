@@ -17,6 +17,7 @@ release = '0.1'
 extensions = [
     "sphinx_new_tab_link",
     'sphinx.ext.imgconverter',
+    'sphinx.ext.imgconverter',
 ]
 
 templates_path = ['_templates']
@@ -42,23 +43,23 @@ html_theme_options = {
 latex_engine = 'xelatex'
 latex_elements = {
     'fontpkg': '''
-\setmainfont{LiberationSerif}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
-\setsansfont{LiberationSans}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
-\setmonofont{LiberationMono}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
+      \setmainfont{LiberationSerif}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
+      \setsansfont{LiberationSans}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
+      \setmonofont{LiberationMono}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
 ''',
  }
