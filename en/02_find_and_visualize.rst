@@ -28,7 +28,9 @@ type, and summary metadata.
 .. tip::
    Make sure you are **logged in** to see resources that are shared exclusively with the
    Pelagos Agreement group. Resources restricted to your group are not visible to
-   unauthenticated users.
+   unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
+
+To view the catalog as a contributore and to access the resources for editing purposes see :ref:`metadata_en:`
 
 
 Filtering and Searching the Catalogue

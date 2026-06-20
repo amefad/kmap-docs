@@ -39,13 +39,18 @@ KMaP has a permission model with several levels:
      - Read-only access. Cannot edit metadata.
 
 If you see an **Edit** button on the resource detail page, you have the right to edit
-that resource's metadata.
+that resource's metadata. All users in contributors group have access to the 
 
 
 Opening the Metadata Editor
 =============================
 
-There are two ways to open the metadata editor:
+The default catalogue open resources in read-only mode, as a contributor user you have an acces to 
+the catalogue in edit mode. Click on the user logo  on the top right corner and a user menu will open. 
+Click on the  **Catalogue** link of the user menu
+
+.. image:: ../_static/catalogue_menu.png
+   :width: 400px
 
 **From the detail page:**
 
@@ -53,11 +58,6 @@ There are two ways to open the metadata editor:
 2. Click the **Edit** button (pencil icon) in the top-right action bar.
 3. A dropdown menu appears. Select **Edit metadata**.
 
-**From the catalogue:**
-
-1. In the catalogue, hover over a resource card.
-2. Click the **⋮** (more options) menu that appears.
-3. Select **Edit metadata**.
 
 The metadata editor opens as a multi-tab form.
 

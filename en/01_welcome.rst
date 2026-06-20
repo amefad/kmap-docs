@@ -18,7 +18,7 @@ environmental and spatial knowledge heritage of the Mediterranean region.
 
 .. figure:: ../_static/kmap_home.png
     :align: center
-    :width: 512px
+    :width: 70%
     :alt: kmap home page
 
     Screenshot of KMaP Home Page
@@ -28,25 +28,32 @@ The platform is structured around three hubs:
 .. list-table::
    :widths: 20 15 65
    :header-rows: 1
+ 
 
    * - Hub
      - Access
      - Description
    * - **Data Hub**
-     - *Maps* |mapsbut|
+     - | *Maps* 
+       | |mapsbut|
      - Geospatial data: datasets, interactive maps, dashboards, and geostories.
    * - **Knowledge Hub**
-     - *Library* |librarybut|
+     - | *Library*
+       | |librarybut|
      - Documentary heritage: reports, publications, and reference documents.
    * - **Exchange Hub**
-     - *Network* |networkbut|
+     - | *Network* 
+       | |networkbut|
      - Collaboration and knowledge exchange.
 
 .. |mapsbut| image:: ../_static/maps.png
+   :width: 96px
 
 .. |librarybut| image:: ../_static/library.png
+   :width: 96px
 
 .. |networkbut| image:: ../_static/network.png
+   :width: 96px
 
 .. note::
    As a member of the **Pelagos Agreement** group, you have access to specific resources,
@@ -69,7 +76,7 @@ dashboards, and analyses are constructed.
 
 .. figure:: ../_static/01_dataset.png
     :align: center
-    :width: 512px
+    :width: 70%
     :alt: dataset page
 
     Dataset Page
@@ -107,12 +114,12 @@ can be searched and filtered, and can be linked to Datasets or Maps.
 Supported file types include: ``.pdf``, ``.docx``, ``.xlsx``, ``.pptx``, ``.jpg``,
 ``.png``, ``.tif``, ``.mp4``, ``.zip``, and many others.
 
-.. figure:: ../_static/01_dataset.png
+.. figure:: ../_static/01_document.png
     :align: center
-    :width: 512px
-    :alt: dataset page
+    :width: 70%
+    :alt: document page
 
-    Dataset Page
+    Document Page
 
 
 
@@ -124,10 +131,10 @@ Datasets. Maps are built and viewed using the integrated **MapStore** map viewer
 
 .. figure:: ../_static/call1_map_zoom.png
     :align: center
-    :width: 512px
-    :alt: dataset page
+    :width: 70%
+    :alt: map page
 
-    Dataset Page
+    Map Page
 
 Each Map:
 
@@ -289,4 +296,4 @@ KMaP organises its datasets into the the following categories according with UNE
   :alt: Governance  
 
 Resources related to the `Scientific Studies financied by Pelagos Agreement <https://pelagos-sanctuary.org/scientific-studies/>`_ 
-are categorized under dtheir respective themes, mainly Marine Biodiversity  and Pollution.
+are categorized under their respective themes, mainly Marine Biodiversity  and Pollution.
