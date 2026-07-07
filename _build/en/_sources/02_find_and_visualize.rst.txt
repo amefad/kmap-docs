@@ -4,6 +4,10 @@
 How to Find and Visualise Your Data
 ====================================
 
+.. contents:: On this page
+   :local:
+   :depth: 2
+
 This section explains how to discover resources in KMaP, apply filters to narrow your
 search, and explore the detail page and preview of a Dataset.
 
@@ -16,23 +20,17 @@ There are two main ways to reach it:
 
 1. **From the navigation bar** – click **Maps** (for spatial resources) or **Library**
    (for documents and publications) in the top menu.
-2. **Directly via URL** – navigate to https://kmap.info-rac.org/maps/#/
+2. **Directly via URL** – navigate to https://kmap.info-rac.org/resources/
 
 The catalogue page displays resources as cards, each showing a thumbnail, title, resource
 type, and summary metadata.
-
-.. figure:: ../_static/catalogue_home.png
-    :align: center
-    :width: 70%
-    :alt: catalogue initial view 
-
-    Catalogue initial view
 
 .. tip::
    Make sure you are **logged in** to see resources that are shared exclusively with the
    Pelagos Agreement group. Resources restricted to your group are not visible to
    unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
-   To view the catalog as a contributor and to access the resources for editing purposes see :ref:`metadata_en:`
+
+To view the catalog as a contributore and to access the resources for editing purposes see :ref:`metadata_en:`
 
 
 Filtering and Searching the Catalogue
@@ -71,7 +69,7 @@ combined freely and are applied immediately.
      - Select *Dataset*, *Document*, *Map*, *GeoStory*, or *Dashboard* to restrict
        results to one type.
    * - **Keywords**
-     - Type or select a keyword (e.g. ``pelagos agreement``) to filter by thematic tag.
+     - Type or select a keyword (e.g. ``pelagos sanctuary``) to filter by thematic tag.
    * - **Category / Theme**
      - Select a thematic category such as *Marine Biodiversity* or *Governance*.
    * - **Date**
@@ -85,8 +83,8 @@ combined freely and are applied immediately.
    To find all Pelagos-related datasets quickly:
 
    1. Set **Resource type** → *Dataset*
-   2. In the **Keywords** filter, type ``pelagos agreement``
-   3. The catalogue will update to show only datasets tagged with that keyword. 
+   2. In the **Keywords** filter, type ``pelagos sanctuary``
+   3. The catalogue will update to show only datasets tagged with that keyword.
 
 
 Step-by-Step Example: Finding a Pelagos Dataset
@@ -99,17 +97,16 @@ Step 1 – Open the catalogue
 ----------------------------
 
 Go to https://kmap.info-rac.org and click **Maps** in the top navigation bar.
-This opens the  catalogue, filtered to spatial resource types.
+This opens the Data Hub catalogue, filtered to spatial resource types.
 
 Step 2 – Search by keyword
 ---------------------------
 
 In the search bar, type::
 
-   pelagos agreement
+   pelagos sanctuary
 
-All the scientifica calls results has been tagged with this keyword (two words). Other resources not managed by the agreement 
-Press **Enter**. The results panel updates to show resources.
+Press **Enter**. The results panel updates to show resources matching that keyword.
 
 Step 3 – Filter to Datasets only
 ----------------------------------

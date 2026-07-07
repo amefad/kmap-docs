@@ -1,0 +1,641 @@
+/* ==========================================================================
+   Pelagos Theme for Sphinx – built on cloud-sptheme
+   Colours drawn from:
+     KMaP    → https://kmap.info-rac.org   (deep ocean blue #1B5E8B, teal #0D7377)
+     Pelagos → https://pelagos-sanctuary.org  (navy #003057, warm white #F5F8FA)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   0. Custom properties (tokens)
+   -------------------------------------------------------------------------- */
+:root {
+  --pel-navy:        #003057;   /* Pelagos deep navy – primary brand */
+  --pel-blue:        #1B5E8B;   /* KMaP ocean blue */
+  --pel-teal:        #0D7377;   /* KMaP teal accent */
+  --pel-teal-light:  #14a0a5;   /* lighter teal for hovers */
+  --pel-sky:         #4fa3c8;   /* mid-blue, links */
+  --pel-white:       #ffffff;
+  --pel-offwhite:    #F5F8FA;   /* page background */
+  --pel-light-gray:  #E8EFF5;   /* sidebar, table zebra */
+  --pel-mid-gray:    #C5D3DE;   /* borders */
+  --pel-text:        #1a2a38;   /* body text */
+  --pel-code-bg:     #EAF2F8;   /* inline code background */
+
+  /* Header geometry */
+  --header-height:   100px;
+  --sidebar-width:   280px;
+}
+
+/* --------------------------------------------------------------------------
+   1. Global resets & base
+   -------------------------------------------------------------------------- */
+html, body {
+  background: var(--pel-offwhite);
+  color: var(--pel-text);
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+a {
+  color: var(--pel-blue);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--pel-navy);
+  text-decoration: underline;
+}
+
+/* Cloud theme sometimes injects a bright highlight background on hover.
+   Ensure text colour is always dark enough to read on any light background. */
+a:hover,
+a:focus {
+  color: var(--pel-navy) !important;
+  background-color: transparent;
+}
+
+/* --------------------------------------------------------------------------
+   2. Header bar
+   -------------------------------------------------------------------------- */
+.pelagos-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  background: linear-gradient(135deg, var(--pel-navy) 0%, var(--pel-blue) 60%, var(--pel-teal) 100%);
+  padding: 0 24px;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.35);
+  gap: 16px;
+}
+
+/* ── Left: Pelagos logo in a white circle ─────────────────────────────────── */
+.pelagos-header-left {
+  flex: 0 0 auto;
+}
+
+.pelagos-logo-link {
+  display: block;
+  line-height: 0;
+}
+
+.pelagos-logo-circle {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.3);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.pelagos-logo-main {
+  width: 78px;
+  height: 78px;
+  object-fit: contain;
+}
+
+/* ── Centre: project title ────────────────────────────────────────────────── */
+.pelagos-header-center {
+  flex: 1 1 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.pelagos-title-link {
+  text-decoration: none !important;
+}
+
+.pelagos-project-title {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--pel-white);
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+/* ── Right: KMaP + INFO/RAC logos ────────────────────────────────────────── */
+.pelagos-header-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.pelagos-partner-link {
+  display: block;
+  line-height: 0;
+}
+
+/* KMaP logo: smaller */
+.pelagos-logo-kmap {
+  height: 36px;
+  max-width: 140px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);   /* force white */
+  opacity: 0.90;
+  transition: opacity 0.2s;
+}
+.pelagos-logo-kmap:hover { opacity: 1; }
+
+/* INFO/RAC logo: larger, max 180px height equivalent */
+.pelagos-logo-inforac {
+  height: 58px;
+  max-width: 180px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);   /* force white */
+  opacity: 0.90;
+  transition: opacity 0.2s;
+}
+.pelagos-logo-inforac:hover { opacity: 1; }
+
+/* --------------------------------------------------------------------------
+   3. Cloud theme overrides – navigation bar (breadcrumb strip)
+   -------------------------------------------------------------------------- */
+div.related {
+  background: var(--pel-navy);
+  color: var(--pel-mid-gray);
+  max-width: none;
+  font-size: 0.82rem;
+  padding: 4px 24px;
+  border-bottom: 1px solid var(--pel-teal);
+}
+
+div.related a {
+  color: var(--pel-sky);
+}
+div.related a:hover {
+  color: var(--pel-white);
+  text-decoration: none;
+}
+
+/* --------------------------------------------------------------------------
+   4. Page layout – sidebar left, content right (mirroring cloud structure)
+   -------------------------------------------------------------------------- */
+
+/* Cloud theme puts content in div.document / div.bodywrapper.
+   We override widths to give the sidebar more room. */
+
+
+div.body {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px 36px 48px 36px;
+  background: var(--pel-white);
+  min-height: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   5. Sidebar styling
+   -------------------------------------------------------------------------- */
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--pel-navy);
+  padding: 8px 16px 4px;
+  margin: 12px 0 4px;
+  border-bottom: 1px solid var(--pel-mid-gray);
+}
+
+div.sphinxsidebar p.caption {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--pel-teal);
+  padding: 10px 16px 2px;
+  margin: 0;
+}
+
+div.sphinxsidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+div.sphinxsidebar li {
+  margin: 0;
+}
+
+div.sphinxsidebar a {
+  display: block;
+  padding: 5px 16px 5px 16px;
+  color: var(--pel-text);
+  font-size: 0.875rem;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+div.sphinxsidebar a:hover {
+
+  color: var(--pel-blue) !important;
+  text-decoration: none;
+}
+
+/* Highlight the active page link */
+div.sphinxsidebar li.current > a,
+div.sphinxsidebar a.current {
+  background: rgba(27,94,139,0.12);
+  border-left-color: var(--pel-blue);
+  color: var(--pel-navy);
+  font-weight: 600;
+}
+
+/* Indented sub-levels */
+div.sphinxsidebar ul ul a { padding-left: 28px; font-size: 0.84rem; }
+div.sphinxsidebar ul ul ul a { padding-left: 42px; font-size: 0.80rem; }
+
+div.sphinxsidebar input[type="text"] {
+  width: calc(100% - 32px);
+  margin: 8px 16px;
+  padding: 6px 10px;
+  border: 1px solid var(--pel-mid-gray);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  background: var(--pel-white);
+}
+div.sphinxsidebar input[type="submit"] {
+  margin: 0 16px 8px;
+  padding: 5px 14px;
+  background: var(--pel-blue);
+  color: var(--pel-white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.82rem;
+}
+div.sphinxsidebar input[type="submit"]:hover {
+  background: var(--pel-teal);
+}
+
+/* --------------------------------------------------------------------------
+   6. Headings
+   -------------------------------------------------------------------------- */
+div.body h1 {
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--pel-navy);
+  border-bottom: 3px solid var(--pel-teal);
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+div.body h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--pel-blue);
+  border-bottom: 1px solid var(--pel-mid-gray);
+  padding-bottom: 4px;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+
+div.body h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--pel-teal);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+div.body h4 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--pel-navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 20px;
+}
+
+/* Permalink anchors */
+div.body a.headerlink {
+  color: var(--pel-mid-gray);
+  font-size: 0.75em;
+  padding-left: 4px;
+}
+div.body a.headerlink:hover { color: var(--pel-teal); }
+
+/* --------------------------------------------------------------------------
+   7. Tables
+   -------------------------------------------------------------------------- */
+table.docutils {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 0.9rem;
+}
+
+table.docutils th {
+  background: var(--pel-navy);
+  color: var(--pel-white);
+  padding: 9px 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}
+
+table.docutils td {
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--pel-mid-gray);
+  vertical-align: top;
+}
+
+table.docutils tr:nth-child(even) td {
+  background: var(--pel-light-gray);
+}
+
+table.docutils tr:hover td {
+  background: rgba(13,115,119,0.10);
+  color: var(--pel-text);
+}
+
+/* --------------------------------------------------------------------------
+   8. Admonitions (note, tip, warning, important)
+   -------------------------------------------------------------------------- */
+div.admonition {
+  border-left: 4px solid var(--pel-mid-gray);
+  border-radius: 0 4px 4px 0;
+  background: var(--pel-light-gray);
+  padding: 14px 18px;
+  margin: 20px 0;
+}
+
+div.admonition p.admonition-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 0 0 8px;
+}
+
+div.note {
+  border-left-color: var(--pel-blue);
+  background: rgba(27,94,139,0.07);
+}
+div.note p.admonition-title { color: var(--pel-blue); }
+
+div.tip {
+  border-left-color: var(--pel-teal);
+  background: rgba(13,115,119,0.07);
+}
+div.tip p.admonition-title { color: var(--pel-teal); }
+
+div.warning {
+  border-left-color: #b85c00;
+  background: rgba(184,92,0,0.07);
+}
+div.warning p.admonition-title { color: #b85c00; }
+
+div.important {
+  border-left-color: var(--pel-navy);
+  background: rgba(0,48,87,0.07);
+}
+div.important p.admonition-title { color: var(--pel-navy); }
+
+/* --------------------------------------------------------------------------
+   9. Code blocks & inline code
+   -------------------------------------------------------------------------- */
+code, tt {
+  background: var(--pel-code-bg);
+  color: var(--pel-navy);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 0.875em;
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  border: 1px solid var(--pel-mid-gray);
+}
+
+div.highlight {
+  background: #f0f6fb;
+  border: 1px solid var(--pel-mid-gray);
+  border-radius: 5px;
+  margin: 16px 0;
+}
+
+div.highlight pre {
+  padding: 14px 18px;
+  overflow-x: auto;
+  font-size: 0.875rem;
+  line-height: 1.55;
+  background: transparent;
+  color: var(--pel-text);
+  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+}
+
+/* --------------------------------------------------------------------------
+   10. Pygments – ocean / Mediterranean palette
+   -------------------------------------------------------------------------- */
+.highlight .hll  { background: #cfe6f5; }
+.highlight .c    { color: #6b8da6; font-style: italic; }   /* Comment */
+.highlight .err  { color: #c0392b; }
+.highlight .k    { color: var(--pel-navy); font-weight: bold; }  /* Keyword */
+.highlight .o    { color: var(--pel-teal); }                /* Operator */
+.highlight .ch   { color: #6b8da6; font-style: italic; }
+.highlight .cm   { color: #6b8da6; font-style: italic; }
+.highlight .cp   { color: var(--pel-teal); }
+.highlight .cpf  { color: #6b8da6; font-style: italic; }
+.highlight .c1   { color: #6b8da6; font-style: italic; }
+.highlight .cs   { color: #6b8da6; font-weight: bold; font-style: italic; }
+.highlight .gd   { color: #c0392b; background: #fde8e8; }  /* Diff deleted */
+.highlight .ge   { font-style: italic; }
+.highlight .gi   { color: #1a7a4a; background: #e8f8ee; }  /* Diff inserted */
+.highlight .gs   { font-weight: bold; }
+.highlight .gu   { color: var(--pel-teal); font-weight: bold; }
+.highlight .kc   { color: var(--pel-navy); font-weight: bold; }
+.highlight .kd   { color: var(--pel-navy); font-weight: bold; }
+.highlight .kn   { color: var(--pel-navy); font-weight: bold; }
+.highlight .kp   { color: var(--pel-navy); }
+.highlight .kr   { color: var(--pel-navy); font-weight: bold; }
+.highlight .kt   { color: #1B5E8B; }
+.highlight .m    { color: #1a7a4a; }                        /* Number */
+.highlight .s    { color: #7d3c98; }                        /* String – purple */
+.highlight .na   { color: var(--pel-teal); }                /* Attr name */
+.highlight .nb   { color: var(--pel-blue); }
+.highlight .nc   { color: var(--pel-blue); font-weight: bold; }
+.highlight .no   { color: #c0392b; }
+.highlight .nd   { color: var(--pel-teal); }
+.highlight .ni   { color: #555; }
+.highlight .ne   { color: #c0392b; font-weight: bold; }
+.highlight .nf   { color: var(--pel-blue); }
+.highlight .nl   { color: #555; }
+.highlight .nn   { color: var(--pel-navy); }
+.highlight .nt   { color: var(--pel-navy); font-weight: bold; }
+.highlight .nv   { color: var(--pel-text); }
+.highlight .ow   { color: var(--pel-teal); font-weight: bold; }
+.highlight .w    { color: #ccc; }
+.highlight .mb   { color: #1a7a4a; }
+.highlight .mf   { color: #1a7a4a; }
+.highlight .mh   { color: #1a7a4a; }
+.highlight .mi   { color: #1a7a4a; }
+.highlight .mo   { color: #1a7a4a; }
+.highlight .sa   { color: #7d3c98; }
+.highlight .sb   { color: #7d3c98; }
+.highlight .sc   { color: #7d3c98; }
+.highlight .dl   { color: #7d3c98; }
+.highlight .sd   { color: #6b8da6; font-style: italic; }
+.highlight .s2   { color: #7d3c98; }
+.highlight .se   { color: #c0392b; font-weight: bold; }
+.highlight .sh   { color: #7d3c98; }
+.highlight .si   { color: #c0392b; }
+.highlight .sx   { color: #7d3c98; }
+.highlight .sr   { color: var(--pel-teal); }
+.highlight .s1   { color: #7d3c98; }
+.highlight .ss   { color: var(--pel-teal); }
+.highlight .bp   { color: var(--pel-blue); }
+.highlight .fm   { color: var(--pel-blue); }
+.highlight .vc   { color: var(--pel-text); }
+.highlight .vg   { color: var(--pel-text); }
+.highlight .vi   { color: var(--pel-text); }
+.highlight .vm   { color: var(--pel-text); }
+.highlight .il   { color: #1a7a4a; }
+
+/* --------------------------------------------------------------------------
+   11. Lists
+   -------------------------------------------------------------------------- */
+div.body ul,
+div.body ol {
+  padding-left: 28px;
+  margin: 10px 0 16px;
+}
+
+div.body li { margin-bottom: 5px; }
+
+div.body ul li::marker { color: var(--pel-teal); }
+
+/* --------------------------------------------------------------------------
+   12. Footer
+   -------------------------------------------------------------------------- */
+.pelagos-footer {
+  background: var(--pel-navy);
+  color: rgba(255,255,255,0.7);
+  font-size: 0.82rem;
+  padding: 16px 24px;
+  margin-top: 0;
+  border-top: 3px solid var(--pel-teal);
+}
+
+.pelagos-footer-inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.pelagos-footer a {
+  color: rgba(255,255,255,0.85);
+}
+.pelagos-footer a:hover {
+  color: var(--pel-white);
+  text-decoration: underline;
+}
+
+.pelagos-footer-sep {
+  opacity: 0.4;
+}
+
+/* Cloud theme has its own footer div – hide it */
+div.footer {
+  display: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   13. Cloud theme structural fixes
+   -------------------------------------------------------------------------- */
+
+/* Suppress cloud's own header if it renders one */
+div.header-wrapper { display: none !important; }
+
+/* Body padding reset so our sticky header lines up */
+body { margin: 0; padding: 0; }
+
+/* Content area fills the full viewport width — no max-width constraint */
+div.document {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+}
+
+
+div.body {
+  max-width: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Cloud sometimes adds a dark nav background – align with ours */
+div.related { margin: 0; }
+
+/* --------------------------------------------------------------------------
+   14. Responsive
+   -------------------------------------------------------------------------- */
+@media (max-width: 900px) {
+  :root { --sidebar-width: 220px; }
+  .pelagos-project-title { font-size: 1rem; }
+  .pelagos-logo-circle { width: 68px; height: 68px; }
+  .pelagos-logo-main { width: 60px; height: 60px; }
+  .pelagos-logo-inforac { height: 44px; }
+  .pelagos-logo-kmap { height: 28px; }
+}
+
+@media (max-width: 680px) {
+
+
+  .pelagos-header {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 14px;
+    gap: 10px;
+  }
+  .pelagos-header-center { order: 3; width: 100%; text-align: left; }
+}
+
+/* --------------------------------------------------------------------------
+   15. Blanket cloud-theme hover overrides
+       Cloud injects a pale yellow/white highlight on some link hovers which
+       makes dark text invisible. Force readable colour on every hover state.
+   -------------------------------------------------------------------------- */
+
+/* Body content links */
+div.body a:hover,
+div.body a:focus {
+  color: var(--pel-navy) !important;
+  background: transparent !important;
+}
+
+/* Navigation bar (breadcrumb) */
+div.related a:hover,
+div.related a:focus {
+  color: var(--pel-white) !important;
+  background: transparent !important;
+}
+
+/* Sidebar – all levels */
+
+
+/* Cloud's "highlight" span that sometimes wraps hovered links */
+a:hover span,
+a:hover code,
+a:hover tt {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+/* Cloud's search results highlight */
+div.context a:hover {
+  color: var(--pel-navy) !important;
+}
