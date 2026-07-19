@@ -38,6 +38,14 @@ type, and summary metadata.
 Filtering and Searching the Catalogue
 ======================================
 
+.. figure:: ../_static/catalogue_filter01.png
+    :align: center
+    :width: 70%
+    :alt: catalogue filter button
+
+    Catalogue filter button
+
+
 Using the Search Bar
 --------------------
 
@@ -60,6 +68,13 @@ Using Filters
 
 On the left side of the catalogue page you will find a filter panel. Filters can be
 combined freely and are applied immediately.
+
+.. figure:: ../_static/catalogue_filter02.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
 
 .. list-table::
    :widths: 25 75
@@ -95,6 +110,14 @@ Step-by-Step Example: Finding a Pelagos Dataset
 The following example walks through finding, previewing, and reading the metadata of a
 Dataset relevant to the Pelagos Agreement.
 
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 Step 1 – Open the catalogue
 ----------------------------
 
@@ -117,14 +140,37 @@ Step 3 – Filter to Datasets only
 In the left filter panel, under **Resource type**, tick **Dataset**.
 The list now shows only datasets tagged with *pelagos sanctuary*.
 
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 Step 4 – Select a Dataset
 --------------------------
 
 Click on a dataset card to open its **detail page**.
 
+.. figure:: ../_static/dataset_view.png
+    :align: center
+    :width: 70%
+    :alt: dataset list page
+
+    Dataset list page
+
 
 The Dataset Detail Page
 ========================
+
+.. figure:: ../_static/dataset_detail.png
+    :align: center
+    :width: 70%
+    :alt: dataset detail page
+
+    Dataset detail page
+
 
 The detail page is the central information page for any resource. It is divided into
 several sections.
