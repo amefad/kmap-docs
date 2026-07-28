@@ -32,17 +32,29 @@ type, and summary metadata.
    Make sure you are **logged in** to see resources that are shared exclusively with the
    Pelagos Agreement group. Resources restricted to your group are not visible to
    unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
-   To view the catalog as a contributor and to access the resources for editing purposes see :ref:`metadata_en:`
+   To view the catalog as a contributor and to access the resources for editing purposes see :ref:`metadata_en`
 
 
 Filtering and Searching the Catalogue
 ======================================
 
+The initial view of the catalogue contains all the resources (maps and datasets) that your user is allowed to see. 
+You need to use the **Filter** tool to restrict the list of resources and find the dataset or map of your interest.
+
 Using the Search Bar
 --------------------
 
-The search bar at the top of the catalogue page accepts free-text queries. It searches
-across titles, abstracts, and keyword fields.
+Clicking on the ``Filter`` button on top left cornere of the catalogue view will open the filter panel. 
+There are two tabs and by default the tab with Kmap categories is selected. The search bar is on the topo of the filter panel and accepts free-text queries. 
+It searches across titles, abstracts, and keyword fields.
+
+.. figure:: ../_static/search_bar_comp.png
+    :align: center
+    :width: 70%
+    :alt: using search bar 
+
+    Sequence of filtering catalogue using search bar 
+
 
 To find Pelagos-related content:
 
@@ -50,16 +62,22 @@ To find Pelagos-related content:
 2. Alternatively, search for ``pelagos agreement`` to retrieve resources tagged
    with that keyword.
 
+
 .. note::
    Both ``pelagos sanctuary`` and ``pelagos agreement`` are controlled keywords used by
    the Pelagos Agreement group when publishing resources on KMaP. Using these exact terms
    will return the most relevant results.
 
-Using Filters
--------------
+As long as you type into the search bar the catalogue view will update: hide the filter panel to view the number of filtered resource.
+the appearance of the ``Filter`` butotn will change. Remember to click on ``Clear filters`` before make a new search
 
-On the left side of the catalogue page you will find a filter panel. Filters can be
-combined freely and are applied immediately.
+.. _advanced_filter:
+
+Using advanced filter
+---------------------
+
+On the ``Advanced`` tab of the filter panel you will find a detailed list of filters based on the metadata fileds of the resources.
+Filters can be combined freely and are applied immediately.
 
 .. list-table::
    :widths: 25 75
@@ -98,49 +116,174 @@ Dataset relevant to the Pelagos Agreement.
 Step 1 – Open the catalogue
 ----------------------------
 
-Go to https://kmap.info-rac.org and click **Maps** in the top navigation bar.
-This opens the  catalogue, filtered to spatial resource types.
 
-Step 2 – Search by keyword
+.. figure:: ../_static/catalogue_filter01.png
+    :align: center
+    :width: 70%
+    :alt: open filter panel
+
+    Open filter panel
+
+Go to https://kmap.info-rac.org and click **Maps** in the top navigation bar.
+This opens the  catalogue, filtered to spatial resource types (datasets and maps).
+Click on the ``Filter`` button then select **Advanced** tab
+
+Step 2 – Filter to Datasets only
+--------------------------------
+
+.. figure:: ../_static/catalogue_filter02.png
+    :align: center
+    :width: 70%
+    :alt: advanced filter
+
+    Advanced filter
+
+In the **Advanced** tab of the filter panel, under **Resources** list of checkbox, tick **Dataset**.
+The list now shows only resource of type datasets.
+
+Step 3 – Search by keyword
 ---------------------------
 
-In the search bar, type::
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter panel with keyword
 
-   pelagos agreement
+    Filter by resource type and keyword
 
-All the scientifica calls results has been tagged with this keyword (two words). Other resources not managed by the agreement 
-Press **Enter**. The results panel updates to show resources.
+In the **keyword** form field start typing ``pelagos agreement`` and select this exact keyword from the dropdown list.
 
-Step 3 – Filter to Datasets only
-----------------------------------
+All the scientific calls results has been tagged with this keyword (two words). 
+Other resources not managed by the agreement but regarding the Pelagos sanctuary may have the ``pelegos sanctuary`` keyword.
 
-In the left filter panel, under **Resource type**, tick **Dataset**.
-The list now shows only datasets tagged with *pelagos sanctuary*.
+The catalogue now list only the resources of type datasets that are tagged with keyword **Pelagos agreement**
 
 Step 4 – Select a Dataset
 --------------------------
 
-Click on a dataset card to open its **detail page**.
+.. figure:: ../_static/dataset_view.png
+    :align: center
+    :width: 70%
+    :alt: catalogue with view button highligted
 
+    The view button
+
+Click on the ``View`` button of a dataset card to open its **detail page**.
 
 The Dataset Detail Page
 ========================
 
-The detail page is the central information page for any resource. It is divided into
+.. figure:: ../_static/dataset_detail.png
+    :align: center
+    :width: 70%
+    :alt: dataset detail page
+
+    The dataset detail page
+
+The detail page contains the main information for any resource. It is divided into
 several sections.
 
-Thumbnail and Actions
----------------------
+Information Panel
+-----------------
 
-At the top of the page you will see:
+The resource detail page by default shows the **information panel** that summarize the essential elements of the dataset.
 
-* A **map thumbnail** or preview image of the dataset.
-* Action buttons:
+On the top left of the panel there is the  **map thumbnail** usualy a small preview image of the dataset. 
+The thumbnail can be replaced by the users that have edit permissions on metadata. 
 
-  * **View map** – opens the dataset in the interactive map viewer.
-  * **Download** – downloads the dataset in your chosen format.
-  * **Edit** (if you have permission) – opens the metadata editor.
-  * **Share** – copies the permalink to the resource.
+.. figure:: ../_static/det_thumbnail.png
+    :align: center
+    :width: 70%
+    :alt: dataset thumbnail
+
+    Thumbnail area in information panel
+
+
+On the top center of the panel there is the title of the dataset and just below it the owner of this resource. 
+Clicking on the ownner's name you will 
+
+.. figure:: ../_static/det_title.png
+    :align: center
+    :width: 70%
+    :alt: dataset title
+
+    Dataset title in information panel
+
+
+.. figure:: ../_static/det_actions.png
+    :align: center
+    :width: 70%
+    :alt: dataset action buttons
+
+    Dataset Action Butotn
+
+
+* The action buttons :
+
+  *  |favorite_bt| **Add to favorites** – Adds this dataset to your favorites. You can easy find your favorites using  :ref:`advanced filter <advanced_filter>`
+  *  |download_bt| **Download** – downloads the dataset in ESRI Shapefile format (for vector datasets) or Geotiff (for raster datasets).
+  *  |share_bt| **Share** – copies the permalink to the resource.
+  *  |service_bt| **OGC services** – copies the URL of OGC services (WMS and WCS/WFS depending on user's authorization) for this dataset only
+
+.. |favorite_bt| image:: ../_static/det_bt_fav.png
+  :height: 3.5em
+  :alt: Favorite button
+
+.. |download_bt| image:: ../_static/det_bt_dwl.png
+  :height: 3.5em
+  :alt: Download button
+
+.. |share_bt| image:: ../_static/det_bt_share.png
+  :height: 3.5em
+  :alt: Share button
+
+.. |service_bt| image:: ../_static/det_bt_services.png
+  :height: 3.5em
+  :alt: Services button
+
+Metadata Preview
+----------------
+
+The **info** tab contains detailed information about the
+dataset. The key fields are:
+
+.. list-table::
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Field
+     - Description
+   * - **Title**
+     - The full name of the dataset.
+   * - **Owner**
+     - The user or organisation responsible for the dataset.
+   * - **Keywords**
+     - Thematic and geographic tags (look for ``pelagos sanctuary`` or
+       ``pelagos agreement`` here).
+   * - **Category**
+     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).
+   * - **Date**
+     - Publication date and last modification date.
+   * - **Spatial extent**
+     - Bounding box or geographic region covered by the data.
+   * - **Coordinate Reference System (CRS)**
+     - The projection used (e.g. WGS 84 / EPSG:4326).
+
+   * - **Licence**
+     - The usage licence (e.g. Creative Commons, ODbL, …).
+   * - **Point of contact**
+     - Who to contact for questions about the data.
+   * - **OGC Services**
+     - WMS, WFS, and WCS endpoint URLs for direct integration in GIS software.
+   * - **Related resources**
+     - Links to Maps, Documents, or other Datasets connected to this resource.
+
+Full Metadata Page
+------------------
+
+To see the complete metadata record, click the **Metadata** tab (or the *View full
+metadata* link near the bottom of the detail page). This view displays all metadata
+fields in their full form, including ISO 19115 / INSPIRE-compliant fields.
 
 Interactive Preview
 -------------------
@@ -155,51 +298,6 @@ basemap. You can:
 .. note::
    The preview is a live, interactive map — not a static image. You can explore the
    data spatially before deciding whether to download or use it.
-
-Metadata Panel
---------------
-
-Below the preview, the **metadata panel** contains detailed information about the
-dataset. The key fields are:
-
-.. list-table::
-   :widths: 30 70
-   :header-rows: 1
-
-   * - Field
-     - Description
-   * - **Title**
-     - The full name of the dataset.
-   * - **Abstract**
-     - A plain-language description of what the dataset contains and its purpose.
-   * - **Keywords**
-     - Thematic and geographic tags (look for ``pelagos sanctuary`` or
-       ``pelagos agreement`` here).
-   * - **Category**
-     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).
-   * - **Date**
-     - Publication date and last modification date.
-   * - **Spatial extent**
-     - Bounding box or geographic region covered by the data.
-   * - **Coordinate Reference System (CRS)**
-     - The projection used (e.g. WGS 84 / EPSG:4326).
-   * - **Owner**
-     - The user or organisation responsible for the dataset.
-   * - **Licence**
-     - The usage licence (e.g. Creative Commons, ODbL, …).
-   * - **Point of contact**
-     - Who to contact for questions about the data.
-   * - **OGC Services**
-     - WMS, WFS, and WCS endpoint URLs for direct integration in GIS software.
-   * - **Related resources**
-     - Links to Maps, Documents, or other Datasets connected to this resource.
-
-Full Metadata View
-------------------
-
-To see the complete metadata record, click the **Metadata** tab (or the *View full
-metadata* link near the bottom of the detail page). This view displays all metadata
-fields in their full form, including ISO 19115 / INSPIRE-compliant fields.
 
 Downloading a Dataset
 ---------------------
