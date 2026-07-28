@@ -38,6 +38,14 @@ type, and summary metadata.
 Filtering and Searching the Catalogue
 ======================================
 
+.. figure:: ../_static/catalogue_filter01.png
+    :align: center
+    :width: 70%
+    :alt: catalogue filter button
+
+    Catalogue filter button
+
+
 The initial view of the catalogue contains all the resources (maps and datasets) that your user is allowed to see. 
 You need to use the **Filter** tool to restrict the list of resources and find the dataset or map of your interest.
 
@@ -79,6 +87,14 @@ Using advanced filter
 On the ``Advanced`` tab of the filter panel you will find a detailed list of filters based on the metadata fileds of the resources.
 Filters can be combined freely and are applied immediately.
 
+.. figure:: ../_static/catalogue_filter02.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 .. list-table::
    :widths: 25 75
    :header-rows: 1
@@ -113,6 +129,14 @@ Step-by-Step Example: Finding a Pelagos Dataset
 The following example walks through finding, previewing, and reading the metadata of a
 Dataset relevant to the Pelagos Agreement.
 
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 Step 1 – Open the catalogue
 ----------------------------
 
@@ -144,12 +168,7 @@ The list now shows only resource of type datasets.
 Step 3 – Search by keyword
 ---------------------------
 
-.. figure:: ../_static/catalogue_filter03.png
-    :align: center
-    :width: 70%
-    :alt: filter panel with keyword
 
-    Filter by resource type and keyword
 
 In the **keyword** form field start typing ``pelagos agreement`` and select this exact keyword from the dropdown list.
 
@@ -157,6 +176,14 @@ All the scientific calls results has been tagged with this keyword (two words).
 Other resources not managed by the agreement but regarding the Pelagos sanctuary may have the ``pelegos sanctuary`` keyword.
 
 The catalogue now list only the resources of type datasets that are tagged with keyword **Pelagos agreement**
+
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
 
 Step 4 – Select a Dataset
 --------------------------
@@ -166,12 +193,22 @@ Step 4 – Select a Dataset
     :width: 70%
     :alt: catalogue with view button highligted
 
+
     The view button
 
 Click on the ``View`` button of a dataset card to open its **detail page**.
 
+
 The Dataset Detail Page
 ========================
+
+.. figure:: ../_static/dataset_detail.png
+    :align: center
+    :width: 70%
+    :alt: dataset detail page
+
+    Dataset detail page
+
 
 .. figure:: ../_static/dataset_detail.png
     :align: center
