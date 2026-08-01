@@ -202,12 +202,7 @@ Click on the ``View`` button of a dataset card to open its **detail page**.
 The Dataset Detail Page
 ========================
 
-.. figure:: ../_static/dataset_detail.png
-    :align: center
-    :width: 70%
-    :alt: dataset detail page
 
-    Dataset detail page
 
 
 .. figure:: ../_static/dataset_detail.png
@@ -332,12 +327,23 @@ Full Metadata Page
 
 To see the complete metadata record, click the **Metadata** tab (or the *View full
 metadata* link near the bottom of the detail page). This view displays all metadata
-fields in their full form, including ISO 19115 / INSPIRE-compliant fields.
+fields in their full form.
+
+To download the metadata in a standard format, e.g ISO 19115 or Dublin Core, you will find the 
+corrispondente entry in the **Download** menu.
+
+.. figure:: ../_static/download_metadata.png
+    :align: center
+    :width: 70%
+    :alt: download menu
+
+    Download menu for data and metadata
 
 Interactive Preview
 -------------------
 
-Below the thumbnail, the **map preview panel** displays the dataset rendered on a
+You can hide the information panel choosing the *X* button on the top right. To show again the 
+information panel displays the dataset rendered on a
 basemap. You can:
 
 * Pan and zoom using mouse or touch gestures.
@@ -348,17 +354,5 @@ basemap. You can:
    The preview is a live, interactive map — not a static image. You can explore the
    data spatially before deciding whether to download or use it.
 
-Downloading a Dataset
----------------------
 
-Click the **Download** button on the detail page. A format selector appears. Common
-options include:
-
-* **ESRI Shapefile** – for use in QGIS, ArcGIS, and most desktop GIS.
-* **GeoJSON** – for web mapping and lightweight GIS use.
-* **KML/KMZ** – for Google Earth.
-* **GeoPackage** – a single-file format supported by QGIS.
-* **GeoTIFF** – for raster datasets.
-* **CSV** – attribute table only (no geometry).
-
-Select your preferred format and click **Download** to save the file.
+Download dataset
