@@ -252,7 +252,7 @@ Clicking on the ownner's name you will
     :width: 70%
     :alt: dataset action buttons
 
-    Dataset Action Butotn
+    Dataset Action Button
 
 
 * The action buttons :
@@ -281,6 +281,14 @@ Clicking on the ownner's name you will
 Metadata Preview
 ----------------
 
+.. figure:: ../_static/det_tabs.png
+    :align: center
+    :width: 70%
+    :alt: tabs of metadata preview
+
+    The tabs of metadata preview
+
+
 The **info** tab contains detailed information about the
 dataset. The key fields are:
 
@@ -290,30 +298,34 @@ dataset. The key fields are:
 
    * - Field
      - Description
-   * - **Title**
-     - The full name of the dataset.
    * - **Owner**
      - The user or organisation responsible for the dataset.
-   * - **Keywords**
-     - Thematic and geographic tags (look for ``pelagos sanctuary`` or
-       ``pelagos agreement`` here).
+   * - **Creation/Added to Catalog/Last modification**
+     - Dates of creation, addition to the catalogue, and last modification.
+   * - **Resource type**
+     - Dataset, Map, Document, GeoStory, or Dashboard.
    * - **Category**
-     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).
-   * - **Date**
-     - Publication date and last modification date.
-   * - **Spatial extent**
-     - Bounding box or geographic region covered by the data.
-   * - **Coordinate Reference System (CRS)**
-     - The projection used (e.g. WGS 84 / EPSG:4326).
-
+     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).  
+   * - **Point of contact**
+     - Usually metadata manager or dataset owner.
+   * - **Attribution**
+     - Copyright and credit information for the dataset.              
+   * - **Keywords**
+     - Thematic and geographic tags.
+   * - **Regions**
+     - The geographic regions related to the dataset.
    * - **Licence**
      - The usage licence (e.g. Creative Commons, ODbL, …).
    * - **Point of contact**
      - Who to contact for questions about the data.
-   * - **OGC Services**
-     - WMS, WFS, and WCS endpoint URLs for direct integration in GIS software.
+   * - **Supplemental Information**
+     - Other information mainly related to origin of the dataset
    * - **Related resources**
      - Links to Maps, Documents, or other Datasets connected to this resource.
+
+On the bottom of the **info** tab there is a link to the **full metadata** page.
+The other tabs **Location** and **Attributes** show the extent and attribute of the dataset.
+The tab  **Linked resources** shows the resources that are linked to this dataset.
 
 Full Metadata Page
 ------------------
