@@ -329,6 +329,10 @@ To see the complete metadata record, click the **Metadata** tab (or the *View fu
 metadata* link near the bottom of the detail page). This view displays all metadata
 fields in their full form.
 
+.. tip::
+   If you're par of **Pelagos** group as a contributor your user may be authorized to 
+   **edit** metatadata of selected resources. To improve metadata content see :ref:`metadata_en`.
+
 To download the metadata in a standard format, e.g ISO 19115 or Dublin Core, you will find the 
 corrispondente entry in the **Download** menu.
 
@@ -343,16 +347,40 @@ Interactive Preview
 -------------------
 
 You can hide the information panel choosing the *X* button on the top right. To show again the 
-information panel displays the dataset rendered on a
-basemap. You can:
+information panel chose 
+
+.. figure:: ../_static/dat_preview_info.png
+    :align: center
+    :width: 70%
+    :alt: Dataset preview page
+
+    Dataset preview page
+
+On the map previewthe dataset is endered on a basemap. You can:
 
 * Pan and zoom using mouse or touch gestures.
 * Click on a feature to open a **pop-up** showing its attribute values.
-* Use the layer panel ( icon) to toggle visibility or inspect the legend.
+* Use the legend  panel |legend_toggle| to toggle visibility or inspect the legend.
+* Visualize data attribute table and filter dataset by attribute value or spatial extent
+
+.. |legend_toggle| image:: ../_static/legend_toggle.png 
+  :height: 1.5em
+  :alt: Legend button
+  :align: bottom
 
 .. note::
    The preview is a live, interactive map — not a static image. You can explore the
-   data spatially before deciding whether to download or use it.
+   data spatially before deciding whether to download or use it. 
 
+.. figure:: ../_static/download_metadata.png
+    :align: center
+    :width: 70%
+    :alt: download menu
 
+    Download menu for data and metadata
+
+Please refer to :ref:`map_viewer` section for further information on the map viewer.
 Download dataset
+----------------
+
+To download dataset

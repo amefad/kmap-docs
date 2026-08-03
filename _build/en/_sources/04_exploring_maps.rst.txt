@@ -29,6 +29,7 @@ Alternatively, search for a map by title using the search bar.
 Click on a Map card to open its **detail page**. From there, click **View map** to open
 it in the interactive map viewer.
 
+.. _map_viewer:
 
 The Map Viewer Interface
 =========================

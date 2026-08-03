@@ -38,6 +38,14 @@ type, and summary metadata.
 Filtering and Searching the Catalogue
 ======================================
 
+.. figure:: ../_static/catalogue_filter01.png
+    :align: center
+    :width: 70%
+    :alt: catalogue filter button
+
+    Catalogue filter button
+
+
 The initial view of the catalogue contains all the resources (maps and datasets) that your user is allowed to see. 
 You need to use the **Filter** tool to restrict the list of resources and find the dataset or map of your interest.
 
@@ -79,6 +87,14 @@ Using advanced filter
 On the ``Advanced`` tab of the filter panel you will find a detailed list of filters based on the metadata fileds of the resources.
 Filters can be combined freely and are applied immediately.
 
+.. figure:: ../_static/catalogue_filter02.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 .. list-table::
    :widths: 25 75
    :header-rows: 1
@@ -113,6 +129,14 @@ Step-by-Step Example: Finding a Pelagos Dataset
 The following example walks through finding, previewing, and reading the metadata of a
 Dataset relevant to the Pelagos Agreement.
 
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
+
 Step 1 – Open the catalogue
 ----------------------------
 
@@ -144,12 +168,7 @@ The list now shows only resource of type datasets.
 Step 3 – Search by keyword
 ---------------------------
 
-.. figure:: ../_static/catalogue_filter03.png
-    :align: center
-    :width: 70%
-    :alt: filter panel with keyword
 
-    Filter by resource type and keyword
 
 In the **keyword** form field start typing ``pelagos agreement`` and select this exact keyword from the dropdown list.
 
@@ -157,6 +176,14 @@ All the scientific calls results has been tagged with this keyword (two words).
 Other resources not managed by the agreement but regarding the Pelagos sanctuary may have the ``pelegos sanctuary`` keyword.
 
 The catalogue now list only the resources of type datasets that are tagged with keyword **Pelagos agreement**
+
+.. figure:: ../_static/catalogue_filter03.png
+    :align: center
+    :width: 70%
+    :alt: filter for pelagos datasets
+
+    Filter for Pelagos datasets
+
 
 Step 4 – Select a Dataset
 --------------------------
@@ -166,12 +193,17 @@ Step 4 – Select a Dataset
     :width: 70%
     :alt: catalogue with view button highligted
 
+
     The view button
 
 Click on the ``View`` button of a dataset card to open its **detail page**.
 
+
 The Dataset Detail Page
 ========================
+
+
+
 
 .. figure:: ../_static/dataset_detail.png
     :align: center
@@ -186,9 +218,10 @@ several sections.
 Information Panel
 -----------------
 
-The resource detail page by default shows the **information panel** over the map preview with the 
+The resource detail page by default shows the **information panel** that summarize the essential elements of the dataset.
 
-* A **map thumbnail** or preview image of the dataset.
+On the top left of the panel there is the  **map thumbnail** usualy a small preview image of the dataset. 
+The thumbnail can be replaced by the users that have edit permissions on metadata. 
 
 .. figure:: ../_static/det_thumbnail.png
     :align: center
@@ -198,12 +231,23 @@ The resource detail page by default shows the **information panel** over the map
     Thumbnail area in information panel
 
 
+On the top center of the panel there is the title of the dataset and just below it the owner of this resource. 
+Clicking on the ownner's name you will 
+
+.. figure:: ../_static/det_title.png
+    :align: center
+    :width: 70%
+    :alt: dataset title
+
+    Dataset title in information panel
+
+
 .. figure:: ../_static/det_actions.png
     :align: center
     :width: 70%
     :alt: dataset action buttons
 
-    The dataset detail page
+    Dataset Action Button
 
 
 * The action buttons :
@@ -232,6 +276,14 @@ The resource detail page by default shows the **information panel** over the map
 Metadata Preview
 ----------------
 
+.. figure:: ../_static/det_tabs.png
+    :align: center
+    :width: 70%
+    :alt: tabs of metadata preview
+
+    The tabs of metadata preview
+
+
 The **info** tab contains detailed information about the
 dataset. The key fields are:
 
@@ -241,63 +293,94 @@ dataset. The key fields are:
 
    * - Field
      - Description
-   * - **Title**
-     - The full name of the dataset.
    * - **Owner**
      - The user or organisation responsible for the dataset.
-   * - **Keywords**
-     - Thematic and geographic tags (look for ``pelagos sanctuary`` or
-       ``pelagos agreement`` here).
+   * - **Creation/Added to Catalog/Last modification**
+     - Dates of creation, addition to the catalogue, and last modification.
+   * - **Resource type**
+     - Dataset, Map, Document, GeoStory, or Dashboard.
    * - **Category**
-     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).
-   * - **Date**
-     - Publication date and last modification date.
-   * - **Spatial extent**
-     - Bounding box or geographic region covered by the data.
-   * - **Coordinate Reference System (CRS)**
-     - The projection used (e.g. WGS 84 / EPSG:4326).
-
+     - The INSPIRE or thematic category (e.g. *Marine Biodiversity*).  
+   * - **Point of contact**
+     - Usually metadata manager or dataset owner.
+   * - **Attribution**
+     - Copyright and credit information for the dataset.              
+   * - **Keywords**
+     - Thematic and geographic tags.
+   * - **Regions**
+     - The geographic regions related to the dataset.
    * - **Licence**
      - The usage licence (e.g. Creative Commons, ODbL, …).
    * - **Point of contact**
      - Who to contact for questions about the data.
-   * - **OGC Services**
-     - WMS, WFS, and WCS endpoint URLs for direct integration in GIS software.
+   * - **Supplemental Information**
+     - Other information mainly related to origin of the dataset
    * - **Related resources**
      - Links to Maps, Documents, or other Datasets connected to this resource.
+
+On the bottom of the **info** tab there is a link to the **full metadata** page.
+The other tabs **Location** and **Attributes** show the extent and attribute of the dataset.
+The tab  **Linked resources** shows the resources that are linked to this dataset.
 
 Full Metadata Page
 ------------------
 
 To see the complete metadata record, click the **Metadata** tab (or the *View full
 metadata* link near the bottom of the detail page). This view displays all metadata
-fields in their full form, including ISO 19115 / INSPIRE-compliant fields.
+fields in their full form.
+
+.. tip::
+   If you're par of **Pelagos** group as a contributor your user may be authorized to 
+   **edit** metatadata of selected resources. To improve metadata content see :ref:`metadata_en`.
+
+To download the metadata in a standard format, e.g ISO 19115 or Dublin Core, you will find the 
+corrispondente entry in the **Download** menu.
+
+.. figure:: ../_static/download_metadata.png
+    :align: center
+    :width: 70%
+    :alt: download menu
+
+    Download menu for data and metadata
 
 Interactive Preview
 -------------------
 
-Below the thumbnail, the **map preview panel** displays the dataset rendered on a
-basemap. You can:
+You can hide the information panel choosing the *X* button on the top right. To show again the 
+information panel chose 
+
+.. figure:: ../_static/dat_preview_info.png
+    :align: center
+    :width: 70%
+    :alt: Dataset preview page
+
+    Dataset preview page
+
+On the map previewthe dataset is endered on a basemap. You can:
 
 * Pan and zoom using mouse or touch gestures.
 * Click on a feature to open a **pop-up** showing its attribute values.
-* Use the layer panel ( icon) to toggle visibility or inspect the legend.
+* Use the legend  panel |legend_toggle| to toggle visibility or inspect the legend.
+* Visualize data attribute table and filter dataset by attribute value or spatial extent
+
+.. |legend_toggle| image:: ../_static/legend_toggle.png 
+  :height: 1.5em
+  :alt: Legend button
+  :align: bottom
 
 .. note::
    The preview is a live, interactive map — not a static image. You can explore the
-   data spatially before deciding whether to download or use it.
+   data spatially before deciding whether to download or use it. 
 
-Downloading a Dataset
----------------------
+.. figure:: ../_static/download_metadata.png
+    :align: center
+    :width: 70%
+    :alt: download menu
 
-Click the **Download** button on the detail page. A format selector appears. Common
-options include:
+    Download menu for data and metadata
 
-* **ESRI Shapefile** – for use in QGIS, ArcGIS, and most desktop GIS.
-* **GeoJSON** – for web mapping and lightweight GIS use.
-* **KML/KMZ** – for Google Earth.
-* **GeoPackage** – a single-file format supported by QGIS.
-* **GeoTIFF** – for raster datasets.
-* **CSV** – attribute table only (no geometry).
+Please refer to :ref:`map_viewer` section for further information on the map viewer.
+Download dataset
+----------------
 
-Select your preferred format and click **Download** to save the file.
+To download dataset
