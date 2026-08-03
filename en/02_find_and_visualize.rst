@@ -34,6 +34,7 @@ type, and summary metadata.
    unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
    To view the catalog as a contributor and to access the resources for editing purposes see :ref:`metadata_en`
 
+.. _filtering
 
 Filtering and Searching the Catalogue
 ======================================
@@ -383,4 +384,9 @@ Please refer to :ref:`map_viewer` section for further information on the map vie
 Download dataset
 ----------------
 
-To download dataset
+To download the dataset choose the **Dataset** entry from the **Download** menu.
+A dialog will open to select the format of the dataset to download. 
+The available formats depend on the type of dataset (vector or raster).
+You can also choose the WGS84 coordinate system instead of native coordinate system, 
+crop the data to the current map extent, and choose to download only the currently filtered features
+(see :ref:`map_viewer` for more information on filtering features).

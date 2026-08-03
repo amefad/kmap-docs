@@ -29,41 +29,73 @@ KMaP has a permission model with several levels:
 
    * - Role
      - Metadata editing rights
-   * - **Resource owner**
-     - Full edit rights on all metadata fields.
-   * - **Group manager**
-     - Can edit resources owned by any member of their group.
-   * - **Group member (editor)**
+   * - **Resource owner** ans **Superusers**
+     - Full edit rights on data and metadata fields.
+   * - **Pelagos Group member (editor)**
      - Can edit resources explicitly shared with the group with *edit* permission.
    * - **Viewer / public**
      - Read-only access. Cannot edit metadata.
+
+
 
 If you see an **Edit** button on the resource detail page, you have the right to edit
 that resource's metadata. All users in contributors group have access to the 
 
 
-Opening the Metadata Editor
-=============================
+Opening the detail page in edit mode
+====================================
 
-The default catalogue open resources in read-only mode, as a contributor user you have an acces to 
-the catalogue in edit mode. Click on the user logo  on the top right corner and a user menu will open. 
-Click on the  **Catalogue** link of the user menu
+If you open a resource from the **maps** menu the detail page is showed in read-only mode, as a contributor user you have an acces to 
+TO open the catalogue in edit mode select the **Catalogue** entry from the user menu.
+Fist Click on the user logo  on the top right corner and then on the  **Catalogue** link.
+You can also go directly to the url https://kmap.info-rac.org/catalogue/.
+
 
 .. image:: ../_static/catalogue_menu.png
-   :width: 400px
+    :align: center
+    :width: 400px
+    :alt: Menu Catalogue 
 
-**From the detail page:**
+    Catalogue entry in user's menu
 
-1. Navigate to the resource detail page (see :ref:`find_en` for how to find a resource).
-2. Click the **Edit** button (pencil icon) in the top-right action bar.
-3. A dropdown menu appears. Select **Edit metadata**.
+The catalogue view in edit mode lists all resources and filters as already explained in the :ref:`find_en``
+section. You can see the difference because there is an **Add Resource** button in the top right
+of the section and the page does not show other section (**navigate by theme** and **recently added**).
+
+.. image:: ../_static/catalogue_full.png
+    :align: center
+    :width: 400px
+    :alt: catalogue in edit mode 
+
+    Catalogue page in edit mode
 
 
-The metadata editor opens as a multi-tab form.
+
+Navigate to the resource detail page (see :ref:`filtering` for how to find a resource).
+On the dataset preview page you have an  **Edit** menu, select the entry **Edit Metadata**.
+
+.. image:: ../_static/dat_edit_menu.png
+    :align: center
+    :width: 400px
+    :alt: edit_menu
+
+    The edit menu in detail dataset page
+
+
+
 
 
 Overview of the Metadata Editor
 =================================
+
+
+
+.. image:: ../_static/metadata_editor01.png
+    :align: center
+    :width: 400px
+    :alt: metadat editor
+
+    The metadata editor page
 
 The metadata editor is organised into tabs. The most important tabs are:
 
@@ -73,14 +105,16 @@ The metadata editor is organised into tabs. The most important tabs are:
 
    * - Tab
      - Content
-   * - **Basic info**
-     - Title, abstract, language, category, keywords, point of contact.
+   * - **Basic Metadata**
+     - Title, thumbnail, date fields, abstract,  category, group, keywords, UNEP-MAP themes point of contact.
    * - **Location and licences**
-     - Spatial extent, CRS, date fields, licence, attribution.
+     - Language, region, license, attribution, data quality statement.
    * - **Optional metadata**
-     - Additional ISO 19115 fields (edition, purpose, supplemental information, …).
-   * - **Settings**
-     - Permissions, featured status, advertised status.
+     - Point of Contact, related resources on the platform and additional ISO 19115 fields (edition, purpose, supplemental information, …).
+   * - **Dataset attributes** (vector datasets)
+     - Label, description visibility and display order of attribute fields.
+   * - **Additional info**
+     - Access contrstaints, resolution and accuracy.     
 
 
 Editing Key Metadata Fields
@@ -148,20 +182,6 @@ Select the most appropriate category from the dropdown:
 A resource can belong to only one primary category. Use keywords for additional
 thematic tagging.
 
-Spatial Extent
---------------
-
-The **spatial extent** defines the geographic bounding box of the resource. For datasets,
-this is usually set automatically when the data is uploaded. You can refine it manually:
-
-1. Go to the **Location and licences** tab.
-2. In the *Spatial extent* section, use the map widget to draw or adjust the bounding box,
-   or enter coordinates (min/max longitude and latitude) manually.
-
-.. tip::
-   For Pelagos-related resources, the spatial extent should cover at least the Pelagos
-   Sanctuary area (approximately between France, Italy, and Monaco in the Ligurian Sea and
-   adjacent western Mediterranean).
 
 Date Fields
 -----------
@@ -175,7 +195,7 @@ Three date fields are available:
    * - Field
      - Description
    * - **Date** (creation date)
-     - When the resource was originally created or the data was collected.
+     - When the resource was originally created or the data was collected since this date .
    * - **Publication date**
      - When the resource was published on KMaP.
    * - **Revision date**
