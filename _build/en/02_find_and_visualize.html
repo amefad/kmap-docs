@@ -8,16 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2. How to Find and Visualise Your Data &#8212; Pelagos Scientific data on KMaP 0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
     <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=ccd5195c" />
     <link rel="stylesheet" type="text/css" href="_static/pelagos.css?v=a161a970" />
-    <link rel="stylesheet" href="./" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script src="_static/documentation_options.js?v=2709fde1"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
 
     
+    
+     
+        <script src="_static/jquery.cookie.js"></script>
+    
+
     
      
         <script src="_static/cloud.base.js"></script>
@@ -290,7 +295,8 @@ several sections.</p>
 <h3><span class="section-number">2.4.1. </span>Information Panel<a class="headerlink" href="#information-panel" title="Link to this heading">¶</a></h3>
 <p>The resource detail page by default shows the <strong>information panel</strong> that summarize the essential elements of the dataset.</p>
 <p>On the top left of the panel there is the  <strong>map thumbnail</strong> usualy a small preview image of the dataset.
-The thumbnail can be replaced by the users that have edit permissions on metadata.</p>
+The thumbnail can be replaced by the users that have edit permissions on metadata, either re-generating
+the map-preview or uploading a custom image. The thumbnail is used in the catalogue cards and in the search results.</p>
 <figure class="align-center" id="id11">
 <a class="reference internal image-reference" href="_images/det_thumbnail.png"><img alt="dataset thumbnail" src="_images/det_thumbnail.png" style="width: 70%;" />
 </a>
@@ -378,7 +384,7 @@ dataset. The key fields are:</p>
 <td><p>Who to contact for questions about the data.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Supplemental Information</strong></p></td>
-<td><p>Other information mainly related to origin of the dataset</p></td>
+<td><p>Other information mainly related to origin and lineage of the dataset</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Related resources</strong></p></td>
 <td><p>Links to Maps, Documents, or other Datasets connected to this resource.</p></td>
@@ -442,7 +448,12 @@ data spatially before deciding whether to download or use it.</p>
 <p>Please refer to <a class="reference internal" href="04_exploring_maps.html#map-viewer"><span class="std std-ref">The Map Viewer Interface</span></a> section for further information on the map viewer.
 Download dataset
 —————-</p>
-<p>To download dataset</p>
+<p>To download the dataset choose the <strong>Dataset</strong> entry from the <strong>Download</strong> menu.
+A dialog will open to select the format of the dataset to download.
+The available formats depend on the type of dataset (vector or raster).
+You can also choose the WGS84 coordinate system instead of native coordinate system,
+crop the data to the current map extent, and choose to download only the currently filtered features
+(see <a class="reference internal" href="04_exploring_maps.html#filtering-features"><span class="std std-ref">Selecting and Filtering Features</span></a> for more information on filtering features).</p>
 </section>
 </section>
 </section>

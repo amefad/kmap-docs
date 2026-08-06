@@ -238,6 +238,10 @@
         var $doc = $('div.document'),
             $hide = $('button#sidebar-hide'),
             $show = $('button#sidebar-show'),
+            copts = {
+                // expires: 7,
+                path: utils.rootpath
+            };
 
         // set sidebar state for current media size
         var lastSmall = false,
@@ -255,6 +259,7 @@
             } else {
                 largeState = visible;
                 if(!visible) { smallState = false; }
+                $.cookie("sidebar", visible ? "expanded" : "collapsed", copts);
             }
             $window.trigger("cloud-sidebar-toggled", visible);
         }
@@ -272,6 +277,7 @@
         if(smallScreen){
             setState(false);
         } else {
+            var value = $.cookie("sidebar");
             
             setState(value != "collapsed");
         }

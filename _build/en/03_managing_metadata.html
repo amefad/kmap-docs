@@ -8,16 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>3. Managing Metadata &#8212; Pelagos Scientific data on KMaP 0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
     <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=ccd5195c" />
     <link rel="stylesheet" type="text/css" href="_static/pelagos.css?v=a161a970" />
-    <link rel="stylesheet" href="./" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
     
     <script src="_static/documentation_options.js?v=2709fde1"></script>
-    <script src="_static/doctools.js?v=9bcbadda"></script>
-    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
 
     
+    
+     
+        <script src="_static/jquery.cookie.js"></script>
+    
+
     
      
         <script src="_static/cloud.base.js"></script>
@@ -93,29 +98,6 @@
             
   <section id="managing-metadata">
 <span id="metadata-en"></span><h1><span class="section-number">3. </span>Managing Metadata<a class="headerlink" href="#managing-metadata" title="Link to this heading">¶</a></h1>
-<nav class="contents local" id="on-this-page">
-<p class="topic-title">On this page</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="#who-can-edit-metadata" id="id1">Who Can Edit Metadata?</a></p></li>
-<li><p><a class="reference internal" href="#opening-the-metadata-editor" id="id2">Opening the Metadata Editor</a></p></li>
-<li><p><a class="reference internal" href="#overview-of-the-metadata-editor" id="id3">Overview of the Metadata Editor</a></p></li>
-<li><p><a class="reference internal" href="#editing-key-metadata-fields" id="id4">Editing Key Metadata Fields</a></p>
-<ul>
-<li><p><a class="reference internal" href="#title" id="id5">Title</a></p></li>
-<li><p><a class="reference internal" href="#abstract" id="id6">Abstract</a></p></li>
-<li><p><a class="reference internal" href="#keywords" id="id7">Keywords</a></p></li>
-<li><p><a class="reference internal" href="#category" id="id8">Category</a></p></li>
-<li><p><a class="reference internal" href="#spatial-extent" id="id9">Spatial Extent</a></p></li>
-<li><p><a class="reference internal" href="#date-fields" id="id10">Date Fields</a></p></li>
-<li><p><a class="reference internal" href="#licence" id="id11">Licence</a></p></li>
-<li><p><a class="reference internal" href="#point-of-contact" id="id12">Point of Contact</a></p></li>
-<li><p><a class="reference internal" href="#thumbnail" id="id13">Thumbnail</a></p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#saving-your-changes" id="id14">Saving Your Changes</a></p></li>
-<li><p><a class="reference internal" href="#metadata-completeness-checklist" id="id15">Metadata Completeness Checklist</a></p></li>
-</ul>
-</nav>
 <p>Good metadata is what makes a resource discoverable and trustworthy. This section
 explains how to view and edit the metadata of a Dataset or Document in KMaP.</p>
 <div class="admonition note">
@@ -126,7 +108,7 @@ edit rights on resources shared within the group — check with your group admin
 if you are unsure.</p>
 </div>
 <section id="who-can-edit-metadata">
-<h2><a class="toc-backref" href="#id1" role="doc-backlink"><span class="section-number">3.1. </span>Who Can Edit Metadata?</a><a class="headerlink" href="#who-can-edit-metadata" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">3.1. </span>Who Can Edit Metadata?<a class="headerlink" href="#who-can-edit-metadata" title="Link to this heading">¶</a></h2>
 <p>KMaP has a permission model with several levels:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -139,16 +121,13 @@ if you are unsure.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Resource owner</strong></p></td>
-<td><p>Full edit rights on all metadata fields.</p></td>
+<tr class="row-even"><td><p><strong>Resource owner</strong> ans <strong>Superusers</strong></p></td>
+<td><p>Full edit rights on data and metadata fields.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Group manager</strong></p></td>
-<td><p>Can edit resources owned by any member of their group.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Group member (editor)</strong></p></td>
+<tr class="row-odd"><td><p><strong>Pelagos Group member (editor)</strong></p></td>
 <td><p>Can edit resources explicitly shared with the group with <em>edit</em> permission.</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Viewer / public</strong></p></td>
+<tr class="row-even"><td><p><strong>Viewer / public</strong></p></td>
 <td><p>Read-only access. Cannot edit metadata.</p></td>
 </tr>
 </tbody>
@@ -156,24 +135,49 @@ if you are unsure.</p>
 <p>If you see an <strong>Edit</strong> button on the resource detail page, you have the right to edit
 that resource’s metadata. All users in contributors group have access to the</p>
 </section>
-<section id="opening-the-metadata-editor">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink"><span class="section-number">3.2. </span>Opening the Metadata Editor</a><a class="headerlink" href="#opening-the-metadata-editor" title="Link to this heading">¶</a></h2>
-<p>The default catalogue open resources in read-only mode, as a contributor user you have an acces to
-the catalogue in edit mode. Click on the user logo  on the top right corner and a user menu will open.
-Click on the  <strong>Catalogue</strong> link of the user menu</p>
-<a class="reference internal image-reference" href="_images/catalogue_menu.png"><img alt="_images/catalogue_menu.png" src="_images/catalogue_menu.png" style="width: 400px;" />
+<section id="opening-the-detail-page-in-edit-mode">
+<h2><span class="section-number">3.2. </span>Opening the detail page in edit mode<a class="headerlink" href="#opening-the-detail-page-in-edit-mode" title="Link to this heading">¶</a></h2>
+<p>If you open a resource from the <strong>maps</strong> menu the detail page is showed in read-only mode, as a contributor user you have an acces to
+TO open the catalogue in edit mode select the <strong>Catalogue</strong> entry from the user menu.
+Fist Click on the user logo  on the top right corner and then on the  <strong>Catalogue</strong> link.
+You can also go directly to the url <a class="reference external" href="https://kmap.info-rac.org/catalogue/" rel="noreferrer" target="_blank">https://kmap.info-rac.org/catalogue/</a>.</p>
+<figure class="align-center" id="id3">
+<a class="reference internal image-reference" href="_images/catalogue_menu.png"><img alt="Menu Catalogue" src="_images/catalogue_menu.png" style="width: 70%;" />
 </a>
-<p><strong>From the detail page:</strong></p>
-<ol class="arabic simple">
-<li><p>Navigate to the resource detail page (see <a class="reference internal" href="02_find_and_visualize.html#find-en"><span class="std std-ref">How to Find and Visualise Your Data</span></a> for how to find a resource).</p></li>
-<li><p>Click the <strong>Edit</strong> button (pencil icon) in the top-right action bar.</p></li>
-<li><p>A dropdown menu appears. Select <strong>Edit metadata</strong>.</p></li>
-</ol>
-<p>The metadata editor opens as a multi-tab form.</p>
+<figcaption>
+<p><span class="caption-text">Catalogue entry in user’s menu</span><a class="headerlink" href="#id3" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The catalogue view in edit mode lists all resources and filters as already explained in the <a class="reference internal" href="02_find_and_visualize.html#find-en"><span class="std std-ref">How to Find and Visualise Your Data</span></a>
+section. You can see the difference because there is an <strong>Add Resource</strong> button in the top right
+of the section and the page does not show other section (<strong>navigate by theme</strong> and <strong>recently added</strong>).</p>
+<figure class="align-center" id="id4">
+<a class="reference internal image-reference" href="_images/catalogue_full.png"><img alt="catalogue in edit mode" src="_images/catalogue_full.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Catalogue page in edit mode</span><a class="headerlink" href="#id4" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Navigate to the resource detail page (see <a class="reference internal" href="02_find_and_visualize.html#advanced-filter"><span class="std std-ref">Using advanced filter</span></a> for how to find a resource).
+On the dataset preview page you have an  <strong>Edit</strong> menu, select the entry <strong>Edit Metadata</strong>.</p>
+<figure class="align-center" id="id5">
+<a class="reference internal image-reference" href="_images/dat_edit_menu.png"><img alt="edit_menu" src="_images/dat_edit_menu.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The edit menu in detail dataset page</span><a class="headerlink" href="#id5" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
 </section>
 <section id="overview-of-the-metadata-editor">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink"><span class="section-number">3.3. </span>Overview of the Metadata Editor</a><a class="headerlink" href="#overview-of-the-metadata-editor" title="Link to this heading">¶</a></h2>
-<p>The metadata editor is organised into tabs. The most important tabs are:</p>
+<h2><span class="section-number">3.3. </span>Overview of the Metadata Editor<a class="headerlink" href="#overview-of-the-metadata-editor" title="Link to this heading">¶</a></h2>
+<figure class="align-center" id="id6">
+<a class="reference internal image-reference" href="_images/metadata_editor01.png"><img alt="metadat editor" src="_images/metadata_editor01.png" style="width: 400px;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The metadata editor page</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The metadata editor is organised into tabs:</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 25.0%" />
@@ -185,58 +189,108 @@ Click on the  <strong>Catalogue</strong> link of the user menu</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><strong>Basic info</strong></p></td>
-<td><p>Title, abstract, language, category, keywords, point of contact.</p></td>
+<tr class="row-even"><td><p><strong>Basic Metadata</strong></p></td>
+<td><p>Title, thumbnail, date fields, abstract,  category, group, keywords, UNEP-MAP themes point of contact.</p></td>
 </tr>
 <tr class="row-odd"><td><p><strong>Location and licences</strong></p></td>
-<td><p>Spatial extent, CRS, date fields, licence, attribution.</p></td>
+<td><p>Language, region, license, attribution, data quality statement.</p></td>
 </tr>
 <tr class="row-even"><td><p><strong>Optional metadata</strong></p></td>
-<td><p>Additional ISO 19115 fields (edition, purpose, supplemental information, …).</p></td>
+<td><p>Point of Contact, related resources on the platform and additional ISO 19115 fields (edition, purpose, supplemental information, …).</p></td>
 </tr>
-<tr class="row-odd"><td><p><strong>Settings</strong></p></td>
-<td><p>Permissions, featured status, advertised status.</p></td>
+<tr class="row-odd"><td><p><strong>Dataset attributes</strong> (vector datasets)</p></td>
+<td><p>Label, description visibility and display order of attribute fields.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Additional info</strong></p></td>
+<td><p>Access contrstaints, resolution and accuracy.</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="editing-key-metadata-fields">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">3.4. </span>Editing Key Metadata Fields</a><a class="headerlink" href="#editing-key-metadata-fields" title="Link to this heading">¶</a></h2>
+<section id="editing-metadata">
+<h2><span class="section-number">3.4. </span>Editing Metadata<a class="headerlink" href="#editing-metadata" title="Link to this heading">¶</a></h2>
+<section id="basic-metadata-tab">
+<h3><span class="section-number">3.4.1. </span>Basic Metadata Tab<a class="headerlink" href="#basic-metadata-tab" title="Link to this heading">¶</a></h3>
+</section>
 <section id="title">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">3.4.1. </span>Title</a><a class="headerlink" href="#title" title="Link to this heading">¶</a></h3>
+<h3><span class="section-number">3.4.2. </span>Title<a class="headerlink" href="#title" title="Link to this heading">¶</a></h3>
 <p>The <strong>title</strong> is the primary way users find your resource. It should be:</p>
 <ul class="simple">
 <li><p>Descriptive and specific (avoid generic titles like “Data” or “Map layer”).</p></li>
 <li><p>Consistent with the naming conventions used by the Pelagos Agreement group.</p></li>
 </ul>
-<p>To edit: click on the <strong>Title</strong> field in the <em>Basic info</em> tab and type your changes.</p>
+<p>To edit: click on the <strong>Title</strong> input text field in the <em>Basic info</em> tab and type your changes.</p>
+<p>The <strong>thumbnail</strong> is the preview image displayed in catalogue cards. It is generated
+automatically for Datasets and Maps. In this page you can re-generate the thumbnail
+by clicking the <em>edit</em> button under the image, a small map view will be displayed,
+you can zoom and pan to select the area to use for the thumbnail and click <em>save</em>.</p>
+<p>You can also change the <strong>title</strong> and <strong>thumbnail</strong> from
+the information panel in the dataset detail page (see <a class="reference internal" href="02_find_and_visualize.html#information-panel"><span class="std std-ref">Information Panel</span></a> for more information).</p>
 </section>
 <section id="abstract">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">3.4.2. </span>Abstract</a><a class="headerlink" href="#abstract" title="Link to this heading">¶</a></h3>
-<p>The <strong>abstract</strong> is a plain-language description of the resource. A good abstract answers:</p>
-<ul class="simple">
-<li><p>What does this resource contain?</p></li>
-<li><p>What geographic area does it cover?</p></li>
-<li><p>What time period does it represent?</p></li>
-<li><p>What is it used for?</p></li>
-<li><p>What are its known limitations?</p></li>
-</ul>
-<p>The abstract field supports basic formatting. Aim for at least two or three sentences.</p>
+<h3><span class="section-number">3.4.3. </span>Abstract<a class="headerlink" href="#abstract" title="Link to this heading">¶</a></h3>
+<p>The <strong>abstract</strong> is a plain-language description of the resource.
+Based on the <cite>INSPIRE guidelines &lt;https://knowledge-base.inspire.ec.europa.eu/publications/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-19119_en&gt;</cite>
+an abstract is a succinct description that can include:
+- A brief summary with the most important details that summarise
+the data or service
+- Coverage: linguistic transcriptions of the extent or location in
+addition to the bounding box
+- Main attributes
+- Data sources
+- Legal references
+- Importance of the work</p>
+<figure class="align-center" id="id7">
+<a class="reference internal image-reference" href="_images/metadata_abstract.png"><img alt="rich editor for abstract" src="_images/metadata_abstract.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The editor for the abstract field.</span><a class="headerlink" href="#id7" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>The abstract field supports html formatting.
+You can use the formatting buttons in the editor toolbar to insert headings,
+images, links, and lists.
+Keep in mind that the abstract is served also in the catalogue and trough CSW service
+and could be rendered in different ways, so be sure that the content is understandable also without formatting and images.</p>
+</section>
+<section id="date-fields">
+<h3><span class="section-number">3.4.4. </span>Date Fields<a class="headerlink" href="#date-fields" title="Link to this heading">¶</a></h3>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="_images/metadata_dates.png"><img alt="date fields dropdown" src="_images/metadata_dates.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The dropdown for date fields.</span><a class="headerlink" href="#id8" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>Three date fields are available from the dropdown menu in the <em>Basic info</em> tab:</p>
+<p>Keep these dates accurate — they are used to filter and sort resources in the catalogue.</p>
+</section>
+<section id="category">
+<h3><span class="section-number">3.4.5. </span>Category<a class="headerlink" href="#category" title="Link to this heading">¶</a></h3>
+<p>The <strong>category</strong> assigns the resource to a thematic classification.
+Select the most appropriate category from the dropdown.
+The available categories are an extension of the
+the <cite>INSPIRE Topic Category &lt;http://inspire.ec.europa.eu/metadata-codelist/TopicCategory&gt;</cite>.</p>
+<p>A resource can belong to only one category. Use keywords for additional
+thematic tagging.</p>
 </section>
 <section id="keywords">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink"><span class="section-number">3.4.3. </span>Keywords</a><a class="headerlink" href="#keywords" title="Link to this heading">¶</a></h3>
-<p>Keywords are the primary mechanism for filtering and discovering resources in KMaP.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>All resources related to the Pelagos Agreement <strong>must include</strong> at least one of the
-following keywords:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code></p></li>
-</ul>
-<p>Without these keywords, your resource will not appear when other group members
-filter the catalogue by these terms.</p>
+<h3><span class="section-number">3.4.6. </span>Keywords<a class="headerlink" href="#keywords" title="Link to this heading">¶</a></h3>
+<p>Keywords are the primary mechanism for filtering and discovering resources in KMaP.
+you can add multiple keywords to a resource, and create new keywords if they do not already
+exist in the platform.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Be sure to not duplicate keywords for the same concept and avoid mispelling (e.g. “marinemammals” vs. “Marine Mammals”).
+Ask your group administrator if you are unsure about which keywords to use.</p>
 </div>
+<figure class="align-center" id="id9">
+<a class="reference internal image-reference" href="_images/metadata_keywords.png"><img alt="keywords field" src="_images/metadata_keywords.png" style="width: 80%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The keywords and UNEP Theme fields.</span><a class="headerlink" href="#id9" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>To add a keyword:</p>
 <ol class="arabic simple">
 <li><p>In the <strong>Keywords</strong> field, start typing the keyword.</p></li>
@@ -244,109 +298,67 @@ filter the catalogue by these terms.</p>
 <li><p>If it is new, type the full keyword and press <strong>Enter</strong> or click <strong>Add</strong>.</p></li>
 <li><p>To remove a keyword, click the <strong>×</strong> next to it.</p></li>
 </ol>
+<p>Pelagos Agreement related resources should include the following keywords: <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">sanctuary</span></code> and <code class="docutils literal notranslate"><span class="pre">pelagos</span> <span class="pre">agreement</span></code>.</p>
 </section>
-<section id="category">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink"><span class="section-number">3.4.4. </span>Category</a><a class="headerlink" href="#category" title="Link to this heading">¶</a></h3>
-<p>The <strong>category</strong> assigns the resource to a thematic classification.
-Select the most appropriate category from the dropdown:</p>
-<ul class="simple">
-<li><p>Fishery and Aquaculture</p></li>
-<li><p>Marine Biodiversity</p></li>
-<li><p>Pollution</p></li>
-<li><p>Climate Change</p></li>
-<li><p>Marine Spatial Planning</p></li>
-<li><p>Sustainability and Blue Economy</p></li>
-<li><p>Governance</p></li>
-</ul>
-<p>A resource can belong to only one primary category. Use keywords for additional
-thematic tagging.</p>
-</section>
-<section id="spatial-extent">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink"><span class="section-number">3.4.5. </span>Spatial Extent</a><a class="headerlink" href="#spatial-extent" title="Link to this heading">¶</a></h3>
-<p>The <strong>spatial extent</strong> defines the geographic bounding box of the resource. For datasets,
-this is usually set automatically when the data is uploaded. You can refine it manually:</p>
-<ol class="arabic simple">
-<li><p>Go to the <strong>Location and licences</strong> tab.</p></li>
-<li><p>In the <em>Spatial extent</em> section, use the map widget to draw or adjust the bounding box,
-or enter coordinates (min/max longitude and latitude) manually.</p></li>
-</ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>For Pelagos-related resources, the spatial extent should cover at least the Pelagos
-Sanctuary area (approximately between France, Italy, and Monaco in the Ligurian Sea and
-adjacent western Mediterranean).</p>
-</div>
-</section>
-<section id="date-fields">
-<h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">3.4.6. </span>Date Fields</a><a class="headerlink" href="#date-fields" title="Link to this heading">¶</a></h3>
-<p>Three date fields are available:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 30.0%" />
-<col style="width: 70.0%" />
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Field</p></th>
-<th class="head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Date</strong> (creation date)</p></td>
-<td><p>When the resource was originally created or the data was collected.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Publication date</strong></p></td>
-<td><p>When the resource was published on KMaP.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Revision date</strong></p></td>
-<td><p>When the resource was last updated.</p></td>
-</tr>
-</tbody>
-</table>
-<p>Keep these dates accurate — they are used to filter and sort resources in the catalogue.</p>
+<section id="location-and-licenses-tab">
+<h3><span class="section-number">3.4.7. </span>Location and Licenses Tab<a class="headerlink" href="#location-and-licenses-tab" title="Link to this heading">¶</a></h3>
 </section>
 <section id="licence">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">3.4.7. </span>Licence</a><a class="headerlink" href="#licence" title="Link to this heading">¶</a></h3>
+<h3><span class="section-number">3.4.8. </span>Licence<a class="headerlink" href="#licence" title="Link to this heading">¶</a></h3>
 <p>The <strong>licence</strong> defines how others may use the resource.</p>
-<ol class="arabic simple">
-<li><p>Go to the <strong>Location and licences</strong> tab.</p></li>
-<li><p>Select a licence from the dropdown. Common options include:</p>
-<ul class="simple">
+<p>Select a licence from the dropdown. Common options include:</p>
+<blockquote>
+<div><ul class="simple">
 <li><p><em>Creative Commons Attribution (CC BY)</em> – free reuse with attribution.</p></li>
 <li><p><em>Creative Commons Attribution ShareAlike (CC BY-SA)</em> – reuse with attribution and
 same licence.</p></li>
 <li><p><em>Open Database Licence (ODbL)</em> – for datasets.</p></li>
 <li><p><em>No restrictions</em> – public domain.</p></li>
 </ul>
-</li>
-</ol>
+</div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are unsure which licence to apply, consult your group administrator. Applying
-the wrong licence may restrict the reuse of your data inappropriately.</p>
+<p>If you are unsure which licence to apply, start with <em>Pelagos data policy</em>
+that refers to the data policy document for sharing scientific data.</p>
 </div>
 </section>
-<section id="point-of-contact">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">3.4.8. </span>Point of Contact</a><a class="headerlink" href="#point-of-contact" title="Link to this heading">¶</a></h3>
-<p>The <strong>point of contact</strong> identifies who to contact for questions about the resource.
-It can be a person or an organisation.</p>
-<ol class="arabic simple">
-<li><p>In the <em>Basic info</em> tab, find the <strong>Point of contact</strong> field.</p></li>
-<li><p>Start typing a name to search registered KMaP users, or enter an organisation name.</p></li>
-</ol>
+<section id="attribution">
+<h3><span class="section-number">3.4.9. </span>Attribution<a class="headerlink" href="#attribution" title="Link to this heading">¶</a></h3>
+<p>Write the name of the copyright holder, eg. Pelagos Agreement.</p>
 </section>
-<section id="thumbnail">
-<h3><a class="toc-backref" href="#id13" role="doc-backlink"><span class="section-number">3.4.9. </span>Thumbnail</a><a class="headerlink" href="#thumbnail" title="Link to this heading">¶</a></h3>
-<p>The <strong>thumbnail</strong> is the preview image displayed in catalogue cards. It is generated
-automatically for Datasets and Maps, but can be replaced manually:</p>
-<ol class="arabic simple">
-<li><p>Click <strong>Edit</strong> on the detail page.</p></li>
-<li><p>Select <strong>Edit thumbnail</strong>.</p></li>
-<li><p>Upload a new image (recommended: 600 × 400 px, JPEG or PNG).</p></li>
-</ol>
+<section id="regions">
+<h3><span class="section-number">3.4.10. </span>Regions<a class="headerlink" href="#regions" title="Link to this heading">¶</a></h3>
+<p>The Regions field can be filled with multiple values (region names) in the same way as the keywords field.
+FOr Pelagos Agreement data  the regions are Europe, France, Italy and Monaco.
+At the present time mainly countries names are listed, marine regions could be addedd in the future..</p>
+</section>
+<section id="optional-metadata-tab">
+<h3><span class="section-number">3.4.11. </span>Optional metadata tab<a class="headerlink" href="#optional-metadata-tab" title="Link to this heading">¶</a></h3>
+</section>
+<section id="point-of-contact-and-owner">
+<h3><span class="section-number">3.4.12. </span>Point of Contact and Owner<a class="headerlink" href="#point-of-contact-and-owner" title="Link to this heading">¶</a></h3>
+<p>The <strong>point of contact</strong> identifies the user or the users to contact for questions about the resource. By default is the user that compiled metadata.
+Start typing and select from existing list or add new one just like the keywords field.
+The <strong>owner</strong> is the user that has full edit rights on the resource. The owner can be different from the point of contact, for example if the resource is managed by a group of users.
+In geonode the owner is always a user account, so you can select only users that have an account in the platform.
+You will see a link to toggle more contact roles</p>
+</section>
+<section id="related-resources">
+<h3><span class="section-number">3.4.13. </span>Related resources<a class="headerlink" href="#related-resources" title="Link to this heading">¶</a></h3>
+<p>The <strong>related resources</strong> field allows you to link other resources in KMaP that are related to this one.
+For the scientific results of Pelagos Calls there is a document linked that describes how the data were produced.
+The maps that uses the dataset will be showed also in the related resources section, but you can add also other datasets.
+You need to know the title of the resource to link, start typing and select the resource from the dropdown list.
+You will see the resource type in brackets next to the title. You can add multiple related resources.</p>
+</section>
+<section id="supplemental-information">
+<h3><span class="section-number">3.4.14. </span>Supplemental information<a class="headerlink" href="#supplemental-information" title="Link to this heading">¶</a></h3>
+<p>FIll in this field with any additional information that is relevant to the resource,
+for example the origin of the data and the lineage.</p>
 </section>
 </section>
 <section id="saving-your-changes">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink"><span class="section-number">3.5. </span>Saving Your Changes</a><a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">3.5. </span>Saving Your Changes<a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
 <p>When you have finished editing, scroll to the bottom of the editor and click
 <strong>Save</strong> (or <strong>Update</strong> — the label may vary). A confirmation message will appear.</p>
 <div class="admonition warning">
@@ -358,7 +370,7 @@ the resource. There is no draft or staging mode.</p>
 all fields have been updated correctly.</p>
 </section>
 <section id="metadata-completeness-checklist">
-<h2><a class="toc-backref" href="#id15" role="doc-backlink"><span class="section-number">3.6. </span>Metadata Completeness Checklist</a><a class="headerlink" href="#metadata-completeness-checklist" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">3.6. </span>Metadata Completeness Checklist<a class="headerlink" href="#metadata-completeness-checklist" title="Link to this heading">¶</a></h2>
 <p>Use the following checklist before publishing or sharing a resource:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -415,18 +427,23 @@ all fields have been updated correctly.</p>
     <ul>
 <li><a class="reference internal" href="#">3. Managing Metadata</a><ul>
 <li><a class="reference internal" href="#who-can-edit-metadata">3.1. Who Can Edit Metadata?</a></li>
-<li><a class="reference internal" href="#opening-the-metadata-editor">3.2. Opening the Metadata Editor</a></li>
+<li><a class="reference internal" href="#opening-the-detail-page-in-edit-mode">3.2. Opening the detail page in edit mode</a></li>
 <li><a class="reference internal" href="#overview-of-the-metadata-editor">3.3. Overview of the Metadata Editor</a></li>
-<li><a class="reference internal" href="#editing-key-metadata-fields">3.4. Editing Key Metadata Fields</a><ul>
-<li><a class="reference internal" href="#title">3.4.1. Title</a></li>
-<li><a class="reference internal" href="#abstract">3.4.2. Abstract</a></li>
-<li><a class="reference internal" href="#keywords">3.4.3. Keywords</a></li>
-<li><a class="reference internal" href="#category">3.4.4. Category</a></li>
-<li><a class="reference internal" href="#spatial-extent">3.4.5. Spatial Extent</a></li>
-<li><a class="reference internal" href="#date-fields">3.4.6. Date Fields</a></li>
-<li><a class="reference internal" href="#licence">3.4.7. Licence</a></li>
-<li><a class="reference internal" href="#point-of-contact">3.4.8. Point of Contact</a></li>
-<li><a class="reference internal" href="#thumbnail">3.4.9. Thumbnail</a></li>
+<li><a class="reference internal" href="#editing-metadata">3.4. Editing Metadata</a><ul>
+<li><a class="reference internal" href="#basic-metadata-tab">3.4.1. Basic Metadata Tab</a></li>
+<li><a class="reference internal" href="#title">3.4.2. Title</a></li>
+<li><a class="reference internal" href="#abstract">3.4.3. Abstract</a></li>
+<li><a class="reference internal" href="#date-fields">3.4.4. Date Fields</a></li>
+<li><a class="reference internal" href="#category">3.4.5. Category</a></li>
+<li><a class="reference internal" href="#keywords">3.4.6. Keywords</a></li>
+<li><a class="reference internal" href="#location-and-licenses-tab">3.4.7. Location and Licenses Tab</a></li>
+<li><a class="reference internal" href="#licence">3.4.8. Licence</a></li>
+<li><a class="reference internal" href="#attribution">3.4.9. Attribution</a></li>
+<li><a class="reference internal" href="#regions">3.4.10. Regions</a></li>
+<li><a class="reference internal" href="#optional-metadata-tab">3.4.11. Optional metadata tab</a></li>
+<li><a class="reference internal" href="#point-of-contact-and-owner">3.4.12. Point of Contact and Owner</a></li>
+<li><a class="reference internal" href="#related-resources">3.4.13. Related resources</a></li>
+<li><a class="reference internal" href="#supplemental-information">3.4.14. Supplemental information</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#saving-your-changes">3.5. Saving Your Changes</a></li>

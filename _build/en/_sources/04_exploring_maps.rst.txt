@@ -156,6 +156,8 @@ The **Identify** tool (ℹ️ icon in the toolbar) works similarly to clicking d
 on the map. It queries all visible layers at the clicked point and returns their
 attributes in a panel.
 
+.. _filtering_features:
+
 Selecting and Filtering Features
 ----------------------------------
 

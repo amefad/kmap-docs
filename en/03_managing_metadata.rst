@@ -4,10 +4,6 @@
 Managing Metadata
 ====================
 
-.. contents:: On this page
-   :local:
-   :depth: 2
-
 Good metadata is what makes a resource discoverable and trustworthy. This section
 explains how to view and edit the metadata of a Dataset or Document in KMaP.
 
@@ -51,36 +47,35 @@ Fist Click on the user logo  on the top right corner and then on the  **Catalogu
 You can also go directly to the url https://kmap.info-rac.org/catalogue/.
 
 
-.. image:: ../_static/catalogue_menu.png
+.. figure:: ../_static/catalogue_menu.png
     :align: center
-    :width: 400px
+    :width: 70%
     :alt: Menu Catalogue 
 
     Catalogue entry in user's menu
 
-The catalogue view in edit mode lists all resources and filters as already explained in the :ref:`find_en``
+The catalogue view in edit mode lists all resources and filters as already explained in the :ref:`find_en`
 section. You can see the difference because there is an **Add Resource** button in the top right
 of the section and the page does not show other section (**navigate by theme** and **recently added**).
 
-.. image:: ../_static/catalogue_full.png
+.. figure:: ../_static/catalogue_full.png
     :align: center
-    :width: 400px
+    :width: 70%
     :alt: catalogue in edit mode 
 
     Catalogue page in edit mode
 
 
 
-Navigate to the resource detail page (see :ref:`filtering` for how to find a resource).
+Navigate to the resource detail page (see :ref:`advanced_filter` for how to find a resource).
 On the dataset preview page you have an  **Edit** menu, select the entry **Edit Metadata**.
 
-.. image:: ../_static/dat_edit_menu.png
+.. figure:: ../_static/dat_edit_menu.png
     :align: center
-    :width: 400px
+    :width: 70%
     :alt: edit_menu
 
     The edit menu in detail dataset page
-
 
 
 
@@ -90,14 +85,14 @@ Overview of the Metadata Editor
 
 
 
-.. image:: ../_static/metadata_editor01.png
+.. figure:: ../_static/metadata_editor01.png
     :align: center
     :width: 400px
     :alt: metadat editor
 
     The metadata editor page
 
-The metadata editor is organised into tabs. The most important tabs are:
+The metadata editor is organised into tabs:
 
 .. list-table::
    :widths: 25 75
@@ -117,8 +112,11 @@ The metadata editor is organised into tabs. The most important tabs are:
      - Access contrstaints, resolution and accuracy.     
 
 
-Editing Key Metadata Fields
-=============================
+Editing Metadata 
+================
+
+Basic Metadata Tab
+------------------
 
 Title
 -----
@@ -128,35 +126,106 @@ The **title** is the primary way users find your resource. It should be:
 * Descriptive and specific (avoid generic titles like "Data" or "Map layer").
 * Consistent with the naming conventions used by the Pelagos Agreement group.
 
-To edit: click on the **Title** field in the *Basic info* tab and type your changes.
+To edit: click on the **Title** input text field in the *Basic info* tab and type your changes.
+
+The **thumbnail** is the preview image displayed in catalogue cards. It is generated
+automatically for Datasets and Maps. In this page you can re-generate the thumbnail
+by clicking the *edit* button under the image, a small map view will be displayed, 
+you can zoom and pan to select the area to use for the thumbnail and click *save*.
+
+You can also change the **title** and **thumbnail** from 
+the information panel in the dataset detail page (see :ref:`Information Panel` for more information).
 
 Abstract
 --------
 
-The **abstract** is a plain-language description of the resource. A good abstract answers:
+The **abstract** is a plain-language description of the resource. 
+Based on the `INSPIRE guidelines <https://knowledge-base.inspire.ec.europa.eu/publications/inspire-metadata-implementing-rules-technical-guidelines-based-en-iso-19115-and-en-iso-19119_en>`
+an abstract is a succinct description that can include:
+- A brief summary with the most important details that summarise
+the data or service
+- Coverage: linguistic transcriptions of the extent or location in
+addition to the bounding box
+- Main attributes
+- Data sources
+- Legal references
+- Importance of the work
 
-* What does this resource contain?
-* What geographic area does it cover?
-* What time period does it represent?
-* What is it used for?
-* What are its known limitations?
+.. figure:: ../_static/metadata_abstract.png
+    :align: center
+    :width: 80%
+    :alt: rich editor for abstract
 
-The abstract field supports basic formatting. Aim for at least two or three sentences.
+    The editor for the abstract field.
+
+The abstract field supports html formatting. 
+You can use the formatting buttons in the editor toolbar to insert headings, 
+images, links, and lists. 
+Keep in mind that the abstract is served also in the catalogue and trough CSW service 
+and could be rendered in different ways, so be sure that the content is understandable also without formatting and images.
+
+Date Fields
+-----------
+
+.. figure:: ../_static/metadata_dates.png
+    :align: center
+    :width: 80%
+    :alt: date fields dropdown
+
+    The dropdown for date fields.
+
+Three date fields are available from the dropdown menu in the *Basic info* tab: 
+
+.. list-table::
+   :widths: 30 70
+   :header-rows: 1
+
+   * - Field
+     - Label
+     - Description
+   * - **Creation** (creation date)
+     - *Creation*
+     - When the resource was originally created or the data was collected. 
+       By default this is the date in wich the resource was uploaded into the platform.
+       If you know the exact date of creation, you can change it to improve metadata quality..
+   * - **Publication date**
+     - *Added to catalog *
+     - When the resource was published on KMaP (automatically generated).
+   * - **Revision date**
+     - *Last catalog modification*
+     - When the resource was last updated (automatically generated).
+
+Keep these dates accurate — they are used to filter and sort resources in the catalogue.
+
+Category
+--------
+
+The **category** assigns the resource to a thematic classification.
+Select the most appropriate category from the dropdown. 
+The available categories are an extension of the  
+the `INSPIRE Topic Category <http://inspire.ec.europa.eu/metadata-codelist/TopicCategory>`.
+
+A resource can belong to only one category. Use keywords for additional
+thematic tagging.
+
 
 Keywords
 ---------
 
 Keywords are the primary mechanism for filtering and discovering resources in KMaP.
+you can add multiple keywords to a resource, and create new keywords if they do not already 
+exist in the platform. 
 
-.. important::
-   All resources related to the Pelagos Agreement **must include** at least one of the
-   following keywords:
+.. tip::
+    Be sure to not duplicate keywords for the same concept and avoid mispelling (e.g. "marinemammals" vs. "Marine Mammals").
+    Ask your group administrator if you are unsure about which keywords to use. 
+    
+.. figure:: ../_static/metadata_keywords.png
+    :align: center
+    :width: 80%
+    :alt: keywords field
 
-   * ``pelagos sanctuary``
-   * ``pelagos agreement``
-
-   Without these keywords, your resource will not appear when other group members
-   filter the catalogue by these terms.
+    The keywords and UNEP Theme fields.
 
 To add a keyword:
 
@@ -165,51 +234,17 @@ To add a keyword:
 3. If it is new, type the full keyword and press **Enter** or click **Add**.
 4. To remove a keyword, click the **×** next to it.
 
-Category
---------
+Pelagos Agreement related resources should include the following keywords: ``pelagos sanctuary`` and ``pelagos agreement``.
 
-The **category** assigns the resource to a thematic classification.
-Select the most appropriate category from the dropdown:
-
-* Fishery and Aquaculture
-* Marine Biodiversity
-* Pollution
-* Climate Change
-* Marine Spatial Planning
-* Sustainability and Blue Economy
-* Governance
-
-A resource can belong to only one primary category. Use keywords for additional
-thematic tagging.
-
-
-Date Fields
------------
-
-Three date fields are available:
-
-.. list-table::
-   :widths: 30 70
-   :header-rows: 1
-
-   * - Field
-     - Description
-   * - **Date** (creation date)
-     - When the resource was originally created or the data was collected since this date .
-   * - **Publication date**
-     - When the resource was published on KMaP.
-   * - **Revision date**
-     - When the resource was last updated.
-
-Keep these dates accurate — they are used to filter and sort resources in the catalogue.
+Location and Licenses Tab
+--------------------------
 
 Licence
 -------
 
 The **licence** defines how others may use the resource.
 
-1. Go to the **Location and licences** tab.
-2. Select a licence from the dropdown. Common options include:
+Select a licence from the dropdown. Common options include:
 
    * *Creative Commons Attribution (CC BY)* – free reuse with attribution.
    * *Creative Commons Attribution ShareAlike (CC BY-SA)* – reuse with attribution and
@@ -218,27 +253,49 @@ The **licence** defines how others may use the resource.
    * *No restrictions* – public domain.
 
 .. note::
-   If you are unsure which licence to apply, consult your group administrator. Applying
-   the wrong licence may restrict the reuse of your data inappropriately.
+   If you are unsure which licence to apply, start with *Pelagos data policy* 
+   that refers to the data policy document for sharing scientific data. 
 
-Point of Contact
-----------------
+Attribution
+-----------
 
-The **point of contact** identifies who to contact for questions about the resource.
-It can be a person or an organisation.
+Write the name of the copyright holder, eg. Pelagos Agreement.
 
-1. In the *Basic info* tab, find the **Point of contact** field.
-2. Start typing a name to search registered KMaP users, or enter an organisation name.
+Regions
+-------
+The Regions field can be filled with multiple values (region names) in the same way as the keywords field.
+FOr Pelagos Agreement data  the regions are Europe, France, Italy and Monaco. 
+At the present time mainly countries names are listed, marine regions could be addedd in the future..
 
-Thumbnail
----------
+Optional metadata tab
+---------------------
 
-The **thumbnail** is the preview image displayed in catalogue cards. It is generated
-automatically for Datasets and Maps, but can be replaced manually:
+Point of Contact and Owner
+---------------------------
 
-1. Click **Edit** on the detail page.
-2. Select **Edit thumbnail**.
-3. Upload a new image (recommended: 600 × 400 px, JPEG or PNG).
+The **point of contact** identifies the user or the users to contact for questions about the resource. By default is the user that compiled metadata.
+Start typing and select from existing list or add new one just like the keywords field.
+The **owner** is the user that has full edit rights on the resource. The owner can be different from the point of contact, for example if the resource is managed by a group of users.
+In geonode the owner is always a user account, so you can select only users that have an account in the platform.
+You will see a link to toggle more contact roles
+
+
+Related resources
+-----------------
+The **related resources** field allows you to link other resources in KMaP that are related to this one. 
+For the scientific results of Pelagos Calls there is a document linked that describes how the data were produced.
+The maps that uses the dataset will be showed also in the related resources section, but you can add also other datasets.
+You need to know the title of the resource to link, start typing and select the resource from the dropdown list. 
+You will see the resource type in brackets next to the title. You can add multiple related resources.
+
+Supplemental information
+-------------------------
+FIll in this field with any additional information that is relevant to the resource, 
+for example the origin of the data and the lineage.
+
+
+
+
 
 
 Saving Your Changes

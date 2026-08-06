@@ -18,6 +18,7 @@ extensions = [
     "sphinx_new_tab_link",
     'sphinx.ext.imgconverter',
     'sphinx.ext.imgconverter',
+    'sphinx.ext.autosectionlabel'
 ]
 
 templates_path = ['_templates']

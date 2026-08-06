@@ -222,7 +222,8 @@ Information Panel
 The resource detail page by default shows the **information panel** that summarize the essential elements of the dataset.
 
 On the top left of the panel there is the  **map thumbnail** usualy a small preview image of the dataset. 
-The thumbnail can be replaced by the users that have edit permissions on metadata. 
+The thumbnail can be replaced by the users that have edit permissions on metadata, either re-generating
+the map-preview or uploading a custom image. The thumbnail is used in the catalogue cards and in the search results.
 
 .. figure:: ../_static/det_thumbnail.png
     :align: center
@@ -315,7 +316,7 @@ dataset. The key fields are:
    * - **Point of contact**
      - Who to contact for questions about the data.
    * - **Supplemental Information**
-     - Other information mainly related to origin of the dataset
+     - Other information mainly related to origin and lineage of the dataset
    * - **Related resources**
      - Links to Maps, Documents, or other Datasets connected to this resource.
 
@@ -389,4 +390,4 @@ A dialog will open to select the format of the dataset to download.
 The available formats depend on the type of dataset (vector or raster).
 You can also choose the WGS84 coordinate system instead of native coordinate system, 
 crop the data to the current map extent, and choose to download only the currently filtered features
-(see :ref:`map_viewer` for more information on filtering features).
+(see :ref:`filtering_features` for more information on filtering features).
