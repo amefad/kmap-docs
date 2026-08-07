@@ -1,7 +1,5 @@
-.. KMaP Documentation – Pelagos Agreement Group
+.. _KMaP Documentation:
 .. English edition
-
-
 
 =======================================================
 KMaP – Knowledge Management Platform

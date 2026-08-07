@@ -111,6 +111,7 @@ The metadata editor is organised into tabs:
    * - **Additional info**
      - Access contrstaints, resolution and accuracy.     
 
+Use :guilabel:`next >>` or :guilabel:`<< back` to navigate through those steps. Once you have finished click on :guilabel:`Update`.
 
 Editing Metadata 
 ================
@@ -177,7 +178,7 @@ Date Fields
 Three date fields are available from the dropdown menu in the *Basic info* tab: 
 
 .. list-table::
-   :widths: 30 70
+   :widths: 30 30 70 
    :header-rows: 1
 
    * - Field
@@ -185,9 +186,9 @@ Three date fields are available from the dropdown menu in the *Basic info* tab:
      - Description
    * - **Creation** (creation date)
      - *Creation*
-     - When the resource was originally created or the data was collected. 
-       By default this is the date in wich the resource was uploaded into the platform.
-       If you know the exact date of creation, you can change it to improve metadata quality..
+     - | When the resource was originally created or the data was collected. 
+       | By default this is the date in wich the resource was uploaded into the platform.
+       | If you know the exact date of creation, you can change it to improve metadata quality..
    * - **Publication date**
      - *Added to catalog *
      - When the resource was published on KMaP (automatically generated).
@@ -290,26 +291,55 @@ You will see the resource type in brackets next to the title. You can add multip
 
 Supplemental information
 -------------------------
+
 FIll in this field with any additional information that is relevant to the resource, 
-for example the origin of the data and the lineage.
+for example the origin of the data and the lineage. 
+The field supports html formatting
 
 
+Dataset Attributes tab
+----------------------
+
+If you are editing metadata of a vector dataset, in this tab you can setup 
+how the attributes will be displayed in the information popup of the `Identify Tool`.
+You can set a more readable label that will be rendered instead of the fieldname, a description,
+whether the attribute should be visible or not and in which order sill appear.
+The display type by default is *label* but for attributes that contain URL an hyperlink will be showed 
+or if the attribute contains a path to media file, the media itself will be rendered.
+
+It is possible to define a completely custom ``HTML`` template for the *Get Feature Info* outcome. 
+That is possible by enabling the :guilabel:`Use a custom template?` flag as shown in the figure below.
 
 
+  .. figure:: ../_static/metadata_attributes_custom.png
+      :align: center
+      :width: 70%
 
+      Use a custom template
+
+  By using the keywork ``${properties.<attribute_name>``, you can tell to GeoNode to render the actual value of the attribute on the map.
+
+
+Additional Info
+---------------
+
+In this tab you can add aonstraints for use the data 
+(ask tha geoportal admin to add accesso constraints to the dropdown list) and an estimation
+of resolution and accuracy values.
+
+Advanced Metadata editing
+=========================
+
+On the top right of the page the button :guilabel:`Advanced Metadata` will open a single page
+with all metadata fields 
 
 Saving Your Changes
 ===================
 
-When you have finished editing, scroll to the bottom of the editor and click
-**Save** (or **Update** — the label may vary). A confirmation message will appear.
+When you have finished editing click
+:guilabel:`Update` on the bottom of the page. A confirmation message will appear.
 
-.. warning::
-   Metadata changes are applied immediately and are visible to all users with access to
-   the resource. There is no draft or staging mode.
 
-After saving, you are returned to the resource detail page where you can verify that
-all fields have been updated correctly.
 
 
 Metadata Completeness Checklist
@@ -341,4 +371,4 @@ Use the following checklist before publishing or sharing a resource:
    * - ☐
      - Point of contact is identified.
    * - ☐
-     - Thumbnail is representative.
+     - Thumbnail is representative and coherent with similar datasets.

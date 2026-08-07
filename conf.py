@@ -32,7 +32,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'pelagos'
 html_theme_path = ["_themes"]
 html_static_path = ['_static']
-
+html_use_index = False
 
 html_theme_options = {
     "body_max_width": "none",

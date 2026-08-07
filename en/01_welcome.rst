@@ -297,3 +297,71 @@ KMaP organises its datasets into the the following categories according with UNE
 
 Resources related to the `Scientific Studies financied by Pelagos Agreement <https://pelagos-sanctuary.org/scientific-studies/>`_ 
 are categorized under their respective themes, mainly Marine Biodiversity  and Pollution.
+
+Manage your user's profile
+==========================
+
+Updating the Profile
+=====================
+
+Once having an account you can enrich your profile with useful information, you can also edit or delete the existing ones.
+You can connect the account with your social network, associate many e-mail addresses to it and manage many options such as preferences about notifications.
+
+You can update these information anytime from your *Profile* page which is accessible from the user menu.
+
+So, click on your profile picture in the top right of the screen. A drop-down list will show. Click on :guilabel:`Profile` to enter the *Profile* settings page.
+
+.. figure:: ../_static/profile_link.png
+     :align: center
+     :width: 70%
+
+     Link to your profile
+
+The *Profile* page looks like the one shown in the picture below.
+
+.. figure:: ../_static/profile_page.png
+     :align: center
+     :width: 70%
+
+     User profile page
+
+Your personal information is shown under the username. 
+At the bottom of the page are listed all the resources associated to your *Profile*, you can decide to view only datasets, maps ,documents, dashboard or geostory by clicking on the corresponding tab.
+
+To add personal information to your profile choose the **Edit profile** link.
+
+Editing Profile Information
+---------------------------
+
+Your *Profile* contains personal information such as your address, your telephone number, your organization and so on but it is empty by default at the beginning.
+
+Through the :guilabel:`Edit profile` button of the *Profile* page you can set your details,
+ including your avatar.
+
+.. figure:: ../_static/profile_update_info.png
+     :align: center
+     :width: 70%
+
+     Updating Profile information
+
+| When finished, click :guilabel:`Update profile`. You will be redirected to the *Profile* page.
+| A message will confirm the profile has been correctly updated.
+
+
+Change the Password
+-------------------
+
+To change your password, click on the :guilabel:`Set/Change password` link of the *Profile* page
+You will be asked to enter your current password and the new one (two times). 
+Click on :guilabel:`Change my password` to perform the change.
+
+.. figure:: ../_static/change_password.png
+     :align: center
+     :width: 70%
+
+     Change your password
+
+If no errors occur you will see a confirmation message.
+
+
+

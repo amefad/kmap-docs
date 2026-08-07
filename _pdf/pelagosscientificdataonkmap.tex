@@ -31,24 +31,24 @@
 
 
 
-\setmainfont{LiberationSerif}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
-\setsansfont{LiberationSans}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
-\setmonofont{LiberationMono}[
-  UprightFont    = *,
-  ItalicFont     = *-Italic,
-  BoldFont       = *-Bold,
-  BoldItalicFont = *-BoldItalic
-]
+      \setmainfont{LiberationSerif}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
+      \setsansfont{LiberationSans}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
+      \setmonofont{LiberationMono}[
+        UprightFont    = *,
+        ItalicFont     = *-Italic,
+        BoldFont       = *-Bold,
+        BoldItalicFont = *-BoldItalic
+      ]
 
 
 
@@ -74,7 +74,7 @@
 
 
 \title{Pelagos Scientific data on KMaP}
-\date{Mar 27, 2026}
+\date{Aug 07, 2026}
 \release{0.1}
 \author{Pelagos Agreement}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -87,7 +87,7 @@
 \pagestyle{plain}
 \sphinxtableofcontents
 \pagestyle{normal}
-\phantomsection\label{\detokenize{index::doc}}
+\phantomsection\label{\detokenize{index::doc}}\phantomsection\label{\detokenize{index:kmap-documentation}}
 
 
 \sphinxAtStartPar
@@ -133,6 +133,13 @@ KMaP is built on \sphinxhref{https://geonode.org/}{GeoNode}, an open\sphinxhyphe
 managing and sharing geospatial information. It acts as a unified access hub to the
 environmental and spatial knowledge heritage of the Mediterranean region.
 
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{kmap_home}.png}
+\caption{Screenshot of KMaP Home Page}\label{\detokenize{01_welcome:id1}}\end{figure}
+
 \sphinxAtStartPar
 The platform is structured around three hubs:
 
@@ -157,8 +164,10 @@ Description
 \sphinxAtStartPar
 \sphinxstylestrong{Data Hub}
 &
-\sphinxAtStartPar
-\sphinxstyleemphasis{Maps} {\color{red}\bfseries{}|mapsbut|}
+\begin{DUlineblock}{0em}
+\item[] \sphinxstyleemphasis{Maps}
+\item[] \sphinxincludegraphics[width=96\sphinxpxdimen]{{maps}.png}
+\end{DUlineblock}
 &
 \sphinxAtStartPar
 Geospatial data: datasets, interactive maps, dashboards, and geostories.
@@ -167,8 +176,10 @@ Geospatial data: datasets, interactive maps, dashboards, and geostories.
 \sphinxAtStartPar
 \sphinxstylestrong{Knowledge Hub}
 &
-\sphinxAtStartPar
-\sphinxstyleemphasis{Library} {\color{red}\bfseries{}|librarybut|}
+\begin{DUlineblock}{0em}
+\item[] \sphinxstyleemphasis{Library}
+\item[] \sphinxincludegraphics[width=96\sphinxpxdimen]{{library}.png}
+\end{DUlineblock}
 &
 \sphinxAtStartPar
 Documentary heritage: reports, publications, and reference documents.
@@ -177,8 +188,10 @@ Documentary heritage: reports, publications, and reference documents.
 \sphinxAtStartPar
 \sphinxstylestrong{Exchange Hub}
 &
-\sphinxAtStartPar
-\sphinxstyleemphasis{Network} {\color{red}\bfseries{}|networkbut|}
+\begin{DUlineblock}{0em}
+\item[] \sphinxstyleemphasis{Network}
+\item[] \sphinxincludegraphics[width=96\sphinxpxdimen]{{network}.png}
+\end{DUlineblock}
 &
 \sphinxAtStartPar
 Collaboration and knowledge exchange.
@@ -208,6 +221,13 @@ KMaP organises all content into five resource types. Each type serves a distinct
 A \sphinxstylestrong{Dataset} is a geographic data layer representing real\sphinxhyphen{}world features or measurements.
 It is the foundational building block of the platform — the raw material from which maps,
 dashboards, and analyses are constructed.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{01_dataset}.png}
+\caption{Dataset Page}\label{\detokenize{01_welcome:id2}}\end{figure}
 
 \sphinxAtStartPar
 Datasets can be:
@@ -271,12 +291,26 @@ can be searched and filtered, and can be linked to Datasets or Maps.
 Supported file types include: \sphinxcode{\sphinxupquote{.pdf}}, \sphinxcode{\sphinxupquote{.docx}}, \sphinxcode{\sphinxupquote{.xlsx}}, \sphinxcode{\sphinxupquote{.pptx}}, \sphinxcode{\sphinxupquote{.jpg}},
 \sphinxcode{\sphinxupquote{.png}}, \sphinxcode{\sphinxupquote{.tif}}, \sphinxcode{\sphinxupquote{.mp4}}, \sphinxcode{\sphinxupquote{.zip}}, and many others.
 
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{01_document}.png}
+\caption{Document Page}\label{\detokenize{01_welcome:id3}}\end{figure}
+
 
 \subsection{Map}
 \label{\detokenize{01_welcome:map}}
 \sphinxAtStartPar
 A \sphinxstylestrong{Map} is an interactive, multi\sphinxhyphen{}layer web map created by composing one or more
 Datasets. Maps are built and viewed using the integrated \sphinxstylestrong{MapStore} map viewer.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{call1_map_zoom}.png}
+\caption{Map Page}\label{\detokenize{01_welcome:id4}}\end{figure}
 
 \sphinxAtStartPar
 Each Map:
@@ -533,7 +567,7 @@ and can be copied directly into QGIS or any other OGC\sphinxhyphen{}compatible c
 \capstart
 
 \noindent\sphinxincludegraphics{{ogc_services}.png}
-\caption{The ogc service links in metadata section}\label{\detokenize{01_welcome:id1}}\end{figure}
+\caption{The ogc service links in metadata section}\label{\detokenize{01_welcome:id5}}\end{figure}
 
 \begin{sphinxadmonition}{tip}{Tip:}
 \sphinxAtStartPar
@@ -582,85 +616,95 @@ KMaP organises its datasets into the the following categories according with UNE
 
 \sphinxAtStartPar
 Resources related to the \sphinxhref{https://pelagos-sanctuary.org/scientific-studies/}{Scientific Studies financied by Pelagos Agreement}
-are categorized under dtheir respective themes, mainly Marine Biodiversity  and Pollution.
+are categorized under their respective themes, mainly Marine Biodiversity  and Pollution.
+
+
+\section{Manage your user’s profile}
+\label{\detokenize{01_welcome:manage-your-user-s-profile}}
+
+\section{Updating the Profile}
+\label{\detokenize{01_welcome:updating-the-profile}}
+\sphinxAtStartPar
+Once having an account you can enrich your profile with useful information, you can also edit or delete the existing ones.
+You can connect the account with your social network, associate many e\sphinxhyphen{}mail addresses to it and manage many options such as preferences about notifications.
+
+\sphinxAtStartPar
+You can update these information anytime from your \sphinxstyleemphasis{Profile} page which is accessible from the user menu.
+
+\sphinxAtStartPar
+So, click on your profile picture in the top right of the screen. A drop\sphinxhyphen{}down list will show. Click on \sphinxguilabel{Profile} to enter the \sphinxstyleemphasis{Profile} settings page.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{profile_link}.png}
+\caption{Link to your profile}\label{\detokenize{01_welcome:id6}}\end{figure}
+
+\sphinxAtStartPar
+The \sphinxstyleemphasis{Profile} page looks like the one shown in the picture below.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{profile_page}.png}
+\caption{User profile page}\label{\detokenize{01_welcome:id7}}\end{figure}
+
+\sphinxAtStartPar
+Your personal information is shown under the username.
+At the bottom of the page are listed all the resources associated to your \sphinxstyleemphasis{Profile}, you can decide to view only datasets, maps ,documents, dashboard or geostory by clicking on the corresponding tab.
+
+\sphinxAtStartPar
+To add personal information to your profile choose the \sphinxstylestrong{Edit profile} link.
+
+
+\subsection{Editing Profile Information}
+\label{\detokenize{01_welcome:editing-profile-information}}
+\sphinxAtStartPar
+Your \sphinxstyleemphasis{Profile} contains personal information such as your address, your telephone number, your organization and so on but it is empty by default at the beginning.
+\begin{description}
+\sphinxlineitem{Through the \sphinxguilabel{Edit profile} button of the \sphinxstyleemphasis{Profile} page you can set your details,}
+\sphinxAtStartPar
+including your avatar.
+
+\end{description}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{profile_update_info}.png}
+\caption{Updating Profile information}\label{\detokenize{01_welcome:id8}}\end{figure}
+
+\begin{DUlineblock}{0em}
+\item[] When finished, click \sphinxguilabel{Update profile}. You will be redirected to the \sphinxstyleemphasis{Profile} page.
+\item[] A message will confirm the profile has been correctly updated.
+\end{DUlineblock}
+
+
+\subsection{Change the Password}
+\label{\detokenize{01_welcome:change-the-password}}
+\sphinxAtStartPar
+To change your password, click on the \sphinxguilabel{Set/Change password} link of the \sphinxstyleemphasis{Profile} page
+You will be asked to enter your current password and the new one (two times).
+Click on \sphinxguilabel{Change my password} to perform the change.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{change_password}.png}
+\caption{Change your password}\label{\detokenize{01_welcome:id9}}\end{figure}
+
+\sphinxAtStartPar
+If no errors occur you will see a confirmation message.
 
 \sphinxstepscope
 
 
 \chapter{How to Find and Visualise Your Data}
 \label{\detokenize{02_find_and_visualize:how-to-find-and-visualise-your-data}}\label{\detokenize{02_find_and_visualize:find-en}}\label{\detokenize{02_find_and_visualize::doc}}
-\begin{sphinxcontents}
-\sphinxstylecontentstitle{On this page}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id1}}{\hyperref[\detokenize{02_find_and_visualize:accessing-the-catalogue}]{\sphinxcrossref{Accessing the Catalogue}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id2}}{\hyperref[\detokenize{02_find_and_visualize:filtering-and-searching-the-catalogue}]{\sphinxcrossref{Filtering and Searching the Catalogue}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id3}}{\hyperref[\detokenize{02_find_and_visualize:using-the-search-bar}]{\sphinxcrossref{Using the Search Bar}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id4}}{\hyperref[\detokenize{02_find_and_visualize:using-filters}]{\sphinxcrossref{Using Filters}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id5}}{\hyperref[\detokenize{02_find_and_visualize:step-by-step-example-finding-a-pelagos-dataset}]{\sphinxcrossref{Step\sphinxhyphen{}by\sphinxhyphen{}Step Example: Finding a Pelagos Dataset}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id6}}{\hyperref[\detokenize{02_find_and_visualize:step-1-open-the-catalogue}]{\sphinxcrossref{Step 1 – Open the catalogue}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id7}}{\hyperref[\detokenize{02_find_and_visualize:step-2-search-by-keyword}]{\sphinxcrossref{Step 2 – Search by keyword}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id8}}{\hyperref[\detokenize{02_find_and_visualize:step-3-filter-to-datasets-only}]{\sphinxcrossref{Step 3 – Filter to Datasets only}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id9}}{\hyperref[\detokenize{02_find_and_visualize:step-4-select-a-dataset}]{\sphinxcrossref{Step 4 – Select a Dataset}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id10}}{\hyperref[\detokenize{02_find_and_visualize:the-dataset-detail-page}]{\sphinxcrossref{The Dataset Detail Page}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id11}}{\hyperref[\detokenize{02_find_and_visualize:thumbnail-and-actions}]{\sphinxcrossref{Thumbnail and Actions}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id12}}{\hyperref[\detokenize{02_find_and_visualize:interactive-preview}]{\sphinxcrossref{Interactive Preview}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id13}}{\hyperref[\detokenize{02_find_and_visualize:metadata-panel}]{\sphinxcrossref{Metadata Panel}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id14}}{\hyperref[\detokenize{02_find_and_visualize:full-metadata-view}]{\sphinxcrossref{Full Metadata View}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{02_find_and_visualize:id15}}{\hyperref[\detokenize{02_find_and_visualize:downloading-a-dataset}]{\sphinxcrossref{Downloading a Dataset}}}
-
-\end{itemize}
-
-\end{itemize}
-\end{sphinxcontents}
-
 \sphinxAtStartPar
 This section explains how to discover resources in KMaP, apply filters to narrow your
 search, and explore the detail page and preview of a Dataset.
@@ -680,7 +724,7 @@ There are two main ways to reach it:
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Directly via URL} – navigate to \sphinxurl{https://kmap.info-rac.org/resources/}
+\sphinxstylestrong{Directly via URL} – navigate to \sphinxurl{https://kmap.info-rac.org/maps/\#/}
 
 \end{enumerate}
 
@@ -688,22 +732,49 @@ There are two main ways to reach it:
 The catalogue page displays resources as cards, each showing a thumbnail, title, resource
 type, and summary metadata.
 
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_home}.png}
+\caption{Catalogue initial view}\label{\detokenize{02_find_and_visualize:id1}}\end{figure}
+
 \begin{sphinxadmonition}{tip}{Tip:}
 \sphinxAtStartPar
 Make sure you are \sphinxstylestrong{logged in} to see resources that are shared exclusively with the
 Pelagos Agreement group. Resources restricted to your group are not visible to
-unauthenticated users.
+unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
+To view the catalog as a contributor and to access the resources for editing purposes see {\hyperref[\detokenize{03_managing_metadata:metadata-en}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{Managing Metadata}}}}}
 \end{sphinxadmonition}
 
 
 \section{Filtering and Searching the Catalogue}
-\label{\detokenize{02_find_and_visualize:filtering-and-searching-the-catalogue}}
+\label{\detokenize{02_find_and_visualize:filtering-and-searching-the-catalogue}}\label{\detokenize{02_find_and_visualize:filtering}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter01}.png}
+\caption{Catalogue filter button}\label{\detokenize{02_find_and_visualize:id2}}\end{figure}
+
+\sphinxAtStartPar
+The initial view of the catalogue contains all the resources (maps and datasets) that your user is allowed to see.
+You need to use the \sphinxstylestrong{Filter} tool to restrict the list of resources and find the dataset or map of your interest.
+
 
 \subsection{Using the Search Bar}
 \label{\detokenize{02_find_and_visualize:using-the-search-bar}}
 \sphinxAtStartPar
-The search bar at the top of the catalogue page accepts free\sphinxhyphen{}text queries. It searches
-across titles, abstracts, and keyword fields.
+Clicking on the \sphinxcode{\sphinxupquote{Filter}} button on top left cornere of the catalogue view will open the filter panel.
+There are two tabs and by default the tab with Kmap categories is selected. The search bar is on the topo of the filter panel and accepts free\sphinxhyphen{}text queries.
+It searches across titles, abstracts, and keyword fields.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{search_bar_comp}.png}
+\caption{Sequence of filtering catalogue using search bar}\label{\detokenize{02_find_and_visualize:id3}}\end{figure}
 
 \sphinxAtStartPar
 To find Pelagos\sphinxhyphen{}related content:
@@ -727,12 +798,23 @@ the Pelagos Agreement group when publishing resources on KMaP. Using these exact
 will return the most relevant results.
 \end{sphinxadmonition}
 
-
-\subsection{Using Filters}
-\label{\detokenize{02_find_and_visualize:using-filters}}
 \sphinxAtStartPar
-On the left side of the catalogue page you will find a filter panel. Filters can be
-combined freely and are applied immediately.
+As long as you type into the search bar the catalogue view will update: hide the filter panel to view the number of filtered resource.
+the appearance of the \sphinxcode{\sphinxupquote{Filter}} butotn will change. Remember to click on \sphinxcode{\sphinxupquote{Clear filters}} before make a new search
+
+
+\subsection{Using advanced filter}
+\label{\detokenize{02_find_and_visualize:using-advanced-filter}}\label{\detokenize{02_find_and_visualize:advanced-filter}}
+\sphinxAtStartPar
+On the \sphinxcode{\sphinxupquote{Advanced}} tab of the filter panel you will find a detailed list of filters based on the metadata fileds of the resources.
+Filters can be combined freely and are applied immediately.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter02}.png}
+\caption{Filter for Pelagos datasets}\label{\detokenize{02_find_and_visualize:id4}}\end{figure}
 
 
 \begin{savenotes}\sphinxattablestart
@@ -761,7 +843,7 @@ results to one type.
 \sphinxstylestrong{Keywords}
 &
 \sphinxAtStartPar
-Type or select a keyword (e.g. \sphinxcode{\sphinxupquote{pelagos sanctuary}}) to filter by thematic tag.
+Type or select a keyword (e.g. \sphinxcode{\sphinxupquote{pelagos agreement}}) to filter by thematic tag.
 \\
 \sphinxhline
 \sphinxAtStartPar
@@ -807,7 +889,7 @@ Set \sphinxstylestrong{Resource type} → \sphinxstyleemphasis{Dataset}
 
 \item {} 
 \sphinxAtStartPar
-In the \sphinxstylestrong{Keywords} filter, type \sphinxcode{\sphinxupquote{pelagos sanctuary}}
+In the \sphinxstylestrong{Keywords} filter, type \sphinxcode{\sphinxupquote{pelagos agreement}}
 
 \item {} 
 \sphinxAtStartPar
@@ -823,112 +905,161 @@ The catalogue will update to show only datasets tagged with that keyword.
 The following example walks through finding, previewing, and reading the metadata of a
 Dataset relevant to the Pelagos Agreement.
 
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter03}.png}
+\caption{Filter for Pelagos datasets}\label{\detokenize{02_find_and_visualize:id5}}\end{figure}
+
 
 \subsection{Step 1 – Open the catalogue}
 \label{\detokenize{02_find_and_visualize:step-1-open-the-catalogue}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter01}.png}
+\caption{Open filter panel}\label{\detokenize{02_find_and_visualize:id6}}\end{figure}
+
 \sphinxAtStartPar
 Go to \sphinxurl{https://kmap.info-rac.org} and click \sphinxstylestrong{Maps} in the top navigation bar.
-This opens the Data Hub catalogue, filtered to spatial resource types.
+This opens the  catalogue, filtered to spatial resource types (datasets and maps).
+Click on the \sphinxcode{\sphinxupquote{Filter}} button then select \sphinxstylestrong{Advanced} tab
 
 
-\subsection{Step 2 – Search by keyword}
-\label{\detokenize{02_find_and_visualize:step-2-search-by-keyword}}
+\subsection{Step 2 – Filter to Datasets only}
+\label{\detokenize{02_find_and_visualize:step-2-filter-to-datasets-only}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter02}.png}
+\caption{Advanced filter}\label{\detokenize{02_find_and_visualize:id7}}\end{figure}
+
 \sphinxAtStartPar
-In the search bar, type:
+In the \sphinxstylestrong{Advanced} tab of the filter panel, under \sphinxstylestrong{Resources} list of checkbox, tick \sphinxstylestrong{Dataset}.
+The list now shows only resource of type datasets.
 
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{n}{pelagos} \PYG{n}{sanctuary}
-\end{sphinxVerbatim}
+
+\subsection{Step 3 – Search by keyword}
+\label{\detokenize{02_find_and_visualize:step-3-search-by-keyword}}
+\sphinxAtStartPar
+In the \sphinxstylestrong{keyword} form field start typing \sphinxcode{\sphinxupquote{pelagos agreement}} and select this exact keyword from the dropdown list.
 
 \sphinxAtStartPar
-Press \sphinxstylestrong{Enter}. The results panel updates to show resources matching that keyword.
+All the scientific calls results has been tagged with this keyword (two words).
+Other resources not managed by the agreement but regarding the Pelagos sanctuary may have the \sphinxcode{\sphinxupquote{pelegos sanctuary}} keyword.
 
-
-\subsection{Step 3 – Filter to Datasets only}
-\label{\detokenize{02_find_and_visualize:step-3-filter-to-datasets-only}}
 \sphinxAtStartPar
-In the left filter panel, under \sphinxstylestrong{Resource type}, tick \sphinxstylestrong{Dataset}.
-The list now shows only datasets tagged with \sphinxstyleemphasis{pelagos sanctuary}.
+The catalogue now list only the resources of type datasets that are tagged with keyword \sphinxstylestrong{Pelagos agreement}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_filter03}.png}
+\caption{Filter for Pelagos datasets}\label{\detokenize{02_find_and_visualize:id8}}\end{figure}
 
 
 \subsection{Step 4 – Select a Dataset}
 \label{\detokenize{02_find_and_visualize:step-4-select-a-dataset}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{dataset_view}.png}
+\caption{The view button}\label{\detokenize{02_find_and_visualize:id9}}\end{figure}
+
 \sphinxAtStartPar
-Click on a dataset card to open its \sphinxstylestrong{detail page}.
+Click on the \sphinxcode{\sphinxupquote{View}} button of a dataset card to open its \sphinxstylestrong{detail page}.
 
 
 \section{The Dataset Detail Page}
 \label{\detokenize{02_find_and_visualize:the-dataset-detail-page}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{dataset_detail}.png}
+\caption{The dataset detail page}\label{\detokenize{02_find_and_visualize:id10}}\end{figure}
+
 \sphinxAtStartPar
-The detail page is the central information page for any resource. It is divided into
+The detail page contains the main information for any resource. It is divided into
 several sections.
 
 
-\subsection{Thumbnail and Actions}
-\label{\detokenize{02_find_and_visualize:thumbnail-and-actions}}
+\subsection{Information Panel}
+\label{\detokenize{02_find_and_visualize:information-panel}}
 \sphinxAtStartPar
-At the top of the page you will see:
+The resource detail page by default shows the \sphinxstylestrong{information panel} that summarize the essential elements of the dataset.
+
+\sphinxAtStartPar
+On the top left of the panel there is the  \sphinxstylestrong{map thumbnail} usualy a small preview image of the dataset.
+The thumbnail can be replaced by the users that have edit permissions on metadata, either re\sphinxhyphen{}generating
+the map\sphinxhyphen{}preview or uploading a custom image. The thumbnail is used in the catalogue cards and in the search results.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{det_thumbnail}.png}
+\caption{Thumbnail area in information panel}\label{\detokenize{02_find_and_visualize:id11}}\end{figure}
+
+\sphinxAtStartPar
+On the top center of the panel there is the title of the dataset and just below it the owner of this resource.
+Clicking on the ownner’s name you will
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{det_title}.png}
+\caption{Dataset title in information panel}\label{\detokenize{02_find_and_visualize:id12}}\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{det_actions}.png}
+\caption{Dataset Action Button}\label{\detokenize{02_find_and_visualize:id13}}\end{figure}
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-A \sphinxstylestrong{map thumbnail} or preview image of the dataset.
-
-\item {} 
-\sphinxAtStartPar
-Action buttons:
+The action buttons :
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{View map} – opens the dataset in the interactive map viewer.
+\sphinxincludegraphics[height=3.5em]{{det_bt_fav}.png} \sphinxstylestrong{Add to favorites} – Adds this dataset to your favorites. You can easy find your favorites using  {\hyperref[\detokenize{02_find_and_visualize:advanced-filter}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{advanced filter}}}}}
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Download} – downloads the dataset in your chosen format.
+\sphinxincludegraphics[height=3.5em]{{det_bt_dwl}.png} \sphinxstylestrong{Download} – downloads the dataset in ESRI Shapefile format (for vector datasets) or Geotiff (for raster datasets).
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Edit} (if you have permission) – opens the metadata editor.
+\sphinxincludegraphics[height=3.5em]{{det_bt_share}.png} \sphinxstylestrong{Share} – copies the permalink to the resource.
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Share} – copies the permalink to the resource.
+\sphinxincludegraphics[height=3.5em]{{det_bt_services}.png} \sphinxstylestrong{OGC services} – copies the URL of OGC services (WMS and WCS/WFS depending on user’s authorization) for this dataset only
 
 \end{itemize}
 
 \end{itemize}
 
 
-\subsection{Interactive Preview}
-\label{\detokenize{02_find_and_visualize:interactive-preview}}
-\sphinxAtStartPar
-Below the thumbnail, the \sphinxstylestrong{map preview panel} displays the dataset rendered on a
-basemap. You can:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Pan and zoom using mouse or touch gestures.
+\subsection{Metadata Preview}
+\label{\detokenize{02_find_and_visualize:metadata-preview}}
+\begin{figure}[htbp]
+\centering
+\capstart
 
-\item {} 
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{det_tabs}.png}
+\caption{The tabs of metadata preview}\label{\detokenize{02_find_and_visualize:id14}}\end{figure}
+
 \sphinxAtStartPar
-Click on a feature to open a \sphinxstylestrong{pop\sphinxhyphen{}up} showing its attribute values.
-
-\item {} 
-\sphinxAtStartPar
-Use the layer panel (☰ icon) to toggle visibility or inspect the legend.
-
-\end{itemize}
-
-\begin{sphinxadmonition}{note}{Note:}
-\sphinxAtStartPar
-The preview is a live, interactive map — not a static image. You can explore the
-data spatially before deciding whether to download or use it.
-\end{sphinxadmonition}
-
-
-\subsection{Metadata Panel}
-\label{\detokenize{02_find_and_visualize:metadata-panel}}
-\sphinxAtStartPar
-Below the preview, the \sphinxstylestrong{metadata panel} contains detailed information about the
+The \sphinxstylestrong{info} tab contains detailed information about the
 dataset. The key fields are:
 
 
@@ -947,25 +1078,24 @@ Description
 \sphinxmidrule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
-\sphinxstylestrong{Title}
+\sphinxstylestrong{Owner}
 &
 \sphinxAtStartPar
-The full name of the dataset.
+The user or organisation responsible for the dataset.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Abstract}
+\sphinxstylestrong{Creation/Added to Catalog/Last modification}
 &
 \sphinxAtStartPar
-A plain\sphinxhyphen{}language description of what the dataset contains and its purpose.
+Dates of creation, addition to the catalogue, and last modification.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Keywords}
+\sphinxstylestrong{Resource type}
 &
 \sphinxAtStartPar
-Thematic and geographic tags (look for \sphinxcode{\sphinxupquote{pelagos sanctuary}} or
-\sphinxcode{\sphinxupquote{pelagos agreement}} here).
+Dataset, Map, Document, GeoStory, or Dashboard.
 \\
 \sphinxhline
 \sphinxAtStartPar
@@ -976,31 +1106,31 @@ The INSPIRE or thematic category (e.g. \sphinxstyleemphasis{Marine Biodiversity}
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Date}
+\sphinxstylestrong{Point of contact}
 &
 \sphinxAtStartPar
-Publication date and last modification date.
+Usually metadata manager or dataset owner.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Spatial extent}
+\sphinxstylestrong{Attribution}
 &
 \sphinxAtStartPar
-Bounding box or geographic region covered by the data.
+Copyright and credit information for the dataset.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Coordinate Reference System (CRS)}
+\sphinxstylestrong{Keywords}
 &
 \sphinxAtStartPar
-The projection used (e.g. WGS 84 / EPSG:4326).
+Thematic and geographic tags.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Owner}
+\sphinxstylestrong{Regions}
 &
 \sphinxAtStartPar
-The user or organisation responsible for the dataset.
+The geographic regions related to the dataset.
 \\
 \sphinxhline
 \sphinxAtStartPar
@@ -1018,10 +1148,10 @@ Who to contact for questions about the data.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{OGC Services}
+\sphinxstylestrong{Supplemental Information}
 &
 \sphinxAtStartPar
-WMS, WFS, and WCS endpoint URLs for direct integration in GIS software.
+Other information mainly related to origin and lineage of the dataset
 \\
 \sphinxhline
 \sphinxAtStartPar
@@ -1035,123 +1165,102 @@ Links to Maps, Documents, or other Datasets connected to this resource.
 \sphinxtableafterendhook\par
 \sphinxattableend\end{savenotes}
 
+\sphinxAtStartPar
+On the bottom of the \sphinxstylestrong{info} tab there is a link to the \sphinxstylestrong{full metadata} page.
+The other tabs \sphinxstylestrong{Location} and \sphinxstylestrong{Attributes} show the extent and attribute of the dataset.
+The tab  \sphinxstylestrong{Linked resources} shows the resources that are linked to this dataset.
 
-\subsection{Full Metadata View}
-\label{\detokenize{02_find_and_visualize:full-metadata-view}}
+
+\subsection{Full Metadata Page}
+\label{\detokenize{02_find_and_visualize:full-metadata-page}}
 \sphinxAtStartPar
 To see the complete metadata record, click the \sphinxstylestrong{Metadata} tab (or the \sphinxstyleemphasis{View full
 metadata} link near the bottom of the detail page). This view displays all metadata
-fields in their full form, including ISO 19115 / INSPIRE\sphinxhyphen{}compliant fields.
+fields in their full form.
 
-
-\subsection{Downloading a Dataset}
-\label{\detokenize{02_find_and_visualize:downloading-a-dataset}}
+\begin{sphinxadmonition}{tip}{Tip:}
 \sphinxAtStartPar
-Click the \sphinxstylestrong{Download} button on the detail page. A format selector appears. Common
-options include:
+If you’re par of \sphinxstylestrong{Pelagos} group as a contributor your user may be authorized to
+\sphinxstylestrong{edit} metatadata of selected resources. To improve metadata content see {\hyperref[\detokenize{03_managing_metadata:metadata-en}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{Managing Metadata}}}}}.
+\end{sphinxadmonition}
+
+\sphinxAtStartPar
+To download the metadata in a standard format, e.g ISO 19115 or Dublin Core, you will find the
+corrispondente entry in the \sphinxstylestrong{Download} menu.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{download_metadata}.png}
+\caption{Download menu for data and metadata}\label{\detokenize{02_find_and_visualize:id15}}\end{figure}
+
+
+\subsection{Interactive Preview}
+\label{\detokenize{02_find_and_visualize:interactive-preview}}
+\sphinxAtStartPar
+You can hide the information panel choosing the \sphinxstyleemphasis{X} button on the top right. To show again the
+information panel chose
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{dat_preview_info}.png}
+\caption{Dataset preview page}\label{\detokenize{02_find_and_visualize:id16}}\end{figure}
+
+\sphinxAtStartPar
+On the map previewthe dataset is endered on a basemap. You can:
 \begin{itemize}
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{ESRI Shapefile} – for use in QGIS, ArcGIS, and most desktop GIS.
+Pan and zoom using mouse or touch gestures.
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{GeoJSON} – for web mapping and lightweight GIS use.
+Click on a feature to open a \sphinxstylestrong{pop\sphinxhyphen{}up} showing its attribute values.
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{KML/KMZ} – for Google Earth.
+Use the legend  panel \raisebox{-\height}{\sphinxincludegraphics[height=1.5em]{{legend_toggle}.png}} to toggle visibility or inspect the legend.
 
 \item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{GeoPackage} – a single\sphinxhyphen{}file format supported by QGIS.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{GeoTIFF} – for raster datasets.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{CSV} – attribute table only (no geometry).
+Visualize data attribute table and filter dataset by attribute value or spatial extent
 
 \end{itemize}
 
+\begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-Select your preferred format and click \sphinxstylestrong{Download} to save the file.
+The preview is a live, interactive map — not a static image. You can explore the
+data spatially before deciding whether to download or use it.
+\end{sphinxadmonition}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{download_metadata}.png}
+\caption{Download menu for data and metadata}\label{\detokenize{02_find_and_visualize:id17}}\end{figure}
+
+\sphinxAtStartPar
+Please refer to {\hyperref[\detokenize{04_exploring_maps:map-viewer}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{The Map Viewer Interface}}}}} section for further information on the map viewer.
+Download dataset
+—————\sphinxhyphen{}
+
+\sphinxAtStartPar
+To download the dataset choose the \sphinxstylestrong{Dataset} entry from the \sphinxstylestrong{Download} menu.
+A dialog will open to select the format of the dataset to download.
+The available formats depend on the type of dataset (vector or raster).
+You can also choose the WGS84 coordinate system instead of native coordinate system,
+crop the data to the current map extent, and choose to download only the currently filtered features
+(see {\hyperref[\detokenize{04_exploring_maps:filtering-features}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{View attribute table  and filtering Features}}}}} for more information on filtering features).
 
 \sphinxstepscope
 
 
 \chapter{Managing Metadata}
 \label{\detokenize{03_managing_metadata:managing-metadata}}\label{\detokenize{03_managing_metadata:metadata-en}}\label{\detokenize{03_managing_metadata::doc}}
-\begin{sphinxcontents}
-\sphinxstylecontentstitle{On this page}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id1}}{\hyperref[\detokenize{03_managing_metadata:who-can-edit-metadata}]{\sphinxcrossref{Who Can Edit Metadata?}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id2}}{\hyperref[\detokenize{03_managing_metadata:opening-the-metadata-editor}]{\sphinxcrossref{Opening the Metadata Editor}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id3}}{\hyperref[\detokenize{03_managing_metadata:overview-of-the-metadata-editor}]{\sphinxcrossref{Overview of the Metadata Editor}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id4}}{\hyperref[\detokenize{03_managing_metadata:editing-key-metadata-fields}]{\sphinxcrossref{Editing Key Metadata Fields}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id5}}{\hyperref[\detokenize{03_managing_metadata:title}]{\sphinxcrossref{Title}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id6}}{\hyperref[\detokenize{03_managing_metadata:abstract}]{\sphinxcrossref{Abstract}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id7}}{\hyperref[\detokenize{03_managing_metadata:keywords}]{\sphinxcrossref{Keywords}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id8}}{\hyperref[\detokenize{03_managing_metadata:category}]{\sphinxcrossref{Category}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id9}}{\hyperref[\detokenize{03_managing_metadata:spatial-extent}]{\sphinxcrossref{Spatial Extent}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id10}}{\hyperref[\detokenize{03_managing_metadata:date-fields}]{\sphinxcrossref{Date Fields}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id11}}{\hyperref[\detokenize{03_managing_metadata:licence}]{\sphinxcrossref{Licence}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id12}}{\hyperref[\detokenize{03_managing_metadata:point-of-contact}]{\sphinxcrossref{Point of Contact}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id13}}{\hyperref[\detokenize{03_managing_metadata:thumbnail}]{\sphinxcrossref{Thumbnail}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id14}}{\hyperref[\detokenize{03_managing_metadata:saving-your-changes}]{\sphinxcrossref{Saving Your Changes}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{03_managing_metadata:id15}}{\hyperref[\detokenize{03_managing_metadata:metadata-completeness-checklist}]{\sphinxcrossref{Metadata Completeness Checklist}}}
-
-\end{itemize}
-\end{sphinxcontents}
-
 \sphinxAtStartPar
 Good metadata is what makes a resource discoverable and trustworthy. This section
 explains how to view and edit the metadata of a Dataset or Document in KMaP.
@@ -1186,21 +1295,14 @@ Metadata editing rights
 \sphinxmidrule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
-\sphinxstylestrong{Resource owner}
+\sphinxstylestrong{Resource owner} ans \sphinxstylestrong{Superusers}
 &
 \sphinxAtStartPar
-Full edit rights on all metadata fields.
+Full edit rights on data and metadata fields.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Group manager}
-&
-\sphinxAtStartPar
-Can edit resources owned by any member of their group.
-\\
-\sphinxhline
-\sphinxAtStartPar
-\sphinxstylestrong{Group member (editor)}
+\sphinxstylestrong{Pelagos Group member (editor)}
 &
 \sphinxAtStartPar
 Can edit resources explicitly shared with the group with \sphinxstyleemphasis{edit} permission.
@@ -1219,58 +1321,59 @@ Read\sphinxhyphen{}only access. Cannot edit metadata.
 
 \sphinxAtStartPar
 If you see an \sphinxstylestrong{Edit} button on the resource detail page, you have the right to edit
-that resource’s metadata.
+that resource’s metadata. All users in contributors group have access to the
 
 
-\section{Opening the Metadata Editor}
-\label{\detokenize{03_managing_metadata:opening-the-metadata-editor}}
+\section{Opening the detail page in edit mode}
+\label{\detokenize{03_managing_metadata:opening-the-detail-page-in-edit-mode}}
 \sphinxAtStartPar
-There are two ways to open the metadata editor:
+If you open a resource from the \sphinxstylestrong{maps} menu the detail page is showed in read\sphinxhyphen{}only mode, as a contributor user you have an acces to
+TO open the catalogue in edit mode select the \sphinxstylestrong{Catalogue} entry from the user menu.
+Fist Click on the user logo  on the top right corner and then on the  \sphinxstylestrong{Catalogue} link.
+You can also go directly to the url \sphinxurl{https://kmap.info-rac.org/catalogue/}.
 
-\sphinxAtStartPar
-\sphinxstylestrong{From the detail page:}
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Navigate to the resource detail page (see {\hyperref[\detokenize{02_find_and_visualize:find-en}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{How to Find and Visualise Your Data}}}}} for how to find a resource).
+\begin{figure}[htbp]
+\centering
+\capstart
 
-\item {} 
-\sphinxAtStartPar
-Click the \sphinxstylestrong{Edit} button (pencil icon) in the top\sphinxhyphen{}right action bar.
-
-\item {} 
-\sphinxAtStartPar
-A dropdown menu appears. Select \sphinxstylestrong{Edit metadata}.
-
-\end{enumerate}
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_menu}.png}
+\caption{Catalogue entry in user’s menu}\label{\detokenize{03_managing_metadata:id1}}\end{figure}
 
 \sphinxAtStartPar
-\sphinxstylestrong{From the catalogue:}
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-In the catalogue, hover over a resource card.
+The catalogue view in edit mode lists all resources and filters as already explained in the {\hyperref[\detokenize{02_find_and_visualize:find-en}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{How to Find and Visualise Your Data}}}}}
+section. You can see the difference because there is an \sphinxstylestrong{Add Resource} button in the top right
+of the section and the page does not show other section (\sphinxstylestrong{navigate by theme} and \sphinxstylestrong{recently added}).
 
-\item {} 
-\sphinxAtStartPar
-Click the \sphinxstylestrong{⋮} (more options) menu that appears.
+\begin{figure}[htbp]
+\centering
+\capstart
 
-\item {} 
-\sphinxAtStartPar
-Select \sphinxstylestrong{Edit metadata}.
-
-\end{enumerate}
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{catalogue_full}.png}
+\caption{Catalogue page in edit mode}\label{\detokenize{03_managing_metadata:id2}}\end{figure}
 
 \sphinxAtStartPar
-The metadata editor opens as a multi\sphinxhyphen{}tab form.
+Navigate to the resource detail page (see {\hyperref[\detokenize{02_find_and_visualize:advanced-filter}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{Using advanced filter}}}}} for how to find a resource).
+On the dataset preview page you have an  \sphinxstylestrong{Edit} menu, select the entry \sphinxstylestrong{Edit Metadata}.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{dat_edit_menu}.png}
+\caption{The edit menu in detail dataset page}\label{\detokenize{03_managing_metadata:id3}}\end{figure}
 
 
 \section{Overview of the Metadata Editor}
 \label{\detokenize{03_managing_metadata:overview-of-the-metadata-editor}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=400\sphinxpxdimen]{{metadata_editor01}.png}
+\caption{The metadata editor page}\label{\detokenize{03_managing_metadata:id4}}\end{figure}
+
 \sphinxAtStartPar
-The metadata editor is organised into tabs. The most important tabs are:
+The metadata editor is organised into tabs:
 
 
 \begin{savenotes}\sphinxattablestart
@@ -1288,40 +1391,53 @@ Content
 \sphinxmidrule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
-\sphinxstylestrong{Basic info}
+\sphinxstylestrong{Basic Metadata}
 &
 \sphinxAtStartPar
-Title, abstract, language, category, keywords, point of contact.
+Title, thumbnail, date fields, abstract,  category, group, keywords, UNEP\sphinxhyphen{}MAP themes point of contact.
 \\
 \sphinxhline
 \sphinxAtStartPar
 \sphinxstylestrong{Location and licences}
 &
 \sphinxAtStartPar
-Spatial extent, CRS, date fields, licence, attribution.
+Language, region, license, attribution, data quality statement.
 \\
 \sphinxhline
 \sphinxAtStartPar
 \sphinxstylestrong{Optional metadata}
 &
 \sphinxAtStartPar
-Additional ISO 19115 fields (edition, purpose, supplemental information, …).
+Point of Contact, related resources on the platform and additional ISO 19115 fields (edition, purpose, supplemental information, …).
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Settings}
+\sphinxstylestrong{Dataset attributes} (vector datasets)
 &
 \sphinxAtStartPar
-Permissions, featured status, advertised status.
+Label, description visibility and display order of attribute fields.
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{Additional info}
+&
+\sphinxAtStartPar
+Access contrstaints, resolution and accuracy.
 \\
 \sphinxbottomrule
 \end{tabular}
 \sphinxtableafterendhook\par
 \sphinxattableend\end{savenotes}
 
+\sphinxAtStartPar
+Use \sphinxguilabel{next >>} or \sphinxguilabel{<< back} to navigate through those steps. Once you have finished click on \sphinxguilabel{Update}.
 
-\section{Editing Key Metadata Fields}
-\label{\detokenize{03_managing_metadata:editing-key-metadata-fields}}
+
+\section{Editing Metadata}
+\label{\detokenize{03_managing_metadata:editing-metadata}}
+
+\subsection{Basic Metadata Tab}
+\label{\detokenize{03_managing_metadata:basic-metadata-tab}}
 
 \subsection{Title}
 \label{\detokenize{03_managing_metadata:title}}
@@ -1339,64 +1455,152 @@ Consistent with the naming conventions used by the Pelagos Agreement group.
 \end{itemize}
 
 \sphinxAtStartPar
-To edit: click on the \sphinxstylestrong{Title} field in the \sphinxstyleemphasis{Basic info} tab and type your changes.
+To edit: click on the \sphinxstylestrong{Title} input text field in the \sphinxstyleemphasis{Basic info} tab and type your changes.
+
+\sphinxAtStartPar
+The \sphinxstylestrong{thumbnail} is the preview image displayed in catalogue cards. It is generated
+automatically for Datasets and Maps. In this page you can re\sphinxhyphen{}generate the thumbnail
+by clicking the \sphinxstyleemphasis{edit} button under the image, a small map view will be displayed,
+you can zoom and pan to select the area to use for the thumbnail and click \sphinxstyleemphasis{save}.
+
+\sphinxAtStartPar
+You can also change the \sphinxstylestrong{title} and \sphinxstylestrong{thumbnail} from
+the information panel in the dataset detail page (see {\hyperref[\detokenize{02_find_and_visualize:information-panel}]{\sphinxcrossref{\DUrole{std}{\DUrole{std-ref}{Information Panel}}}}} for more information).
 
 
 \subsection{Abstract}
 \label{\detokenize{03_managing_metadata:abstract}}
 \sphinxAtStartPar
-The \sphinxstylestrong{abstract} is a plain\sphinxhyphen{}language description of the resource. A good abstract answers:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-What does this resource contain?
+The \sphinxstylestrong{abstract} is a plain\sphinxhyphen{}language description of the resource.
+Based on the \sphinxtitleref{INSPIRE guidelines <https://knowledge\sphinxhyphen{}base.inspire.ec.europa.eu/publications/inspire\sphinxhyphen{}metadata\sphinxhyphen{}implementing\sphinxhyphen{}rules\sphinxhyphen{}technical\sphinxhyphen{}guidelines\sphinxhyphen{}based\sphinxhyphen{}en\sphinxhyphen{}iso\sphinxhyphen{}19115\sphinxhyphen{}and\sphinxhyphen{}en\sphinxhyphen{}iso\sphinxhyphen{}19119\_en>}
+an abstract is a succinct description that can include:
+\sphinxhyphen{} A brief summary with the most important details that summarise
+the data or service
+\sphinxhyphen{} Coverage: linguistic transcriptions of the extent or location in
+addition to the bounding box
+\sphinxhyphen{} Main attributes
+\sphinxhyphen{} Data sources
+\sphinxhyphen{} Legal references
+\sphinxhyphen{} Importance of the work
 
-\item {} 
-\sphinxAtStartPar
-What geographic area does it cover?
+\begin{figure}[htbp]
+\centering
+\capstart
 
-\item {} 
-\sphinxAtStartPar
-What time period does it represent?
-
-\item {} 
-\sphinxAtStartPar
-What is it used for?
-
-\item {} 
-\sphinxAtStartPar
-What are its known limitations?
-
-\end{itemize}
+\noindent\sphinxincludegraphics[width=0.800\linewidth]{{metadata_abstract}.png}
+\caption{The editor for the abstract field.}\label{\detokenize{03_managing_metadata:id5}}\end{figure}
 
 \sphinxAtStartPar
-The abstract field supports basic formatting. Aim for at least two or three sentences.
+The abstract field supports html formatting.
+You can use the formatting buttons in the editor toolbar to insert headings,
+images, links, and lists.
+Keep in mind that the abstract is served also in the catalogue and trough CSW service
+and could be rendered in different ways, so be sure that the content is understandable also without formatting and images.
+
+
+\subsection{Date Fields}
+\label{\detokenize{03_managing_metadata:date-fields}}
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.800\linewidth]{{metadata_dates}.png}
+\caption{The dropdown for date fields.}\label{\detokenize{03_managing_metadata:id6}}\end{figure}
+
+\sphinxAtStartPar
+Three date fields are available from the dropdown menu in the \sphinxstyleemphasis{Basic info} tab:
+
+
+\begin{savenotes}\sphinxattablestart
+\sphinxthistablewithglobalstyle
+\centering
+\begin{tabular}[t]{\X{30}{130}\X{30}{130}\X{70}{130}}
+\sphinxtoprule
+\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Field
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Label
+&\sphinxstyletheadfamily 
+\sphinxAtStartPar
+Description
+\\
+\sphinxmidrule
+\sphinxtableatstartofbodyhook
+\sphinxAtStartPar
+\sphinxstylestrong{Creation} (creation date)
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{Creation}
+&
+\begin{DUlineblock}{0em}
+\item[] When the resource was originally created or the data was collected.
+\item[] By default this is the date in wich the resource was uploaded into the platform.
+\item[] If you know the exact date of creation, you can change it to improve metadata quality..
+\end{DUlineblock}
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{Publication date}
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{Added to catalog}
+&
+\sphinxAtStartPar
+When the resource was published on KMaP (automatically generated).
+\\
+\sphinxhline
+\sphinxAtStartPar
+\sphinxstylestrong{Revision date}
+&
+\sphinxAtStartPar
+\sphinxstyleemphasis{Last catalog modification}
+&
+\sphinxAtStartPar
+When the resource was last updated (automatically generated).
+\\
+\sphinxbottomrule
+\end{tabular}
+\sphinxtableafterendhook\par
+\sphinxattableend\end{savenotes}
+
+\sphinxAtStartPar
+Keep these dates accurate — they are used to filter and sort resources in the catalogue.
+
+
+\subsection{Category}
+\label{\detokenize{03_managing_metadata:category}}
+\sphinxAtStartPar
+The \sphinxstylestrong{category} assigns the resource to a thematic classification.
+Select the most appropriate category from the dropdown.
+The available categories are an extension of the
+the \sphinxtitleref{INSPIRE Topic Category <http://inspire.ec.europa.eu/metadata\sphinxhyphen{}codelist/TopicCategory>}.
+
+\sphinxAtStartPar
+A resource can belong to only one category. Use keywords for additional
+thematic tagging.
 
 
 \subsection{Keywords}
 \label{\detokenize{03_managing_metadata:keywords}}
 \sphinxAtStartPar
 Keywords are the primary mechanism for filtering and discovering resources in KMaP.
+you can add multiple keywords to a resource, and create new keywords if they do not already
+exist in the platform.
 
-\begin{sphinxadmonition}{important}{Important:}
+\begin{sphinxadmonition}{tip}{Tip:}
 \sphinxAtStartPar
-All resources related to the Pelagos Agreement \sphinxstylestrong{must include} at least one of the
-following keywords:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{pelagos sanctuary}}
-
-\item {} 
-\sphinxAtStartPar
-\sphinxcode{\sphinxupquote{pelagos agreement}}
-
-\end{itemize}
-
-\sphinxAtStartPar
-Without these keywords, your resource will not appear when other group members
-filter the catalogue by these terms.
+Be sure to not duplicate keywords for the same concept and avoid mispelling (e.g. “marinemammals” vs. “Marine Mammals”).
+Ask your group administrator if you are unsure about which keywords to use.
 \end{sphinxadmonition}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.800\linewidth]{{metadata_keywords}.png}
+\caption{The keywords and UNEP Theme fields.}\label{\detokenize{03_managing_metadata:id7}}\end{figure}
 
 \sphinxAtStartPar
 To add a keyword:
@@ -1420,134 +1624,18 @@ To remove a keyword, click the \sphinxstylestrong{×} next to it.
 
 \end{enumerate}
 
-
-\subsection{Category}
-\label{\detokenize{03_managing_metadata:category}}
 \sphinxAtStartPar
-The \sphinxstylestrong{category} assigns the resource to a thematic classification.
-Select the most appropriate category from the dropdown:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-Fishery and Aquaculture
-
-\item {} 
-\sphinxAtStartPar
-Marine Biodiversity
-
-\item {} 
-\sphinxAtStartPar
-Pollution
-
-\item {} 
-\sphinxAtStartPar
-Climate Change
-
-\item {} 
-\sphinxAtStartPar
-Marine Spatial Planning
-
-\item {} 
-\sphinxAtStartPar
-Sustainability and Blue Economy
-
-\item {} 
-\sphinxAtStartPar
-Governance
-
-\end{itemize}
-
-\sphinxAtStartPar
-A resource can belong to only one primary category. Use keywords for additional
-thematic tagging.
+Pelagos Agreement related resources should include the following keywords: \sphinxcode{\sphinxupquote{pelagos sanctuary}} and \sphinxcode{\sphinxupquote{pelagos agreement}}.
 
 
-\subsection{Spatial Extent}
-\label{\detokenize{03_managing_metadata:spatial-extent}}
-\sphinxAtStartPar
-The \sphinxstylestrong{spatial extent} defines the geographic bounding box of the resource. For datasets,
-this is usually set automatically when the data is uploaded. You can refine it manually:
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Go to the \sphinxstylestrong{Location and licences} tab.
-
-\item {} 
-\sphinxAtStartPar
-In the \sphinxstyleemphasis{Spatial extent} section, use the map widget to draw or adjust the bounding box,
-or enter coordinates (min/max longitude and latitude) manually.
-
-\end{enumerate}
-
-\begin{sphinxadmonition}{tip}{Tip:}
-\sphinxAtStartPar
-For Pelagos\sphinxhyphen{}related resources, the spatial extent should cover at least the Pelagos
-Sanctuary area (approximately between France, Italy, and Monaco in the Ligurian Sea and
-adjacent western Mediterranean).
-\end{sphinxadmonition}
-
-
-\subsection{Date Fields}
-\label{\detokenize{03_managing_metadata:date-fields}}
-\sphinxAtStartPar
-Three date fields are available:
-
-
-\begin{savenotes}\sphinxattablestart
-\sphinxthistablewithglobalstyle
-\centering
-\begin{tabular}[t]{\X{30}{100}\X{70}{100}}
-\sphinxtoprule
-\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Field
-&\sphinxstyletheadfamily 
-\sphinxAtStartPar
-Description
-\\
-\sphinxmidrule
-\sphinxtableatstartofbodyhook
-\sphinxAtStartPar
-\sphinxstylestrong{Date} (creation date)
-&
-\sphinxAtStartPar
-When the resource was originally created or the data was collected.
-\\
-\sphinxhline
-\sphinxAtStartPar
-\sphinxstylestrong{Publication date}
-&
-\sphinxAtStartPar
-When the resource was published on KMaP.
-\\
-\sphinxhline
-\sphinxAtStartPar
-\sphinxstylestrong{Revision date}
-&
-\sphinxAtStartPar
-When the resource was last updated.
-\\
-\sphinxbottomrule
-\end{tabular}
-\sphinxtableafterendhook\par
-\sphinxattableend\end{savenotes}
-
-\sphinxAtStartPar
-Keep these dates accurate — they are used to filter and sort resources in the catalogue.
-
+\subsection{Location and Licenses Tab}
+\label{\detokenize{03_managing_metadata:location-and-licenses-tab}}
 
 \subsection{Licence}
 \label{\detokenize{03_managing_metadata:licence}}
 \sphinxAtStartPar
 The \sphinxstylestrong{licence} defines how others may use the resource.
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Go to the \sphinxstylestrong{Location and licences} tab.
 
-\item {} 
 \sphinxAtStartPar
 Select a licence from the dropdown. Common options include:
 \begin{itemize}
@@ -1570,70 +1658,105 @@ same licence.
 
 \end{itemize}
 
-\end{enumerate}
-
 \begin{sphinxadmonition}{note}{Note:}
 \sphinxAtStartPar
-If you are unsure which licence to apply, consult your group administrator. Applying
-the wrong licence may restrict the reuse of your data inappropriately.
+If you are unsure which licence to apply, start with \sphinxstyleemphasis{Pelagos data policy}
+that refers to the data policy document for sharing scientific data.
 \end{sphinxadmonition}
 
 
-\subsection{Point of Contact}
-\label{\detokenize{03_managing_metadata:point-of-contact}}
+\subsection{Attribution}
+\label{\detokenize{03_managing_metadata:attribution}}
 \sphinxAtStartPar
-The \sphinxstylestrong{point of contact} identifies who to contact for questions about the resource.
-It can be a person or an organisation.
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-In the \sphinxstyleemphasis{Basic info} tab, find the \sphinxstylestrong{Point of contact} field.
-
-\item {} 
-\sphinxAtStartPar
-Start typing a name to search registered KMaP users, or enter an organisation name.
-
-\end{enumerate}
+Write the name of the copyright holder, eg. Pelagos Agreement.
 
 
-\subsection{Thumbnail}
-\label{\detokenize{03_managing_metadata:thumbnail}}
+\subsection{Regions}
+\label{\detokenize{03_managing_metadata:regions}}
 \sphinxAtStartPar
-The \sphinxstylestrong{thumbnail} is the preview image displayed in catalogue cards. It is generated
-automatically for Datasets and Maps, but can be replaced manually:
-\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Click \sphinxstylestrong{Edit} on the detail page.
+The Regions field can be filled with multiple values (region names) in the same way as the keywords field.
+FOr Pelagos Agreement data  the regions are Europe, France, Italy and Monaco.
+At the present time mainly countries names are listed, marine regions could be addedd in the future..
 
-\item {} 
-\sphinxAtStartPar
-Select \sphinxstylestrong{Edit thumbnail}.
 
-\item {} 
-\sphinxAtStartPar
-Upload a new image (recommended: 600 × 400 px, JPEG or PNG).
+\subsection{Optional metadata tab}
+\label{\detokenize{03_managing_metadata:optional-metadata-tab}}
 
-\end{enumerate}
+\subsection{Point of Contact and Owner}
+\label{\detokenize{03_managing_metadata:point-of-contact-and-owner}}
+\sphinxAtStartPar
+The \sphinxstylestrong{point of contact} identifies the user or the users to contact for questions about the resource. By default is the user that compiled metadata.
+Start typing and select from existing list or add new one just like the keywords field.
+The \sphinxstylestrong{owner} is the user that has full edit rights on the resource. The owner can be different from the point of contact, for example if the resource is managed by a group of users.
+In geonode the owner is always a user account, so you can select only users that have an account in the platform.
+You will see a link to toggle more contact roles
+
+
+\subsection{Related resources}
+\label{\detokenize{03_managing_metadata:related-resources}}
+\sphinxAtStartPar
+The \sphinxstylestrong{related resources} field allows you to link other resources in KMaP that are related to this one.
+For the scientific results of Pelagos Calls there is a document linked that describes how the data were produced.
+The maps that uses the dataset will be showed also in the related resources section, but you can add also other datasets.
+You need to know the title of the resource to link, start typing and select the resource from the dropdown list.
+You will see the resource type in brackets next to the title. You can add multiple related resources.
+
+
+\subsection{Supplemental information}
+\label{\detokenize{03_managing_metadata:supplemental-information}}
+\sphinxAtStartPar
+FIll in this field with any additional information that is relevant to the resource,
+for example the origin of the data and the lineage.
+The field supports html formatting
+
+
+\subsection{Dataset Attributes tab}
+\label{\detokenize{03_managing_metadata:dataset-attributes-tab}}
+\sphinxAtStartPar
+If you are editing metadata of a vector dataset, in this tab you can setup
+how the attributes will be displayed in the information popup of the \sphinxtitleref{Identify Tool}.
+You can set a more readable label that will be rendered instead of the fieldname, a description,
+whether the attribute should be visible or not and in which order sill appear.
+The display type by default is \sphinxstyleemphasis{label} but for attributes that contain URL an hyperlink will be showed
+or if the attribute contains a path to media file, the media itself will be rendered.
+
+\sphinxAtStartPar
+It is possible to define a completely custom \sphinxcode{\sphinxupquote{HTML}} template for the \sphinxstyleemphasis{Get Feature Info} outcome.
+That is possible by enabling the \sphinxguilabel{Use a custom template?} flag as shown in the figure below.
+\begin{quote}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{metadata_attributes_custom}.png}
+\caption{Use a custom template}\label{\detokenize{03_managing_metadata:id8}}\end{figure}
+
+\sphinxAtStartPar
+By using the keywork \sphinxcode{\sphinxupquote{\$\{properties.<attribute\_name>}}, you can tell to GeoNode to render the actual value of the attribute on the map.
+\end{quote}
+
+
+\subsection{Additional Info}
+\label{\detokenize{03_managing_metadata:additional-info}}
+\sphinxAtStartPar
+In this tab you can add aonstraints for use the data
+(ask tha geoportal admin to add accesso constraints to the dropdown list) and an estimation
+of resolution and accuracy values.
+
+
+\section{Advanced Metadata editing}
+\label{\detokenize{03_managing_metadata:advanced-metadata-editing}}
+\sphinxAtStartPar
+On the top right of the page the button \sphinxguilabel{Advanced Metadata} will open a single page
+with all metadata fields
 
 
 \section{Saving Your Changes}
 \label{\detokenize{03_managing_metadata:saving-your-changes}}
 \sphinxAtStartPar
-When you have finished editing, scroll to the bottom of the editor and click
-\sphinxstylestrong{Save} (or \sphinxstylestrong{Update} — the label may vary). A confirmation message will appear.
-
-\begin{sphinxadmonition}{warning}{Warning:}
-\sphinxAtStartPar
-Metadata changes are applied immediately and are visible to all users with access to
-the resource. There is no draft or staging mode.
-\end{sphinxadmonition}
-
-\sphinxAtStartPar
-After saving, you are returned to the resource detail page where you can verify that
-all fields have been updated correctly.
+When you have finished editing click
+\sphinxguilabel{Update} on the bottom of the page. A confirmation message will appear.
 
 
 \section{Metadata Completeness Checklist}
@@ -1717,7 +1840,7 @@ Point of contact is identified.
 ☐
 &
 \sphinxAtStartPar
-Thumbnail is representative.
+Thumbnail is representative and coherent with similar datasets.
 \\
 \sphinxbottomrule
 \end{tabular}
@@ -1729,122 +1852,14 @@ Thumbnail is representative.
 
 \chapter{Exploring Maps}
 \label{\detokenize{04_exploring_maps:exploring-maps}}\label{\detokenize{04_exploring_maps:maps-en}}\label{\detokenize{04_exploring_maps::doc}}
-\begin{sphinxcontents}
-\sphinxstylecontentstitle{On this page}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id1}}{\hyperref[\detokenize{04_exploring_maps:finding-a-map}]{\sphinxcrossref{Finding a Map}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id2}}{\hyperref[\detokenize{04_exploring_maps:the-map-viewer-interface}]{\sphinxcrossref{The Map Viewer Interface}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id3}}{\hyperref[\detokenize{04_exploring_maps:navigating-the-map}]{\sphinxcrossref{Navigating the Map}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id4}}{\hyperref[\detokenize{04_exploring_maps:basic-navigation}]{\sphinxcrossref{Basic Navigation}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id5}}{\hyperref[\detokenize{04_exploring_maps:going-to-a-specific-location}]{\sphinxcrossref{Going to a Specific Location}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id6}}{\hyperref[\detokenize{04_exploring_maps:working-with-layers}]{\sphinxcrossref{Working with Layers}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id7}}{\hyperref[\detokenize{04_exploring_maps:opening-the-layer-panel}]{\sphinxcrossref{Opening the Layer Panel}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id8}}{\hyperref[\detokenize{04_exploring_maps:toggling-layer-visibility}]{\sphinxcrossref{Toggling Layer Visibility}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id9}}{\hyperref[\detokenize{04_exploring_maps:changing-layer-order}]{\sphinxcrossref{Changing Layer Order}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id10}}{\hyperref[\detokenize{04_exploring_maps:adjusting-layer-opacity}]{\sphinxcrossref{Adjusting Layer Opacity}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id11}}{\hyperref[\detokenize{04_exploring_maps:viewing-the-legend}]{\sphinxcrossref{Viewing the Legend}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id12}}{\hyperref[\detokenize{04_exploring_maps:querying-features}]{\sphinxcrossref{Querying Features}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id13}}{\hyperref[\detokenize{04_exploring_maps:clicking-on-a-feature}]{\sphinxcrossref{Clicking on a Feature}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id14}}{\hyperref[\detokenize{04_exploring_maps:identify-tool}]{\sphinxcrossref{Identify Tool}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id15}}{\hyperref[\detokenize{04_exploring_maps:selecting-and-filtering-features}]{\sphinxcrossref{Selecting and Filtering Features}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id16}}{\hyperref[\detokenize{04_exploring_maps:measurement-tools}]{\sphinxcrossref{Measurement Tools}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id17}}{\hyperref[\detokenize{04_exploring_maps:distance-measurement}]{\sphinxcrossref{Distance Measurement}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id18}}{\hyperref[\detokenize{04_exploring_maps:area-measurement}]{\sphinxcrossref{Area Measurement}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id19}}{\hyperref[\detokenize{04_exploring_maps:printing-and-exporting-the-map-view}]{\sphinxcrossref{Printing and Exporting the Map View}}}
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id20}}{\hyperref[\detokenize{04_exploring_maps:print}]{\sphinxcrossref{Print}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id21}}{\hyperref[\detokenize{04_exploring_maps:share-permalink}]{\sphinxcrossref{Share / Permalink}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id22}}{\hyperref[\detokenize{04_exploring_maps:embed}]{\sphinxcrossref{Embed}}}
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id23}}{\hyperref[\detokenize{04_exploring_maps:saving-changes-to-a-map}]{\sphinxcrossref{Saving Changes to a Map}}}
-
-\item {} 
-\sphinxAtStartPar
-\phantomsection\label{\detokenize{04_exploring_maps:id24}}{\hyperref[\detokenize{04_exploring_maps:creating-a-new-map}]{\sphinxcrossref{Creating a New Map}}}
-
-\end{itemize}
-\end{sphinxcontents}
-
 \sphinxAtStartPar
 A \sphinxstylestrong{Map} in KMaP is an interactive, multi\sphinxhyphen{}layer web map built from one or more Datasets.
 This section explains how to find, open, and navigate Maps, how to work with layers, and
 how to extract information from the data displayed.
+
+\sphinxAtStartPar
+Geonode use \sphinxtitleref{Mapstore <https://mapstore.io/>} map viewer to interact with the maps.
+See also the Mapstore \sphinxtitleref{documentation <https://docs.mapstore.geosolutionsgroup.com/en/latest/>} for advanced use of map viewer.
 
 
 \section{Finding a Map}
@@ -1871,25 +1886,48 @@ in the \sphinxstylestrong{Keywords} field, type \sphinxcode{\sphinxupquote{pelag
 
 \sphinxAtStartPar
 Alternatively, search for a map by title using the search bar.
+\begin{quote}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=0.700\linewidth]{{map_cat_view}.png}
+\caption{Map view button}\label{\detokenize{04_exploring_maps:id1}}\end{figure}
+\end{quote}
 
 \sphinxAtStartPar
-Click on a Map card to open its \sphinxstylestrong{detail page}. From there, click \sphinxstylestrong{View map} to open
-it in the interactive map viewer.
+Click on \sphinxguilabel{View} button on a Map card to open it in the interactive map viewer.
 
 
 \section{The Map Viewer Interface}
-\label{\detokenize{04_exploring_maps:the-map-viewer-interface}}
+\label{\detokenize{04_exploring_maps:the-map-viewer-interface}}\label{\detokenize{04_exploring_maps:map-viewer}}
 \sphinxAtStartPar
 The map viewer (powered by \sphinxstylestrong{MapStore}) opens in a full\sphinxhyphen{}screen layout.
+\_static/map\_view.png
+\begin{quote}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=1.000\linewidth]{{map_view}.png}
+\caption{Map view components}\label{\detokenize{04_exploring_maps:id2}}\end{figure}
+\end{quote}
+
+\sphinxAtStartPar
 Its main interface elements are:
 
 
 \begin{savenotes}\sphinxattablestart
 \sphinxthistablewithglobalstyle
 \centering
-\begin{tabular}[t]{\X{30}{100}\X{70}{100}}
+\begin{tabular}[t]{\X{10}{110}\X{30}{110}\X{70}{110}}
 \sphinxtoprule
 \sphinxstyletheadfamily 
+\sphinxAtStartPar
+ref
+&\sphinxstyletheadfamily 
 \sphinxAtStartPar
 Element
 &\sphinxstyletheadfamily 
@@ -1899,6 +1937,9 @@ Description
 \sphinxmidrule
 \sphinxtableatstartofbodyhook
 \sphinxAtStartPar
+1
+&
+\sphinxAtStartPar
 \sphinxstylestrong{Main map canvas}
 &
 \sphinxAtStartPar
@@ -1906,45 +1947,63 @@ The central interactive map area.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Layer panel} (☰)
+2
 &
 \sphinxAtStartPar
-Toggles layer visibility, reorders layers, accesses layer settings.
+\sphinxstylestrong{Layer panel}
+&
+\sphinxAtStartPar
+Toggles layer visibility, reorders layers, display legend, accesses layer settings.
 \\
 \sphinxhline
+\sphinxAtStartPar
+3
+&
 \sphinxAtStartPar
 \sphinxstylestrong{Basemap switcher}
 &
 \sphinxAtStartPar
-Changes the background map (OpenStreetMap, satellite imagery, …).
+Changes the background map. By default use a light background map hosted by Info\sphinxhyphen{}Rac
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Zoom controls} (+ / −)
+4
 &
 \sphinxAtStartPar
-Zoom in and out. Also supports mouse wheel and pinch gesture.
+\sphinxstylestrong{Navigation Bar}
+&
+\sphinxAtStartPar
+Zoom in and out. Query tool and 3D view
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Toolbar}
+5
 &
 \sphinxAtStartPar
-Row of tool icons at the top or side of the map canvas.
+\sphinxstylestrong{Search bar}
+&
+\sphinxAtStartPar
+Type in to search by location, name and coordinates.
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Scale bar}
+6
 &
 \sphinxAtStartPar
-Displays the current map scale.
+\sphinxstylestrong{Sidebar}
+&
+\sphinxAtStartPar
+Contains print, add layers and measure tools
 \\
 \sphinxhline
 \sphinxAtStartPar
-\sphinxstylestrong{Coordinates panel}
+7
 &
 \sphinxAtStartPar
-Shows the geographic coordinates of the mouse cursor position.
+\sphinxstylestrong{Menu tools}
+&
+\sphinxAtStartPar
+Link to catalog (\sphinxstyleemphasis{All resources}), show map info, save and share the map, edit metadata and add dataset to the map.
 \\
 \sphinxbottomrule
 \end{tabular}
@@ -2015,36 +2074,33 @@ In the Layer panel, right\sphinxhyphen{}click a layer and select \sphinxstyleemp
 \subsection{Going to a Specific Location}
 \label{\detokenize{04_exploring_maps:going-to-a-specific-location}}
 \sphinxAtStartPar
-Use the \sphinxstylestrong{Search / Geocoder} tool in the toolbar (🔍 icon) to search for a place name.
+Use the \sphinxstylestrong{Search bar}  to search for a place name.
 Type the name and press Enter — the map will zoom to that location.
+The place names are geocoded using \sphinxtitleref{nominatim <https://nominatim.openstreetmap.org>}
 
 
 \section{Working with Layers}
 \label{\detokenize{04_exploring_maps:working-with-layers}}
 
-\subsection{Opening the Layer Panel}
-\label{\detokenize{04_exploring_maps:opening-the-layer-panel}}
+\subsection{Table of Conetnts (TOC)}
+\label{\detokenize{04_exploring_maps:table-of-conetnts-toc}}
 \sphinxAtStartPar
-Click the \sphinxstylestrong{☰} (hamburger) icon to open the layer panel. It lists all layers included
-in the map, grouped into:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Overlays} – the thematic data layers (e.g. Pelagos Sanctuary boundary, cetacean
-sighting points, shipping lanes).
+Click the \sphinxincludegraphics[width=1.5em]{{map_view_lyr_toggle}.png}  icon to open the TOC. It lists all layers included
+in the map, divded into different groups and subgroups: you can expand and collapse the
+groups by clicking the \sphinxguilabel{>} on the left of the layer name.
 
-\item {} 
 \sphinxAtStartPar
-\sphinxstylestrong{Background layers} – the basemap options (only one can be active at a time).
-
-\end{itemize}
+Layer names mostly reflects the layer title but the map author can change them.
+The link to the effective layers/datasts is listed in the map information > linked resources
 
 
 \subsection{Toggling Layer Visibility}
 \label{\detokenize{04_exploring_maps:toggling-layer-visibility}}
 \sphinxAtStartPar
-Each layer in the panel has an \sphinxstylestrong{eye icon} (👁). Click it to show or hide that layer.
+Each layer in the panel has a \sphinxstylestrong{radio button} . Click it to show or hide that layer.
 Hidden layers remain in the map composition but are not displayed on the canvas.
+If the group is a \sphinxstylestrong{mutally exclusive group} only one layer at time can be visible.
+Check the group settings with right click on the group name and opn the context menu
 
 
 \subsection{Changing Layer Order}
@@ -2069,97 +2125,90 @@ Release to drop.
 \end{enumerate}
 
 
-\subsection{Adjusting Layer Opacity}
-\label{\detokenize{04_exploring_maps:adjusting-layer-opacity}}\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-In the Layer panel, click the \sphinxstylestrong{⋮} (options) icon next to a layer.
-
-\item {} 
-\sphinxAtStartPar
-Select \sphinxstylestrong{Settings} (or the slider icon).
-
-\item {} 
-\sphinxAtStartPar
-Use the \sphinxstylestrong{Opacity} slider to set transparency between 0 \% (invisible) and 100 \% (solid).
-
-\end{enumerate}
-
-
 \subsection{Viewing the Legend}
-\label{\detokenize{04_exploring_maps:viewing-the-legend}}\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
+\label{\detokenize{04_exploring_maps:viewing-the-legend}}
 \sphinxAtStartPar
-Click the \sphinxstylestrong{⋮} (options) icon next to a layer.
+Click the :guilabel:` > ` arrow to a layer name and the legend is shown under the layer.
+Use the \sphinxstylestrong{Opacity} slider at the bottom to set transparency between 0 \% (invisible) and 100 \% (solid).
 
-\item {} 
+
+\subsection{Compare two layers}
+\label{\detokenize{04_exploring_maps:compare-two-layers}}
 \sphinxAtStartPar
-Select \sphinxstylestrong{Legend} to expand the symbol key for that layer.
-
-\end{enumerate}
-
-\sphinxAtStartPar
-Alternatively, some map configurations display a persistent legend panel on the side
-of the canvas.
-
-
-\section{Querying Features}
-\label{\detokenize{04_exploring_maps:querying-features}}
-
-\subsection{Clicking on a Feature}
-\label{\detokenize{04_exploring_maps:clicking-on-a-feature}}
-\sphinxAtStartPar
-Click on any visible feature (point, line, or polygon) on the map canvas to open an
-\sphinxstylestrong{attribute pop\sphinxhyphen{}up}. The pop\sphinxhyphen{}up displays the attribute values associated with that
-feature — for example, the name of a marine protected area, a species name, or a
-monitoring value.
-
-\sphinxAtStartPar
-If multiple layers overlap at the clicked location, the pop\sphinxhyphen{}up may show results from
-all overlapping layers. Use the arrow buttons in the pop\sphinxhyphen{}up to navigate between them.
-
-
-\subsection{Identify Tool}
-\label{\detokenize{04_exploring_maps:identify-tool}}
-\sphinxAtStartPar
-The \sphinxstylestrong{Identify} tool (ℹ️ icon in the toolbar) works similarly to clicking directly
-on the map. It queries all visible layers at the clicked point and returns their
-attributes in a panel.
-
-
-\subsection{Selecting and Filtering Features}
-\label{\detokenize{04_exploring_maps:selecting-and-filtering-features}}
-\sphinxAtStartPar
-For vector layers, MapStore offers a \sphinxstylestrong{Filter} tool:
+When two solid layers overlaps the \sphinxstylestrong{opacity} control can be not sufficent to compare them.
+Mapstore provide a \sphinxstylestrong{Swipe tool} to compare different layers.
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-In the Layer panel, click \sphinxstylestrong{⋮} next to the desired layer.
+First make visibile the bottom layer checking its radio button.
 
 \item {} 
 \sphinxAtStartPar
-Select \sphinxstylestrong{Filter}.
+Select the layer on top that will covers the first layer and make it visibile as well
 
 \item {} 
 \sphinxAtStartPar
-Define a filter condition using the attribute fields
-(e.g. show only records where \sphinxstyleemphasis{country = “France”}).
+Right click on the second layer and select \sphinxstylestrong{Swipe tool}
 
 \item {} 
 \sphinxAtStartPar
-Click \sphinxstylestrong{Apply}. Only features matching the filter are displayed.
+A vertical line will appear on the map: on the left the selected layer is transparent and on the right is visible.
+
+\item {} 
+\sphinxAtStartPar
+Move the swipe line dragging it by mouse or pan and zoom the map to compare the two layers.
 
 \end{enumerate}
 
-\begin{sphinxadmonition}{tip}{Tip:}
+
+\subsection{Time based layers}
+\label{\detokenize{04_exploring_maps:time-based-layers}}
 \sphinxAtStartPar
-Use the filter tool to focus on a specific subset of Pelagos data — for example,
-showing only cetacean sightings from a specific year, or only routes that pass
-through the sanctuary.
-\end{sphinxadmonition}
+Mapstore viewer can manage also layers with \sphinxstylestrong{time} dimension. See for instances the map about
+pelagos \sphinxstylestrong{ToR2} at \sphinxtitleref{https://kmap.info\sphinxhyphen{}rac.org/catalogue/\#/map/20208}.
+Since it contains the remote layer of monthly  vessel density from \sphinxtitleref{Emodnet server <https://emodnet.ec.europa.eu/geoviewer/?layers=12707@0f2f3ff1\sphinxhyphen{}30ef\sphinxhyphen{}49e1\sphinxhyphen{}96e7\sphinxhyphen{}8ca78d58a07c:1:1,12432@5d89d371\sphinxhyphen{}a52a\sphinxhyphen{}476b\sphinxhyphen{}92de\sphinxhyphen{}a423f6d2c15d:1:0,12445@5d89d371\sphinxhyphen{}a52a\sphinxhyphen{}476b\sphinxhyphen{}92de\sphinxhyphen{}a423f6d2c15d:1:0\&basemap=ebwbl\&active=12707\&bounds=\sphinxhyphen{}419329.86269369797,4523009.9685573215,1271431.3853908484,5643139.295413333\&filters=\&projection=EPSG:3857>}
+When the map opens with a Timeline control on the bottom. Altought this remote service is not fuly compatible with Mapstore
+you can still move from monthlyframes using \sphinxstylestrong{Up} and \sphinxstylestrong{Down} arrows over the month field.
+
+
+\section{Querying Features}
+\label{\detokenize{04_exploring_maps:querying-features}}
+\sphinxAtStartPar
+The \sphinxstylestrong{Query tool} \sphinxincludegraphics[width=1.5em]{{map_view_query_tool}.png} is active by default in the navigation bar.
+
+\sphinxAtStartPar
+Click on any visible feature (point, line, or polygon) on the map canvas and in the side panel which
+displays the attribute values associated with the feature under the pin, or the cell value of the raster.
+
+\sphinxAtStartPar
+If no layer is selected a dropdown list with all the layer with a feature that intersects the query point is showed.
+
+\sphinxAtStartPar
+If a layer is selected on the TOC the panel sows only features/values from that layer.
+To deselect a layer click again over the layer name.
+
+
+\subsection{View attribute table  and filtering Features}
+\label{\detokenize{04_exploring_maps:view-attribute-table-and-filtering-features}}\label{\detokenize{04_exploring_maps:filtering-features}}
+\sphinxAtStartPar
+For vector layers, MapStore can show the attribute table and filter features by attribute or by area.
+Select a layer in the TOC and click on the \sphinxstylestrong{attribute table} icon
+
+\sphinxAtStartPar
+The attribute table will open on the bottom of the map.
+You can resize the panel by dragging the top border with mouse.
+On the top left of the attribute panel click on the \sphinxstylestrong{Advanced search} button.
+
+\sphinxAtStartPar
+On the left panel are the filter options, you can use \sphinxstylestrong{attribute filter} combining different conditions.
+You can also filter by area of interests and a target layer. Figure below shows an attribute filter
+on \sphinxstylestrong{Ports and moorings} layer in \sphinxstylestrong{ToR2 map}.
+Given this conditions only Features that have \sphinxtitleref{country=Italy} and \sphinxtitleref{capacity>100} are shown from the layer.
+
+\sphinxAtStartPar
+Filtered dataset can also be exported as a new dataset, click on the \sphinxstylestrong{download data} \sphinxincludegraphics[width=1.5em]{{download_dataset_but}.png}
+and in the next window select \sphinxstylestrong{Download filtered dataset} checkbox.
 
 
 \section{Measurement Tools}
@@ -2170,11 +2219,11 @@ through the sanctuary.
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Click the \sphinxstylestrong{Measure} tool (📐 icon) in the toolbar.
+Click the \sphinxstylestrong{Measure} tool in the sidebar.
 
 \item {} 
 \sphinxAtStartPar
-Select \sphinxstylestrong{Distance}.
+Select \sphinxstylestrong{Distance}, \sphinxstylestrong{Area}, or \sphinxstylestrong{Bearing}
 
 \item {} 
 \sphinxAtStartPar
@@ -2215,44 +2264,8 @@ inaccuracies for large areas. For precise measurements, use a desktop GIS applic
 \end{sphinxadmonition}
 
 
-\section{Printing and Exporting the Map View}
-\label{\detokenize{04_exploring_maps:printing-and-exporting-the-map-view}}
-
-\subsection{Print}
-\label{\detokenize{04_exploring_maps:print}}\begin{enumerate}
-\sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
-\item {} 
-\sphinxAtStartPar
-Click the \sphinxstylestrong{Print} tool (🖨 icon) in the toolbar.
-
-\item {} 
-\sphinxAtStartPar
-A print dialog appears. Configure:
-\begin{itemize}
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Title} – a title to display on the printed map.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Paper size} – A4, A3, Letter, etc.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Resolution} – 72, 150, or 300 dpi.
-
-\item {} 
-\sphinxAtStartPar
-\sphinxstylestrong{Layout} – portrait or landscape.
-
-\end{itemize}
-
-\item {} 
-\sphinxAtStartPar
-Click \sphinxstylestrong{Print} to generate a PDF or image.
-
-\end{enumerate}
-
+\section{Exporting the Map View}
+\label{\detokenize{04_exploring_maps:exporting-the-map-view}}
 
 \subsection{Share / Permalink}
 \label{\detokenize{04_exploring_maps:share-permalink}}
@@ -2270,6 +2283,9 @@ A permalink URL is generated. Copy and share this URL — recipients will open t
 in the same state.
 
 \end{enumerate}
+
+\sphinxAtStartPar
+The permalink could be used by users that already have access rights to the map.
 
 
 \subsection{Embed}
@@ -2289,11 +2305,17 @@ Copy the HTML \sphinxcode{\sphinxupquote{<iframe>}} code and paste it into your 
 
 \end{enumerate}
 
+\begin{sphinxadmonition}{warning}{Warning:}
+\sphinxAtStartPar
+If you embed a map in an external website please be sure that all the layers
+and the map itself are publicly accessible. Log out and test as a non\sphinxhyphen{}logged user.
+\end{sphinxadmonition}
+
 
 \section{Saving Changes to a Map}
 \label{\detokenize{04_exploring_maps:saving-changes-to-a-map}}
 \sphinxAtStartPar
-If you have \sphinxstylestrong{edit permission} on a Map, you can save changes to layers, styles, and
+If you have \sphinxstylestrong{edit permission} on a Map, you can save changes to the map configuration that include  layers, styles, and
 the initial view:
 \begin{enumerate}
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
@@ -2304,7 +2326,7 @@ initial extent, etc.).
 
 \item {} 
 \sphinxAtStartPar
-Click the \sphinxstylestrong{Save} button (💾 icon) in the toolbar.
+Select the \sphinxstylestrong{Save} entry from \sphinxstylestrong{Resource} menu.
 
 \item {} 
 \sphinxAtStartPar
@@ -2328,11 +2350,11 @@ Members of the Pelagos Agreement group with appropriate permissions can create n
 \sphinxsetlistlabels{\arabic}{enumi}{enumii}{}{.}%
 \item {} 
 \sphinxAtStartPar
-Go to \sphinxstylestrong{Maps} in the navigation bar.
+Open the \sphinxstylestrong{Catalogue} in \sphinxtitleref{edit mode <Opening the detail page in edit mode>}
 
 \item {} 
 \sphinxAtStartPar
-Click \sphinxstylestrong{+ Create map} (or the equivalent button at the top of the catalogue).
+Click \sphinxstylestrong{Add Resource}  button at the top of the catalogue.
 
 \item {} 
 \sphinxAtStartPar
@@ -2340,12 +2362,12 @@ The map viewer opens with an empty canvas.
 
 \item {} 
 \sphinxAtStartPar
-Use the \sphinxstylestrong{Add layer} button (+ icon in the Layer panel) to search for and add
+Use the \sphinxstylestrong{Add layer} menu to search for and add
 Datasets from the KMaP catalogue.
 
 \item {} 
 \sphinxAtStartPar
-Style each layer as needed.
+Arrange the layer order Style each layer as needed.
 
 \item {} 
 \sphinxAtStartPar

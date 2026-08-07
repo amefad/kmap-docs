@@ -34,7 +34,7 @@ type, and summary metadata.
    unauthenticated users. As a contributor you will also have the editing rights on the related resources only if youre logged in.
    To view the catalog as a contributor and to access the resources for editing purposes see :ref:`metadata_en`
 
-.. _filtering
+.. _filtering:
 
 Filtering and Searching the Catalogue
 ======================================

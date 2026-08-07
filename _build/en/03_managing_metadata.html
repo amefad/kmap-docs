@@ -8,21 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>3. Managing Metadata &#8212; Pelagos Scientific data on KMaP 0.1 documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d75fae25" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=649a27d8" />
     <link rel="stylesheet" type="text/css" href="_static/cloud.css?v=ccd5195c" />
     <link rel="stylesheet" type="text/css" href="_static/pelagos.css?v=a161a970" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    <link rel="stylesheet" href="./" type="text/css" />
     
     <script src="_static/documentation_options.js?v=2709fde1"></script>
-    <script src="_static/doctools.js?v=fd6eb6e6"></script>
-    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
 
     
-    
-     
-        <script src="_static/jquery.cookie.js"></script>
-    
-
     
      
         <script src="_static/cloud.base.js"></script>
@@ -33,7 +28,6 @@
         <script src="_static/cloud.js"></script>
     
 
-    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="4. Exploring Maps" href="04_exploring_maps.html" />
     <link rel="prev" title="2. How to Find and Visualise Your Data" href="02_find_and_visualize.html" />
@@ -75,11 +69,8 @@
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
           <a href="04_exploring_maps.html" title="4. Exploring Maps"
-             accesskey="N">next</a> &nbsp; &nbsp;</li>
+             accesskey="N">next</a></li>
         <li class="right" >
           <a href="02_find_and_visualize.html" title="2. How to Find and Visualise Your Data"
              accesskey="P">previous</a> &nbsp; &nbsp;</li>
@@ -206,6 +197,7 @@ On the dataset preview page you have an  <strong>Edit</strong> menu, select the 
 </tr>
 </tbody>
 </table>
+<p>Use <span class="guilabel">next &gt;&gt;</span> or <span class="guilabel">&lt;&lt; back</span> to navigate through those steps. Once you have finished click on <span class="guilabel">Update</span>.</p>
 </section>
 <section id="editing-metadata">
 <h2><span class="section-number">3.4. </span>Editing Metadata<a class="headerlink" href="#editing-metadata" title="Link to this heading">¶</a></h2>
@@ -263,6 +255,38 @@ and could be rendered in different ways, so be sure that the content is understa
 </figcaption>
 </figure>
 <p>Three date fields are available from the dropdown menu in the <em>Basic info</em> tab:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23.1%" />
+<col style="width: 23.1%" />
+<col style="width: 53.8%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Field</p></th>
+<th class="head"><p>Label</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Creation</strong> (creation date)</p></td>
+<td><p><em>Creation</em></p></td>
+<td><div class="line-block">
+<div class="line">When the resource was originally created or the data was collected.</div>
+<div class="line">By default this is the date in wich the resource was uploaded into the platform.</div>
+<div class="line">If you know the exact date of creation, you can change it to improve metadata quality..</div>
+</div>
+</td>
+</tr>
+<tr class="row-odd"><td><p><strong>Publication date</strong></p></td>
+<td><p><a href="#id1"><span class="problematic" id="id2">*</span></a>Added to catalog *</p></td>
+<td><p>When the resource was published on KMaP (automatically generated).</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Revision date</strong></p></td>
+<td><p><em>Last catalog modification</em></p></td>
+<td><p>When the resource was last updated (automatically generated).</p></td>
+</tr>
+</tbody>
+</table>
 <p>Keep these dates accurate — they are used to filter and sort resources in the catalogue.</p>
 </section>
 <section id="category">
@@ -354,23 +378,49 @@ You will see the resource type in brackets next to the title. You can add multip
 <section id="supplemental-information">
 <h3><span class="section-number">3.4.14. </span>Supplemental information<a class="headerlink" href="#supplemental-information" title="Link to this heading">¶</a></h3>
 <p>FIll in this field with any additional information that is relevant to the resource,
-for example the origin of the data and the lineage.</p>
+for example the origin of the data and the lineage.
+The field supports html formatting</p>
 </section>
+<section id="dataset-attributes-tab">
+<h3><span class="section-number">3.4.15. </span>Dataset Attributes tab<a class="headerlink" href="#dataset-attributes-tab" title="Link to this heading">¶</a></h3>
+<p>If you are editing metadata of a vector dataset, in this tab you can setup
+how the attributes will be displayed in the information popup of the <cite>Identify Tool</cite>.
+You can set a more readable label that will be rendered instead of the fieldname, a description,
+whether the attribute should be visible or not and in which order sill appear.
+The display type by default is <em>label</em> but for attributes that contain URL an hyperlink will be showed
+or if the attribute contains a path to media file, the media itself will be rendered.</p>
+<p>It is possible to define a completely custom <code class="docutils literal notranslate"><span class="pre">HTML</span></code> template for the <em>Get Feature Info</em> outcome.
+That is possible by enabling the <span class="guilabel">Use a custom template?</span> flag as shown in the figure below.</p>
+<blockquote>
+<div><figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="_images/metadata_attributes_custom.png"><img alt="_images/metadata_attributes_custom.png" src="_images/metadata_attributes_custom.png" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Use a custom template</span><a class="headerlink" href="#id10" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
+<p>By using the keywork <code class="docutils literal notranslate"><span class="pre">${properties.&lt;attribute_name&gt;</span></code>, you can tell to GeoNode to render the actual value of the attribute on the map.</p>
+</div></blockquote>
+</section>
+<section id="additional-info">
+<h3><span class="section-number">3.4.16. </span>Additional Info<a class="headerlink" href="#additional-info" title="Link to this heading">¶</a></h3>
+<p>In this tab you can add aonstraints for use the data
+(ask tha geoportal admin to add accesso constraints to the dropdown list) and an estimation
+of resolution and accuracy values.</p>
+</section>
+</section>
+<section id="advanced-metadata-editing">
+<h2><span class="section-number">3.5. </span>Advanced Metadata editing<a class="headerlink" href="#advanced-metadata-editing" title="Link to this heading">¶</a></h2>
+<p>On the top right of the page the button <span class="guilabel">Advanced Metadata</span> will open a single page
+with all metadata fields</p>
 </section>
 <section id="saving-your-changes">
-<h2><span class="section-number">3.5. </span>Saving Your Changes<a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
-<p>When you have finished editing, scroll to the bottom of the editor and click
-<strong>Save</strong> (or <strong>Update</strong> — the label may vary). A confirmation message will appear.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Metadata changes are applied immediately and are visible to all users with access to
-the resource. There is no draft or staging mode.</p>
-</div>
-<p>After saving, you are returned to the resource detail page where you can verify that
-all fields have been updated correctly.</p>
+<h2><span class="section-number">3.6. </span>Saving Your Changes<a class="headerlink" href="#saving-your-changes" title="Link to this heading">¶</a></h2>
+<p>When you have finished editing click
+<span class="guilabel">Update</span> on the bottom of the page. A confirmation message will appear.</p>
 </section>
 <section id="metadata-completeness-checklist">
-<h2><span class="section-number">3.6. </span>Metadata Completeness Checklist<a class="headerlink" href="#metadata-completeness-checklist" title="Link to this heading">¶</a></h2>
+<h2><span class="section-number">3.7. </span>Metadata Completeness Checklist<a class="headerlink" href="#metadata-completeness-checklist" title="Link to this heading">¶</a></h2>
 <p>Use the following checklist before publishing or sharing a resource:</p>
 <table class="docutils align-default">
 <colgroup>
@@ -409,7 +459,7 @@ all fields have been updated correctly.</p>
 <td><p>Point of contact is identified.</p></td>
 </tr>
 <tr class="row-even"><td><p>☐</p></td>
-<td><p>Thumbnail is representative.</p></td>
+<td><p>Thumbnail is representative and coherent with similar datasets.</p></td>
 </tr>
 </tbody>
 </table>
@@ -444,10 +494,13 @@ all fields have been updated correctly.</p>
 <li><a class="reference internal" href="#point-of-contact-and-owner">3.4.12. Point of Contact and Owner</a></li>
 <li><a class="reference internal" href="#related-resources">3.4.13. Related resources</a></li>
 <li><a class="reference internal" href="#supplemental-information">3.4.14. Supplemental information</a></li>
+<li><a class="reference internal" href="#dataset-attributes-tab">3.4.15. Dataset Attributes tab</a></li>
+<li><a class="reference internal" href="#additional-info">3.4.16. Additional Info</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#saving-your-changes">3.5. Saving Your Changes</a></li>
-<li><a class="reference internal" href="#metadata-completeness-checklist">3.6. Metadata Completeness Checklist</a></li>
+<li><a class="reference internal" href="#advanced-metadata-editing">3.5. Advanced Metadata editing</a></li>
+<li><a class="reference internal" href="#saving-your-changes">3.6. Saving Your Changes</a></li>
+<li><a class="reference internal" href="#metadata-completeness-checklist">3.7. Metadata Completeness Checklist</a></li>
 </ul>
 </li>
 </ul>
@@ -500,11 +553,8 @@ all fields have been updated correctly.</p>
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
           <a href="04_exploring_maps.html" title="4. Exploring Maps"
-             >next</a> &nbsp; &nbsp;</li>
+             >next</a></li>
         <li class="right" >
           <a href="02_find_and_visualize.html" title="2. How to Find and Visualise Your Data"
              >previous</a> &nbsp; &nbsp;</li>

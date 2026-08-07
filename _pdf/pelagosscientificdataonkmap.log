@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.3.27)  27 MAR 2026 13:26
+This is XeTeX, Version 3.141592653-2.6-0.999996 (TeX Live 2025/dev/Debian) (preloaded format=xelatex 2026.3.27)  7 AUG 2026 14:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,67 +983,75 @@ File: call1_map.png Graphic file (type bmp)
 
 ]
 Chapter 1.
-
-Underfull \hbox (badness 8170) in paragraph at lines 160--162
-[]|\TU/LiberationSerif(0)/m/it/10 Maps []\TU/LiberationSerif(0)/b/n/10 |maps-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
-[]|\TU/LiberationSerif(0)/m/it/10 Library []\TU/LiberationSerif(0)/b/n/10 |li-
- []
-
+File: kmap_home.png Graphic file (type bmp)
+<kmap_home.png>
+File: maps.png Graphic file (type bmp)
+<maps.png>
+File: library.png Graphic file (type bmp)
+<library.png>
+File: network.png Graphic file (type bmp)
+<network.png>
 
 
 [3]
+File: 01_dataset.png Graphic file (type bmp)
+<01_dataset.png>
+
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 472--474
-[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--485
-[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--485
-\TU/LiberationSerif(0)/m/n/10 Feature Ser-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 494--496
-[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 494--496
-\TU/LiberationSerif(0)/m/n/10 Coverage
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--506
-[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 504--506
-\TU/LiberationSerif(0)/m/n/10 Map Tile
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 514--516
-[]|\TU/LiberationSerif(0)/m/n/10 OGC Cata-
- []
-
-File: ogc_services.png Graphic file (type bmp)
-<ogc_services.png>
+File: 01_document.png Graphic file (type bmp)
+<01_document.png>
+File: call1_map_zoom.png Graphic file (type bmp)
+<call1_map_zoom.png>
 
 
 [5]
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 506--508
+[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
+[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 517--519
+\TU/LiberationSerif(0)/m/n/10 Feature Ser-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
+[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 528--530
+\TU/LiberationSerif(0)/m/n/10 Coverage
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--540
+[]|\TU/LiberationSerif(0)/m/n/10 OGC Web
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 538--540
+\TU/LiberationSerif(0)/m/n/10 Map Tile
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 548--550
+[]|\TU/LiberationSerif(0)/m/n/10 OGC Cata-
+ []
+
+
+
+[7]
+File: ogc_services.png Graphic file (type bmp)
+<ogc_services.png>
 File: 01pollution.png Graphic file (type bmp)
 <01pollution.png>
 File: 02biodiversity.png Graphic file (type bmp)
@@ -1056,127 +1064,249 @@ File: 05MSP.png Graphic file (type bmp)
 <05MSP.png>
 File: 06fishery.png Graphic file (type bmp)
 <06fishery.png>
-File: 07governance.png Graphic file (type bmp)
-<07governance.png>
 
 
-[7]
-
-[8
-
-]
-Chapter 2.
-
+[8]
 
 [9]
+File: 07governance.png Graphic file (type bmp)
+<07governance.png>
+File: profile_link.png Graphic file (type bmp)
+<profile_link.png>
+File: profile_page.png Graphic file (type bmp)
+<profile_page.png>
+File: profile_update_info.png Graphic file (type bmp)
+<profile_update_info.png>
+
 
 [10]
-Missing character: There is no ␣ (U+2423) in font Liberation Mono/OT:script=lat
-n;language=dflt;!
-Missing character: There is no ☰ (U+2630) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-
 
 [11]
+File: change_password.png Graphic file (type bmp)
+<change_password.png>
+
 
 [12]
-Chapter 3.
+Chapter 2.
+File: catalogue_home.png Graphic file (type bmp)
+<catalogue_home.png>
 
 
 [13
 
 ]
-Missing character: There is no ⋮ (U+22EE) in font Liberation Serif Bold/OT:scri
-pt=latn;language=dflt;!
+File: catalogue_filter01.png Graphic file (type bmp)
+<catalogue_filter01.png>
+File: search_bar_comp.png Graphic file (type bmp)
+<search_bar_comp.png>
 
 
 [14]
+File: catalogue_filter02.png Graphic file (type bmp)
+<catalogue_filter02.png>
+
 
 [15]
+File: catalogue_filter03.png Graphic file (type bmp)
+<catalogue_filter03.png>
+File: catalogue_filter01.png Graphic file (type bmp)
+<catalogue_filter01.png>
+File: catalogue_filter02.png Graphic file (type bmp)
+<catalogue_filter02.png>
+File: catalogue_filter03.png Graphic file (type bmp)
+<catalogue_filter03.png>
+
 
 [16]
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-
 
 [17]
+File: dataset_view.png Graphic file (type bmp)
+<dataset_view.png>
+File: dataset_detail.png Graphic file (type bmp)
+<dataset_detail.png>
 
-[18
 
-]
-Chapter 4.
+[18]
+File: det_thumbnail.png Graphic file (type bmp)
+<det_thumbnail.png>
+File: det_title.png Graphic file (type bmp)
+<det_title.png>
+File: det_actions.png Graphic file (type bmp)
+<det_actions.png>
+File: det_bt_fav.png Graphic file (type bmp)
+<det_bt_fav.png>
+File: det_bt_dwl.png Graphic file (type bmp)
+<det_bt_dwl.png>
 
 
 [19]
-Missing character: There is no ☰ (U+2630) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no 🏠 (U+1F3E0) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
-Missing character: There is no 🔍 (U+1F50D) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
-
 
 [20]
-Missing character: There is no ☰ (U+2630) in font Liberation Serif Bold/OT:scri
-pt=latn;language=dflt;!
-Missing character: There is no 👁 (U+1F441) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
-Missing character: There is no ⋮ (U+22EE) in font Liberation Serif Bold/OT:scri
-pt=latn;language=dflt;!
-Missing character: There is no ⋮ (U+22EE) in font Liberation Serif Bold/OT:scri
-pt=latn;language=dflt;!
-Missing character: There is no ℹ (U+2139) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
-Missing character: There is no ️ (U+FE0F) in font Liberation Serif/OT:script=la
-tn;language=dflt;!
+File: det_bt_share.png Graphic file (type bmp)
+<det_bt_share.png>
+File: det_bt_services.png Graphic file (type bmp)
+<det_bt_services.png>
+File: det_tabs.png Graphic file (type bmp)
+<det_tabs.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1087--1089
+[]|\TU/LiberationSerif(0)/b/n/10 Creation/Added to Cata-
+ []
+
 
 
 [21]
-Missing character: There is no ⋮ (U+22EE) in font Liberation Serif Bold/OT:scri
-pt=latn;language=dflt;!
-Missing character: There is no 📐 (U+1F4D0) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
-Missing character: There is no 🖨 (U+1F5A8) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
+File: download_metadata.png Graphic file (type bmp)
+<download_metadata.png>
+File: dat_preview_info.png Graphic file (type bmp)
+<dat_preview_info.png>
+File: legend_toggle.png Graphic file (type bmp)
+<legend_toggle.png>
+File: download_metadata.png Graphic file (type bmp)
+<download_metadata.png>
 
 
 [22]
-Missing character: There is no 💾 (U+1F4BE) in font Liberation Serif/OT:script=l
-atn;language=dflt;!
-(./pelagosscientificdataonkmap.ind)
 
-[23] (./pelagosscientificdataonkmap.aux)
+[23]
+
+[24]
+Chapter 3.
+File: catalogue_menu.png Graphic file (type bmp)
+<catalogue_menu.png>
+File: catalogue_full.png Graphic file (type bmp)
+<catalogue_full.png>
+File: dat_edit_menu.png Graphic file (type bmp)
+<dat_edit_menu.png>
+
+
+[25
+
+]
+
+[26]
+File: metadata_editor01.png Graphic file (type bmp)
+<metadata_editor01.png>
+
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1485
+\TU/LiberationSerif(0)/m/it/10 base.inspire.ec.europa.eu/publications/inspire-m
+etadata-implementing-rules-technical-guidelines-based-en-iso-
+ []
+
+File: metadata_abstract.png Graphic file (type bmp)
+<metadata_abstract.png>
+
+
+[28]
+File: metadata_dates.png Graphic file (type bmp)
+<metadata_dates.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1533
+[]|\TU/LiberationSerif(0)/b/n/10 Creation \TU/LiberationSerif(0)/m/n/10 (creati
+on
+ []
+
+
+
+[29]
+File: metadata_keywords.png Graphic file (type bmp)
+<metadata_keywords.png>
+
+
+[30]
+File: metadata_attributes_custom.png Graphic file (type bmp)
+<metadata_attributes_custom.png>
+
+
+[31]
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+Missing character: There is no ☐ (U+2610) in font Liberation Serif/OT:script=la
+tn;language=dflt;!
+
+
+[32]
+Chapter 4.
+File: map_cat_view.png Graphic file (type bmp)
+<map_cat_view.png>
+
+
+[33
+
+]
+File: map_view.png Graphic file (type bmp)
+<map_view.png>
+
+
+[34]
+Missing character: There is no 🏠 (U+1F3E0) in font Liberation Serif/OT:script=l
+atn;language=dflt;!
+File: map_view_lyr_toggle.png Graphic file (type bmp)
+<map_view_lyr_toggle.png>
+
+
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 2167--2173
+\TU/LiberationSerif(0)/m/n/10 sity from \TU/LiberationSerif(0)/m/it/10 Emodnet 
+server <https://emodnet.ec.europa.eu/geoviewer/?layers=12707@0f2f3ff1-30ef-49e1
+-96e7-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2167--2173
+\TU/LiberationSerif(0)/m/it/10 8ca78d58a07c:1:1,12432@5d89d371-a52a-476b-92de-a
+423f6d2c15d:1:0,12445@5d89d371-a52a-476b-92de-
+ []
+
+
+Overfull \hbox (288.36998pt too wide) in paragraph at lines 2167--2173
+\TU/LiberationSerif(0)/m/it/10 a423f6d2c15d:1:0&basemap=ebwbl&active=12707&boun
+ds=-419329.86269369797,4523009.9685573215,1271431.3853908484,5643139.295413333&
+filters=&projection=EPSG:3857>
+ []
+
+File: map_view_query_tool.png Graphic file (type bmp)
+<map_view_query_tool.png>
+File: download_dataset_but.png Graphic file (type bmp)
+<download_dataset_but.png>
+
+
+[36]
+
+[37] (./pelagosscientificdataonkmap.ind)
+
+[38] (./pelagosscientificdataonkmap.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `pelagosscientificdataonkmap.out' has not cha
 nged.
-(rerunfilecheck)             Checksum: 403AF4A29DC1422E200BA6670904E9DF;10649.
+(rerunfilecheck)             Checksum: 00E8E9A0E5FB5BE9A95C8E0AB37C5250;12355.
  ) 
 Here is how much of TeX's memory you used:
- 18464 strings out of 475852
- 371233 string characters out of 5775423
- 825125 words of memory out of 5000000
- 41026 multiletter control sequences out of 15000+600000
+ 18871 strings out of 475852
+ 381038 string characters out of 5775423
+ 827225 words of memory out of 5000000
+ 41391 multiletter control sequences out of 15000+600000
  564323 words of font info for 99 fonts, out of 8000000 for 9000
  15 hyphenation exceptions out of 8191
- 79i,16n,93p,1216b,574s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,16n,93p,1216b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on pelagosscientificdataonkmap.pdf (27 pages).
+Output written on pelagosscientificdataonkmap.pdf (42 pages).

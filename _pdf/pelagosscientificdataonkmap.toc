@@ -1,68 +1,77 @@
 \xpg@aux {}{english}
 \contentsline {chapter}{\numberline {1}Welcome to KMaP}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}What is KMaP?}{3}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Resource Types}{3}{section.1.2}%
-\contentsline {subsection}{\numberline {1.2.1}Dataset}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Document}{4}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Map}{4}{subsection.1.2.3}%
-\contentsline {subsection}{\numberline {1.2.4}GeoStory}{4}{subsection.1.2.4}%
-\contentsline {subsection}{\numberline {1.2.5}Dashboard}{5}{subsection.1.2.5}%
-\contentsline {section}{\numberline {1.3}Interoperable Services}{5}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Themes Available on KMaP}{7}{section.1.4}%
-\contentsline {chapter}{\numberline {2}How to Find and Visualise Your Data}{9}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Accessing the Catalogue}{9}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Filtering and Searching the Catalogue}{10}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Using the Search Bar}{10}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Using Filters}{10}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Step\sphinxhyphen {}by\sphinxhyphen {}Step Example: Finding a Pelagos Dataset}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Step 1 – Open the catalogue}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Step 2 – Search by keyword}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Step 3 – Filter to Datasets only}{11}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Step 4 – Select a Dataset}{11}{subsection.2.3.4}%
-\contentsline {section}{\numberline {2.4}The Dataset Detail Page}{11}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Thumbnail and Actions}{11}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Interactive Preview}{11}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}Metadata Panel}{12}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Full Metadata View}{12}{subsection.2.4.4}%
-\contentsline {subsection}{\numberline {2.4.5}Downloading a Dataset}{12}{subsection.2.4.5}%
-\contentsline {chapter}{\numberline {3}Managing Metadata}{13}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Who Can Edit Metadata?}{14}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Opening the Metadata Editor}{14}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Overview of the Metadata Editor}{14}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Editing Key Metadata Fields}{14}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Title}{14}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Abstract}{15}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Keywords}{15}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Category}{15}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Spatial Extent}{16}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Date Fields}{16}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}Licence}{16}{subsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.4.8}Point of Contact}{16}{subsection.3.4.8}%
-\contentsline {subsection}{\numberline {3.4.9}Thumbnail}{17}{subsection.3.4.9}%
-\contentsline {section}{\numberline {3.5}Saving Your Changes}{17}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Metadata Completeness Checklist}{17}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Exploring Maps}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Finding a Map}{20}{section.4.1}%
-\contentsline {section}{\numberline {4.2}The Map Viewer Interface}{20}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Navigating the Map}{20}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Basic Navigation}{20}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Going to a Specific Location}{20}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Working with Layers}{21}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Opening the Layer Panel}{21}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Toggling Layer Visibility}{21}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}Changing Layer Order}{21}{subsection.4.4.3}%
-\contentsline {subsection}{\numberline {4.4.4}Adjusting Layer Opacity}{21}{subsection.4.4.4}%
-\contentsline {subsection}{\numberline {4.4.5}Viewing the Legend}{21}{subsection.4.4.5}%
-\contentsline {section}{\numberline {4.5}Querying Features}{21}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Clicking on a Feature}{21}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Identify Tool}{21}{subsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.5.3}Selecting and Filtering Features}{22}{subsection.4.5.3}%
-\contentsline {section}{\numberline {4.6}Measurement Tools}{22}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Distance Measurement}{22}{subsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.6.2}Area Measurement}{22}{subsection.4.6.2}%
-\contentsline {section}{\numberline {4.7}Printing and Exporting the Map View}{22}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Print}{22}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Share / Permalink}{23}{subsection.4.7.2}%
-\contentsline {subsection}{\numberline {4.7.3}Embed}{23}{subsection.4.7.3}%
-\contentsline {section}{\numberline {4.8}Saving Changes to a Map}{23}{section.4.8}%
-\contentsline {section}{\numberline {4.9}Creating a New Map}{23}{section.4.9}%
+\contentsline {section}{\numberline {1.2}Resource Types}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Dataset}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Document}{5}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Map}{5}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}GeoStory}{7}{subsection.1.2.4}%
+\contentsline {subsection}{\numberline {1.2.5}Dashboard}{7}{subsection.1.2.5}%
+\contentsline {section}{\numberline {1.3}Interoperable Services}{7}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Themes Available on KMaP}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Manage your user’s profile}{10}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Updating the Profile}{10}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Editing Profile Information}{10}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Change the Password}{12}{subsection.1.6.2}%
+\contentsline {chapter}{\numberline {2}How to Find and Visualise Your Data}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Accessing the Catalogue}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Filtering and Searching the Catalogue}{14}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Using the Search Bar}{14}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Using advanced filter}{15}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Step\sphinxhyphen {}by\sphinxhyphen {}Step Example: Finding a Pelagos Dataset}{16}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Step 1 – Open the catalogue}{16}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Step 2 – Filter to Datasets only}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Step 3 – Search by keyword}{16}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Step 4 – Select a Dataset}{18}{subsection.2.3.4}%
+\contentsline {section}{\numberline {2.4}The Dataset Detail Page}{18}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Information Panel}{19}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Metadata Preview}{21}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}Full Metadata Page}{22}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Interactive Preview}{22}{subsection.2.4.4}%
+\contentsline {chapter}{\numberline {3}Managing Metadata}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Who Can Edit Metadata?}{25}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Opening the detail page in edit mode}{25}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Overview of the Metadata Editor}{27}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Editing Metadata}{28}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Basic Metadata Tab}{28}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Title}{28}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Abstract}{28}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Date Fields}{29}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Category}{29}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Keywords}{29}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Location and Licenses Tab}{30}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Licence}{30}{subsection.3.4.8}%
+\contentsline {subsection}{\numberline {3.4.9}Attribution}{31}{subsection.3.4.9}%
+\contentsline {subsection}{\numberline {3.4.10}Regions}{31}{subsection.3.4.10}%
+\contentsline {subsection}{\numberline {3.4.11}Optional metadata tab}{31}{subsection.3.4.11}%
+\contentsline {subsection}{\numberline {3.4.12}Point of Contact and Owner}{31}{subsection.3.4.12}%
+\contentsline {subsection}{\numberline {3.4.13}Related resources}{31}{subsection.3.4.13}%
+\contentsline {subsection}{\numberline {3.4.14}Supplemental information}{31}{subsection.3.4.14}%
+\contentsline {subsection}{\numberline {3.4.15}Dataset Attributes tab}{31}{subsection.3.4.15}%
+\contentsline {subsection}{\numberline {3.4.16}Additional Info}{31}{subsection.3.4.16}%
+\contentsline {section}{\numberline {3.5}Advanced Metadata editing}{32}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Saving Your Changes}{32}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Metadata Completeness Checklist}{32}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Exploring Maps}{33}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Finding a Map}{33}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The Map Viewer Interface}{34}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Navigating the Map}{35}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Basic Navigation}{35}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Going to a Specific Location}{35}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Working with Layers}{35}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Table of Conetnts (TOC)}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Toggling Layer Visibility}{35}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Changing Layer Order}{35}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Viewing the Legend}{35}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Compare two layers}{35}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Time based layers}{36}{subsection.4.4.6}%
+\contentsline {section}{\numberline {4.5}Querying Features}{36}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}View attribute table and filtering Features}{36}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Measurement Tools}{36}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Distance Measurement}{36}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Area Measurement}{37}{subsection.4.6.2}%
+\contentsline {section}{\numberline {4.7}Exporting the Map View}{37}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Share / Permalink}{37}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Embed}{37}{subsection.4.7.2}%
+\contentsline {section}{\numberline {4.8}Saving Changes to a Map}{37}{section.4.8}%
+\contentsline {section}{\numberline {4.9}Creating a New Map}{38}{section.4.9}%
